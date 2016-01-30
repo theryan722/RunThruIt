@@ -27,6 +27,7 @@ Partial Class frmManager
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WelcomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TipsQuotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseCurrentTabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,7 +42,6 @@ Partial Class frmManager
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
-        Me.TipsQuotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -73,13 +73,19 @@ Partial Class frmManager
         'WelcomeToolStripMenuItem
         '
         Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
-        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.WelcomeToolStripMenuItem.Text = "Welcome"
+        '
+        'TipsQuotesToolStripMenuItem
+        '
+        Me.TipsQuotesToolStripMenuItem.Name = "TipsQuotesToolStripMenuItem"
+        Me.TipsQuotesToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.TipsQuotesToolStripMenuItem.Text = "Tips && Quotes"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TabsToolStripMenuItem
@@ -168,12 +174,6 @@ Partial Class frmManager
         Me.TabControl1.Size = New System.Drawing.Size(704, 429)
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.UseSelectable = True
-        '
-        'TipsQuotesToolStripMenuItem
-        '
-        Me.TipsQuotesToolStripMenuItem.Name = "TipsQuotesToolStripMenuItem"
-        Me.TipsQuotesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.TipsQuotesToolStripMenuItem.Text = "Tips && Quotes"
         '
         'frmManager
         '
