@@ -127,6 +127,12 @@
     <Compile Include="Forms\Dialogs\dlgNewLog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Dialogs\dlgViewLog.Designer.vb">
+      <DependentUpon>dlgViewLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgViewLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManager.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\dlgNewLog.resx">
       <DependentUpon>dlgNewLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgViewLog.resx">
+      <DependentUpon>dlgViewLog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManager.resx">
       <DependentUpon>frmManager.vb</DependentUpon>
