@@ -19,7 +19,14 @@
 #Region "Methods"
 
     Private Sub LoadShoes()
-       
+        RemoveAllShoeItems()
+        For Each item As Shoe In ShoeManager.GetShoes()
+            Dim newb As New ctrl_logitem
+            newb.WorkoutItem = item
+            newb.BackColor = ConvertShoeLifespanToColor(item.GetLifespanLeft)
+            newb.Dock = DockStyle.Top
+            pnl_list.Controls.Add(newb)
+        Next
     End Sub
 
     Private Sub RemoveAllShoeItems()
@@ -29,6 +36,24 @@
             Next
         End If
     End Sub
+
+    Private Function ConvertShoeLifespanToColor(ByVal ls As String) As Color
+        Select Case CDbl(ls)
+            Case Is > 0.5
+                Return Color.Green
+            Case Is > 0.4
+                Return Color.LimeGreen
+            Case Is > 0.3
+                Return Color.Yellow
+            Case Is > 0.2
+                Return Color.Orange
+            Case Is > 0.15
+                Return Color.OrangeRed
+            Case Else
+                Return Color.Red
+        End Select
+    End Function
+
 
 #End Region
 
