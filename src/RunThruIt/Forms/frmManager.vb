@@ -100,7 +100,11 @@
 #Region "frmManager"
 
     Private Sub frmManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Tabs.AddWelcome()
+        If My.Settings.set_firsttime Then
+            dlgFirstTime.ShowDialog()
+        Else
+            Tabs.AddWelcome()
+        End If
     End Sub
 
 #End Region   
