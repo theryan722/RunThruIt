@@ -8,6 +8,7 @@
             Dim newb As New ctrl_logitem
             newb.WorkoutItem = item
             newb.BackColor = ConvertWorkoutTypeToColor(item.WorkoutType)
+            newb.Dock = DockStyle.Top
             pnl_list.Controls.Add(newb)
         Next
     End Sub
