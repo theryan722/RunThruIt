@@ -17,7 +17,14 @@
 #Region "Methods"
 
     Private Function VerifyFields() As Boolean
-
+        Dim ret As Boolean = True
+        If txtName.Text = "" Or Not IsNumeric(txtMileage.Text) Or Not IsNumeric(txtMaxMileage.Text) Then
+            ret = False
+        End If
+        If Not IsDate(dt_date.Value) Then
+            ret = False
+        End If
+        Return ret
     End Function
 
     Private Sub CreateShoe(ByVal sname As String, ByVal smileage As String, ByVal smaxmileage As String, ByVal snotes As String, ByVal sdate As Date)
