@@ -20,8 +20,10 @@
 
     Private Function VerifyAge() As Boolean
         Dim ret As Boolean = True
-        If Not IsNumeric(txtAge.Text) Then
-            ret = False
+        If txtAge.Text <> "" Then
+            If Not IsNumeric(txtAge.Text) Then
+                ret = False
+            End If
         End If
         Return ret
     End Function
