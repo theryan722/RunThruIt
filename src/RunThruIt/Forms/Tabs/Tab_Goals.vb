@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub AddGoalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddGoalToolStripMenuItem.Click
-
+        AddGoal()
     End Sub
 
 #End Region
@@ -53,6 +53,10 @@
 #End Region
 
 #Region "Methods"
+
+    Private Sub AddGoal()
+
+    End Sub
 
     Private Sub LoadGoals()
         lb_goals.Items.Clear()
