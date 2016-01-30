@@ -97,11 +97,11 @@
     <Compile Include="Forms\Dialogs\dlgNewLog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMain.vb">
+    <Compile Include="Forms\frmManager.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMain.Designer.vb">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <Compile Include="Forms\frmManager.Designer.vb">
+      <DependentUpon>frmManager.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tabs\Tab_About.Designer.vb">
@@ -128,10 +128,22 @@
     <Compile Include="Forms\Tabs\Tab_Log.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Tabs\Tab_Options.Designer.vb">
+      <DependentUpon>Tab_Options.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Tabs\Tab_Profile.Designer.vb">
       <DependentUpon>Tab_Profile.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tabs\Tab_Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Welcome.Designer.vb">
+      <DependentUpon>Tab_Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Welcome.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -160,8 +172,8 @@
     <EmbeddedResource Include="Forms\Dialogs\dlgNewLog.resx">
       <DependentUpon>dlgNewLog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMain.resx">
-      <DependentUpon>frmMain.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frmManager.resx">
+      <DependentUpon>frmManager.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
