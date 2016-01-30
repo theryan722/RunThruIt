@@ -33,7 +33,8 @@
     End Function
 
     Public Shared Function ConvertStringToShoe(ByVal str As String) As Shoe
-        
+        Dim arr() As String = str.Split("|")
+        Return New Shoe(arr(0), arr(1), arr(2), Boolean.Parse(arr(3)))
     End Function
 
 #End Region
