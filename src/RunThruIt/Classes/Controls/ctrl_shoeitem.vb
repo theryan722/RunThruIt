@@ -23,7 +23,9 @@
     End Sub
 
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
-
+        Dim newb As New dlgViewShoe
+        newb.DisplayShoe(ShoeItem)
+        newb.ShowDialog()
     End Sub
 
 #End Region
