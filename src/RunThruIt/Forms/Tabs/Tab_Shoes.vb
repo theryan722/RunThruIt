@@ -35,7 +35,7 @@
     End Sub
 
     Private Sub Tab_shoes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        LoadShoes()
     End Sub
 
 #End Region
