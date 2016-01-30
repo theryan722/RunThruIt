@@ -46,7 +46,10 @@
     End Sub
 
     Private Sub LoadCompleted()
-
+        lb_completed.Items.Clear()
+        For Each item As String In My.Settings.log_completedgoals
+            lb_completed.Items.Add(item)
+        Next
     End Sub
 
     Private Sub LoadAll()
