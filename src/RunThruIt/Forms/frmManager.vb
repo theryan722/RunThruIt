@@ -4,7 +4,13 @@
 
 #Region "File"
 
+    Private Sub WelcomeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WelcomeToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+
+    End Sub
 
 #End Region
 
@@ -28,9 +34,31 @@
 
 #Region "About"
 
+    Private Sub AboutToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem1.Click
 
+    End Sub
+
+    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
+
+    End Sub
 
 #End Region
+
+    Private Sub ProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfileToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub GoalsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GoalsToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub LogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub InjuryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InjuryToolStripMenuItem.Click
+
+    End Sub
 
 #End Region
 
@@ -73,6 +101,6 @@
 
 
 
-#End Region
+#End Region   
     
 End Class
