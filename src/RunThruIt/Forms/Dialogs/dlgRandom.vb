@@ -19,7 +19,12 @@
 #Region "dlgRandom"
 
     Private Sub dlgRandom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Select Case New Random().Next(0, 2)
+            Case 0
+                btnNewQuote.PerformClick()
+            Case 1
+                btnNewTip.PerformClick()
+        End Select
     End Sub
 
 #End Region
