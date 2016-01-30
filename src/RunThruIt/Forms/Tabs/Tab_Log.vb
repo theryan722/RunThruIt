@@ -1,14 +1,6 @@
 ﻿Public Class Tab_Log
 
-#Region "Methods"
-
-    'Run
-    'Bike
-    'Walk
-    'Swim
-    'Hike
-    'Strength Training
-    'Yoga
+#Region "Methods"""
 
     Private Sub LoadWorkouts()
         For Each item As Workout In LogManager.GetWorkouts()
@@ -39,11 +31,21 @@
         Return ret
     End Function
 
+    Private Sub RemoveAllWorkoutItems()
+
+    End Sub
+
 #End Region
 
 #Region "UI"
 
+    Private Sub btnReload_Click(sender As Object, e As EventArgs) Handles btnReload.Click
 
+    End Sub
+
+    Private Sub btnRemoveAll_Click(sender As Object, e As EventArgs) Handles btnRemoveAll.Click
+
+    End Sub
 
 #End Region
 
