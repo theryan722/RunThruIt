@@ -80,7 +80,13 @@
     End Sub
 
     Private Sub lbl_activitylevel_Click(sender As Object, e As EventArgs) Handles lbl_activitylevel.Click
-
+        Dim pactivitylevel As String = InputBox("Please enter an activity level between 1 and 5", "Modify Weight", My.Settings.profile_activitylevel)
+        If Not IsNumeric(pactivitylevel) Or pactivitylevel = "" Or pactivitylevel > 5 Or pactivitylevel < 1 Then
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid activity level.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            My.Settings.profile_activitylevel = pactivitylevel
+            LoadProfile()
+        End If
     End Sub
 
 #End Region
