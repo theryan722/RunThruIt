@@ -31,4 +31,12 @@
 
 #End Region
 
+#Region "ctrl_shoeitem"
+
+    Private Sub ctrl_shoeitem_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles Me.MouseDoubleClick
+        btnView.PerformClick()
+    End Sub
+
+#End Region
+
 End Class
