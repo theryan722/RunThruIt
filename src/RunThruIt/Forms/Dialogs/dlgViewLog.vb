@@ -23,7 +23,7 @@
     End Sub
 
     Private Sub dlgViewLog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Parent = frmManager
     End Sub
 
 #End Region
