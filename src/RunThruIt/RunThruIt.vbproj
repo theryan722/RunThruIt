@@ -139,6 +139,9 @@
     <EmbeddedResource Include="Forms\Dialogs\dlgFirstTime.resx">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgFunFact.resx">
+      <DependentUpon>dlgFunFact.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
