@@ -27,7 +27,7 @@
 #Region "Context Menu Strip"
 
     Private Sub RemoveToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles RemoveToolStripMenuItem1.Click
-
+        RemoveCompleted()
     End Sub
 
     Private Sub MarkAsIncompleteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarkAsIncompleteToolStripMenuItem.Click
