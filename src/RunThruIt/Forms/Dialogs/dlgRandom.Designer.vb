@@ -29,6 +29,7 @@ Partial Class dlgRandom
         Me.btnNewQuote = New MetroFramework.Controls.MetroButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.check_displayatstartup = New MetroFramework.Controls.MetroCheckBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,11 +88,22 @@ Partial Class dlgRandom
         Me.Panel1.Size = New System.Drawing.Size(370, 23)
         Me.Panel1.TabIndex = 4
         '
+        'check_displayatstartup
+        '
+        Me.check_displayatstartup.AutoSize = True
+        Me.check_displayatstartup.Location = New System.Drawing.Point(245, 39)
+        Me.check_displayatstartup.Name = "check_displayatstartup"
+        Me.check_displayatstartup.Size = New System.Drawing.Size(115, 15)
+        Me.check_displayatstartup.TabIndex = 5
+        Me.check_displayatstartup.Text = "Display at Startup"
+        Me.check_displayatstartup.UseSelectable = True
+        '
         'dlgRandom
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(370, 233)
+        Me.Controls.Add(Me.check_displayatstartup)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
@@ -113,4 +125,5 @@ Partial Class dlgRandom
     Friend WithEvents btnNewQuote As MetroFramework.Controls.MetroButton
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents check_displayatstartup As MetroFramework.Controls.MetroCheckBox
 End Class
