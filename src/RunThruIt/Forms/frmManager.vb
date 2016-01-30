@@ -53,7 +53,7 @@
     End Sub
 
     Private Sub LogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogToolStripMenuItem.Click
-
+        Tabs.AddLog()
     End Sub
 
     Private Sub InjuryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InjuryToolStripMenuItem.Click
