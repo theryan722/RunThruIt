@@ -50,7 +50,7 @@
 #Region "Tab_Log"
 
     Private Sub Tab_Log_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        LoadWorkouts()
     End Sub
 
 #End Region
