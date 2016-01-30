@@ -19,7 +19,7 @@
 #Region "Methods"
 
     Private Sub LoadShoes()
-
+       
     End Sub
 
     Private Sub RemoveAllShoeItems()

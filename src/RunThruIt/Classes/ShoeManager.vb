@@ -16,6 +16,14 @@
         My.Settings.set_shoes.Clear()
     End Sub
 
+    Public Shared Function GetShoes() As List(Of Shoe)
+        Dim ret As New List(Of Shoe)
+        For Each item As String In My.Settings.set_shoes
+            ret.Add(ConvertStringToShoe(item))
+        Next
+        Return ret
+    End Function
+
 #End Region
 
 #Region "Convert"
