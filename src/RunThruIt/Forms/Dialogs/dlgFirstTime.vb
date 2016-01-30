@@ -30,8 +30,10 @@
 
     Private Function VerifyWeight() As Boolean
         Dim ret As Boolean = True
-        If Not IsNumeric(txtWeight.Text) Then
-            ret = False
+        If txtWeight.Text <> "" Then
+            If Not IsNumeric(txtWeight.Text) Then
+                ret = False
+            End If
         End If
         Return ret
     End Function
