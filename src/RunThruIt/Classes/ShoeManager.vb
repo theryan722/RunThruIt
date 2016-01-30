@@ -4,6 +4,18 @@
 
 #Region "Public"
 
+    Public Shared Function CheckIfShoeExists(ByVal name As String) As Boolean
+        Dim ret As Boolean = False
+        For Each item As String In My.Settings.set_shoes
+            Dim arr() As String = item.Split("|")
+            If arr(0) = name Then
+                ret = True
+                Exit For
+            End If
+        Next
+        Return ret
+    End Function
+
     Public Shared Function GetShoeFromIndex(ByVal index As Integer) As Shoe
         Return ConvertStringToShoe(My.Settings.set_shoes(index))
     End Function
