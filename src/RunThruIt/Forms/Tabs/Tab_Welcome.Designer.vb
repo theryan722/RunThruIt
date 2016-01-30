@@ -22,11 +22,13 @@ Partial Class Tab_Welcome
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.btnGoals = New MetroFramework.Controls.MetroTile()
         Me.btnInjury = New MetroFramework.Controls.MetroTile()
         Me.btnLog = New MetroFramework.Controls.MetroTile()
         Me.btnProfile = New MetroFramework.Controls.MetroTile()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -43,6 +45,7 @@ Partial Class Tab_Welcome
         Me.btnGoals.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.btnGoals.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.btnGoals.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.ToolTip1.SetToolTip(Me.btnGoals, "View, set and track your goals")
         Me.btnGoals.UseSelectable = True
         '
         'btnInjury
@@ -58,6 +61,7 @@ Partial Class Tab_Welcome
         Me.btnInjury.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.btnInjury.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.btnInjury.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.ToolTip1.SetToolTip(Me.btnInjury, "Get help with injury prevention and healing")
         Me.btnInjury.UseSelectable = True
         '
         'btnLog
@@ -73,6 +77,7 @@ Partial Class Tab_Welcome
         Me.btnLog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.btnLog.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.btnLog.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.ToolTip1.SetToolTip(Me.btnLog, "Log and view your runs/workouts")
         Me.btnLog.UseSelectable = True
         '
         'btnProfile
@@ -88,6 +93,7 @@ Partial Class Tab_Welcome
         Me.btnProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.btnProfile.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.btnProfile.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.ToolTip1.SetToolTip(Me.btnProfile, "View your profile")
         Me.btnProfile.UseSelectable = True
         '
         'TableLayoutPanel1
@@ -127,4 +133,5 @@ Partial Class Tab_Welcome
     Friend WithEvents btnLog As MetroFramework.Controls.MetroTile
     Friend WithEvents btnProfile As MetroFramework.Controls.MetroTile
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
 End Class
