@@ -3,8 +3,12 @@
 #Region "Methods"""
 
     Private Sub LoadWorkouts()
+        RemoveAllWorkoutItems()
         For Each item As Workout In LogManager.GetWorkouts()
-
+            Dim newb As New ctrl_logitem
+            newb.WorkoutItem = item
+            newb.BackColor = ConvertWorkoutTypeToColor(item.WorkoutType)
+            pnl_list.Controls.Add(newb)
         Next
     End Sub
 
