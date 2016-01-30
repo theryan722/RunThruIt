@@ -7,6 +7,16 @@
         MetroFramework.MetroMessageBox.Show(frmManager, "Changes to profile saved!", "Saved Changes", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
+    Private Sub pb_profilepicture_Click(sender As Object, e As EventArgs) Handles pb_profilepicture.Click
+        Dim newb As New OpenFileDialog
+        newb.Title = "Browse for profile picture"
+        newb.Filter = "All Files (*.*)|*.*|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp"
+        If newb.ShowDialog = Windows.Forms.DialogResult.OK Then
+            pb_profilepicture.BackgroundImage = Image.FromFile(newb.FileName)
+            My.Settings.profile_picture = newb.FileName
+        End If
+    End Sub
+
 #End Region
 
 #Region "Methods"
@@ -29,5 +39,5 @@
     End Sub
 
 #End Region
-
+   
 End Class
