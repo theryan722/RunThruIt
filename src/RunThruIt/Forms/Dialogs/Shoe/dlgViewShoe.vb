@@ -6,6 +6,14 @@
         Me.Close()
     End Sub
 
+    Private Sub FlashTimer_Tick(sender As Object, e As EventArgs) Handles FlashTimer.Tick
+        If lblLifespanLeft.Visible Then
+            lblLifespanLeft.Hide()
+        Else
+            lblLifespanLeft.Show()
+        End If
+    End Sub
+
 #End Region
 
 #Region "Methods"
@@ -16,8 +24,14 @@
         lblMaxMileage.Text = "Max Recommended Mileage: " & nshoe.MaxMileage
         lblDatePurchased.Text = "Date Purchased: " & nshoe.DatePurchased.ToString("mm:dd:yyyy")
         txtNotes.Text = nshoe.Notes
+        lblLifespanLeft.Text = "Life Span Left: " & nshoe.GetLifespanLeft & "%"
+        If CDbl(nshoe.GetLifespanLeft) < 0.2 Then
+            FlashTimer.Start()
+            lblLifespanLeft.ForeColor = Color.Red
+        End If
     End Sub
 
 #End Region
 
+    
 End Class

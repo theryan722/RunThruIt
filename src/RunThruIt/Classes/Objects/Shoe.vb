@@ -23,7 +23,7 @@
 #End Region
 
     Public Function GetLifespanLeft() As String
-        Dim per As Double = 1.0 - (CInt(Mileage) / CInt(MaxMileage))
+        Dim per As Double = 1.0 - (CDbl(Mileage) / CDbl(MaxMileage))
         Return per.ToString()
     End Function
 

@@ -22,6 +22,7 @@ Partial Class dlgViewShoe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dlgViewShoe))
         Me.btnClose = New MetroFramework.Controls.MetroButton()
         Me.lblName = New System.Windows.Forms.Label()
@@ -30,12 +31,14 @@ Partial Class dlgViewShoe
         Me.lblNotes = New System.Windows.Forms.Label()
         Me.txtNotes = New MetroFramework.Controls.MetroTextBox()
         Me.lblDatePurchased = New System.Windows.Forms.Label()
+        Me.lblLifespanLeft = New System.Windows.Forms.Label()
+        Me.FlashTimer = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'btnClose
         '
         Me.btnClose.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnClose.Location = New System.Drawing.Point(0, 227)
+        Me.btnClose.Location = New System.Drawing.Point(0, 256)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(338, 23)
         Me.btnClose.TabIndex = 0
@@ -76,7 +79,7 @@ Partial Class dlgViewShoe
         '
         Me.lblNotes.AutoSize = True
         Me.lblNotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNotes.Location = New System.Drawing.Point(3, 160)
+        Me.lblNotes.Location = New System.Drawing.Point(3, 192)
         Me.lblNotes.Name = "lblNotes"
         Me.lblNotes.Size = New System.Drawing.Size(52, 18)
         Me.lblNotes.TabIndex = 4
@@ -85,7 +88,7 @@ Partial Class dlgViewShoe
         'txtNotes
         '
         Me.txtNotes.Lines = New String(-1) {}
-        Me.txtNotes.Location = New System.Drawing.Point(61, 160)
+        Me.txtNotes.Location = New System.Drawing.Point(61, 192)
         Me.txtNotes.MaxLength = 32767
         Me.txtNotes.Multiline = True
         Me.txtNotes.Name = "txtNotes"
@@ -107,11 +110,26 @@ Partial Class dlgViewShoe
         Me.lblDatePurchased.TabIndex = 6
         Me.lblDatePurchased.Text = "Date Purchased:"
         '
+        'lblLifespanLeft
+        '
+        Me.lblLifespanLeft.AutoSize = True
+        Me.lblLifespanLeft.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLifespanLeft.Location = New System.Drawing.Point(3, 160)
+        Me.lblLifespanLeft.Name = "lblLifespanLeft"
+        Me.lblLifespanLeft.Size = New System.Drawing.Size(95, 18)
+        Me.lblLifespanLeft.TabIndex = 7
+        Me.lblLifespanLeft.Text = "Lifespan Left:"
+        '
+        'FlashTimer
+        '
+        Me.FlashTimer.Interval = 750
+        '
         'dlgViewShoe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(338, 250)
+        Me.ClientSize = New System.Drawing.Size(338, 279)
+        Me.Controls.Add(Me.lblLifespanLeft)
         Me.Controls.Add(Me.lblDatePurchased)
         Me.Controls.Add(Me.txtNotes)
         Me.Controls.Add(Me.lblNotes)
@@ -135,4 +153,6 @@ Partial Class dlgViewShoe
     Friend WithEvents lblNotes As System.Windows.Forms.Label
     Friend WithEvents txtNotes As MetroFramework.Controls.MetroTextBox
     Friend WithEvents lblDatePurchased As System.Windows.Forms.Label
+    Friend WithEvents lblLifespanLeft As System.Windows.Forms.Label
+    Friend WithEvents FlashTimer As System.Windows.Forms.Timer
 End Class

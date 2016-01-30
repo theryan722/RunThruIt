@@ -123,28 +123,34 @@
     <Compile Include="Forms\Dialogs\dlgFirstTime.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Dialogs\Shoe\dlgNewShoe.Designer.vb">
+      <DependentUpon>dlgNewShoe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Shoe\dlgNewShoe.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Dialogs\dlgRandom.Designer.vb">
       <DependentUpon>dlgRandom.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dialogs\dlgRandom.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgNewLog.Designer.vb">
+    <Compile Include="Forms\Dialogs\Log\dlgNewLog.Designer.vb">
       <DependentUpon>dlgNewLog.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgNewLog.vb">
+    <Compile Include="Forms\Dialogs\Log\dlgNewLog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgViewLog.Designer.vb">
+    <Compile Include="Forms\Dialogs\Log\dlgViewLog.Designer.vb">
       <DependentUpon>dlgViewLog.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgViewLog.vb">
+    <Compile Include="Forms\Dialogs\Log\dlgViewLog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgViewShoe.Designer.vb">
+    <Compile Include="Forms\Dialogs\Shoe\dlgViewShoe.Designer.vb">
       <DependentUpon>dlgViewShoe.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgViewShoe.vb">
+    <Compile Include="Forms\Dialogs\Shoe\dlgViewShoe.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmManager.vb">
@@ -228,16 +234,19 @@
     <EmbeddedResource Include="Forms\Dialogs\dlgFirstTime.resx">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Shoe\dlgNewShoe.resx">
+      <DependentUpon>dlgNewShoe.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\dlgRandom.resx">
       <DependentUpon>dlgRandom.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Dialogs\dlgNewLog.resx">
+    <EmbeddedResource Include="Forms\Dialogs\Log\dlgNewLog.resx">
       <DependentUpon>dlgNewLog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Dialogs\dlgViewLog.resx">
+    <EmbeddedResource Include="Forms\Dialogs\Log\dlgViewLog.resx">
       <DependentUpon>dlgViewLog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Dialogs\dlgViewShoe.resx">
+    <EmbeddedResource Include="Forms\Dialogs\Shoe\dlgViewShoe.resx">
       <DependentUpon>dlgViewShoe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManager.resx">
