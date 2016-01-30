@@ -66,27 +66,30 @@ Partial Class ctrl_shoeitem
         'lblDate
         '
         Me.lblDate.AutoSize = True
+        Me.lblDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.Location = New System.Drawing.Point(4, 14)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(87, 13)
+        Me.lblDate.Size = New System.Drawing.Size(102, 13)
         Me.lblDate.TabIndex = 9
         Me.lblDate.Text = "Date Purchased:"
         '
         'lblMileage
         '
         Me.lblMileage.AutoSize = True
+        Me.lblMileage.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMileage.Location = New System.Drawing.Point(3, 28)
         Me.lblMileage.Name = "lblMileage"
-        Me.lblMileage.Size = New System.Drawing.Size(47, 13)
+        Me.lblMileage.Size = New System.Drawing.Size(55, 13)
         Me.lblMileage.TabIndex = 8
         Me.lblMileage.Text = "Mileage:"
         '
         'lblName
         '
         Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.Location = New System.Drawing.Point(3, 1)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(38, 13)
+        Me.lblName.Size = New System.Drawing.Size(43, 13)
         Me.lblName.TabIndex = 7
         Me.lblName.Text = "Name:"
         '

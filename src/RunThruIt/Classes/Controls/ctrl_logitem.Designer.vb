@@ -34,27 +34,30 @@ Partial Class ctrl_logitem
         'lblType
         '
         Me.lblType.AutoSize = True
+        Me.lblType.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblType.Location = New System.Drawing.Point(6, 6)
         Me.lblType.Name = "lblType"
-        Me.lblType.Size = New System.Drawing.Size(34, 13)
+        Me.lblType.Size = New System.Drawing.Size(39, 13)
         Me.lblType.TabIndex = 0
         Me.lblType.Text = "Type:"
         '
         'lblDuration
         '
         Me.lblDuration.AutoSize = True
+        Me.lblDuration.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDuration.Location = New System.Drawing.Point(6, 33)
         Me.lblDuration.Name = "lblDuration"
-        Me.lblDuration.Size = New System.Drawing.Size(50, 13)
+        Me.lblDuration.Size = New System.Drawing.Size(59, 13)
         Me.lblDuration.TabIndex = 1
         Me.lblDuration.Text = "Duration:"
         '
         'lblDate
         '
         Me.lblDate.AutoSize = True
+        Me.lblDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.Location = New System.Drawing.Point(7, 19)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(33, 13)
+        Me.lblDate.Size = New System.Drawing.Size(38, 13)
         Me.lblDate.TabIndex = 2
         Me.lblDate.Text = "Date:"
         '
