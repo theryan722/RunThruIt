@@ -48,7 +48,9 @@
 
     Private Function VerifyActivityLevel()
         Dim ret As Boolean = True
-
+        If Not IsNumeric(txtActivityLevel.Text) Then
+            ret = False
+        End If
         Return ret
     End Function
 
