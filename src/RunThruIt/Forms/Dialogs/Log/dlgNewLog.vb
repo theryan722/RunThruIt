@@ -13,6 +13,9 @@
             CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, combo_shoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text), txtDuration.Text)
             My.Settings.Save()
             Me.DialogResult = Windows.Forms.DialogResult.OK
+            If My.Settings.set_defaultshoe <> My.Settings.set_shoes(combo_shoes.SelectedIndex) Then
+                My.Settings.set_defaultshoe = My.Settings.set_shoes(combo_shoes.SelectedIndex)
+            End If
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
@@ -21,6 +24,15 @@
 #End Region
 
 #Region "Methods"
+
+    Private Sub LoadShoes()
+        For Each item As Shoe In ShoeManager.GetShoes()
+            combo_shoes.Items.Add(item.ShoeName)
+        Next
+        If My.Settings.set_defaultshoe <> "" Then
+            combo_shoes.SelectedItem = ShoeManager.ConvertStringToShoe(My.Settings.set_defaultshoe).ShoeName
+        End If
+    End Sub
 
     Private Function VerifyFields() As Boolean
         Dim ret As Boolean = True
