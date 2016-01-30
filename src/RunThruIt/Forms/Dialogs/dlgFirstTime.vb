@@ -8,7 +8,39 @@
 
 #Region "Methods"
 
+#Region "Verification"
 
+    Private Function VerifyAllFields() As Boolean
+
+    End Function
+
+    Private Function VerifyName() As Boolean
+
+    End Function
+
+    Private Function VerifyAge() As Boolean
+
+    End Function
+
+    Private Function VerifyWeight() As Boolean
+
+    End Function
+
+    Private Function VerifySex() As Boolean
+
+    End Function
+
+    Private Function VerifyActivityLevel()
+
+    End Function
+
+    Private Function VerifyPassword()
+
+    End Function
+
+#End Region
+
+    
 
 #End Region
 
@@ -23,6 +55,5 @@
     End Sub
 
 #End Region
-
 
 End Class
