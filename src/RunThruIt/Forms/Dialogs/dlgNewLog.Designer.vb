@@ -49,9 +49,9 @@ Partial Class dlgNewLog
         Me.dt_date.Location = New System.Drawing.Point(113, 99)
         Me.dt_date.MinimumSize = New System.Drawing.Size(0, 29)
         Me.dt_date.Name = "dt_date"
-        Me.dt_date.ShowCheckBox = True
-        Me.dt_date.Size = New System.Drawing.Size(246, 29)
+        Me.dt_date.Size = New System.Drawing.Size(210, 29)
         Me.dt_date.TabIndex = 1
+        Me.dt_date.Value = New Date(2016, 1, 30, 0, 0, 0, 0)
         '
         'combo_type
         '

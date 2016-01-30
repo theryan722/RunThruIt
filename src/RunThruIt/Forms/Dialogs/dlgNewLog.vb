@@ -16,6 +16,17 @@
 
 #Region "Methods"
 
+    Private Function VerifyFields() As Boolean
+        Dim ret As Boolean = True
+        If combo_type.SelectedIndex = -1 Then
+            ret = False
+        End If
+        If Not IsDate(dt_date.Value) Then
+            ret = False
+        End If
+        Return ret
+    End Function
+
     Private Sub CreateWorkout(ByVal type As String, ByVal wdate As Date, ByVal notes As String, ByVal distance As String, ByVal shoes As String, ByVal pace As String, ByVal injured As Boolean)
         Dim b As Workout = New Workout
         b.WorkoutType = type
