@@ -12,12 +12,13 @@
 
     Public Sub DisplayWorkout(ByVal nworkout As Workout)
         lblType.Text = "Type: " & nworkout.WorkoutType
-        lblDate.Text = "Date: " & nworkout.WorkoutDate
+        lblDate.Text = "Date: " & nworkout.WorkoutDate.ToString("mm:dd:yyyy")
         lblDistance.Text = "Distance: " & nworkout.Distance & " miles"
         lblInjury.Text = "Injury: " & nworkout.Injury
         lblPace.Text = "Pace: " & nworkout.Pace
         lblShoes.Text = "Shoes: " & nworkout.Shoes
         txtNotes.Text = nworkout.Notes
+        lblTime.Text = "Time: " & nworkout.WorkoutTime.ToString("hh:mm")
     End Sub
 
 #End Region

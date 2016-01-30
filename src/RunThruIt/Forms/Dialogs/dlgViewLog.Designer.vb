@@ -32,12 +32,13 @@ Partial Class dlgViewLog
         Me.lblShoes = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtNotes = New MetroFramework.Controls.MetroTextBox()
+        Me.lblTime = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnClose
         '
         Me.btnClose.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnClose.Location = New System.Drawing.Point(0, 277)
+        Me.btnClose.Location = New System.Drawing.Point(0, 295)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(300, 23)
         Me.btnClose.TabIndex = 0
@@ -78,7 +79,7 @@ Partial Class dlgViewLog
         '
         Me.lblPace.AutoSize = True
         Me.lblPace.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPace.Location = New System.Drawing.Point(3, 141)
+        Me.lblPace.Location = New System.Drawing.Point(3, 162)
         Me.lblPace.Name = "lblPace"
         Me.lblPace.Size = New System.Drawing.Size(44, 17)
         Me.lblPace.TabIndex = 4
@@ -88,7 +89,7 @@ Partial Class dlgViewLog
         '
         Me.lblInjury.AutoSize = True
         Me.lblInjury.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInjury.Location = New System.Drawing.Point(3, 165)
+        Me.lblInjury.Location = New System.Drawing.Point(3, 186)
         Me.lblInjury.Name = "lblInjury"
         Me.lblInjury.Size = New System.Drawing.Size(46, 17)
         Me.lblInjury.TabIndex = 5
@@ -98,7 +99,7 @@ Partial Class dlgViewLog
         '
         Me.lblShoes.AutoSize = True
         Me.lblShoes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblShoes.Location = New System.Drawing.Point(3, 191)
+        Me.lblShoes.Location = New System.Drawing.Point(3, 212)
         Me.lblShoes.Name = "lblShoes"
         Me.lblShoes.Size = New System.Drawing.Size(52, 17)
         Me.lblShoes.TabIndex = 6
@@ -107,7 +108,7 @@ Partial Class dlgViewLog
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 219)
+        Me.Label7.Location = New System.Drawing.Point(3, 240)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(38, 13)
         Me.Label7.TabIndex = 7
@@ -116,7 +117,7 @@ Partial Class dlgViewLog
         'txtNotes
         '
         Me.txtNotes.Lines = New String(-1) {}
-        Me.txtNotes.Location = New System.Drawing.Point(47, 219)
+        Me.txtNotes.Location = New System.Drawing.Point(47, 240)
         Me.txtNotes.MaxLength = 32767
         Me.txtNotes.Multiline = True
         Me.txtNotes.Name = "txtNotes"
@@ -127,11 +128,22 @@ Partial Class dlgViewLog
         Me.txtNotes.TabIndex = 8
         Me.txtNotes.UseSelectable = True
         '
+        'lblTime
+        '
+        Me.lblTime.AutoSize = True
+        Me.lblTime.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTime.Location = New System.Drawing.Point(3, 136)
+        Me.lblTime.Name = "lblTime"
+        Me.lblTime.Size = New System.Drawing.Size(43, 17)
+        Me.lblTime.TabIndex = 9
+        Me.lblTime.Text = "Time:"
+        '
         'dlgViewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(300, 300)
+        Me.ClientSize = New System.Drawing.Size(300, 318)
+        Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.txtNotes)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.lblShoes)
@@ -161,4 +173,5 @@ Partial Class dlgViewLog
     Friend WithEvents lblShoes As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtNotes As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents lblTime As System.Windows.Forms.Label
 End Class

@@ -43,6 +43,8 @@ Partial Class dlgNewLog
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtInjury = New MetroFramework.Controls.MetroTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dt_time = New MetroFramework.Controls.MetroDateTime()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -101,7 +103,7 @@ Partial Class dlgNewLog
         Me.Panel1.Controls.Add(Me.btnOk)
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 314)
+        Me.Panel1.Location = New System.Drawing.Point(0, 350)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(369, 23)
         Me.Panel1.TabIndex = 7
@@ -118,7 +120,7 @@ Partial Class dlgNewLog
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(18, 190)
+        Me.Label3.Location = New System.Drawing.Point(18, 231)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(38, 13)
         Me.Label3.TabIndex = 7
@@ -127,7 +129,7 @@ Partial Class dlgNewLog
         'txtNotes
         '
         Me.txtNotes.Lines = New String(-1) {}
-        Me.txtNotes.Location = New System.Drawing.Point(62, 190)
+        Me.txtNotes.Location = New System.Drawing.Point(62, 231)
         Me.txtNotes.MaxLength = 32767
         Me.txtNotes.Multiline = True
         Me.txtNotes.Name = "txtNotes"
@@ -141,7 +143,7 @@ Partial Class dlgNewLog
         'txtDistance
         '
         Me.txtDistance.Lines = New String(-1) {}
-        Me.txtDistance.Location = New System.Drawing.Point(62, 132)
+        Me.txtDistance.Location = New System.Drawing.Point(62, 173)
         Me.txtDistance.MaxLength = 32767
         Me.txtDistance.Name = "txtDistance"
         Me.txtDistance.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -154,7 +156,7 @@ Partial Class dlgNewLog
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 132)
+        Me.Label4.Location = New System.Drawing.Point(4, 173)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 13)
         Me.Label4.TabIndex = 10
@@ -163,7 +165,7 @@ Partial Class dlgNewLog
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(21, 161)
+        Me.Label5.Location = New System.Drawing.Point(21, 202)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(35, 13)
         Me.Label5.TabIndex = 11
@@ -172,7 +174,7 @@ Partial Class dlgNewLog
         'txtPace
         '
         Me.txtPace.Lines = New String(-1) {}
-        Me.txtPace.Location = New System.Drawing.Point(62, 161)
+        Me.txtPace.Location = New System.Drawing.Point(62, 202)
         Me.txtPace.MaxLength = 32767
         Me.txtPace.Name = "txtPace"
         Me.txtPace.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -185,7 +187,7 @@ Partial Class dlgNewLog
         'txtShoes
         '
         Me.txtShoes.Lines = New String(-1) {}
-        Me.txtShoes.Location = New System.Drawing.Point(62, 268)
+        Me.txtShoes.Location = New System.Drawing.Point(62, 309)
         Me.txtShoes.MaxLength = 32767
         Me.txtShoes.Name = "txtShoes"
         Me.txtShoes.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -198,7 +200,7 @@ Partial Class dlgNewLog
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(16, 268)
+        Me.Label6.Location = New System.Drawing.Point(16, 309)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 13)
         Me.Label6.TabIndex = 15
@@ -218,7 +220,7 @@ Partial Class dlgNewLog
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(4, 294)
+        Me.Label7.Location = New System.Drawing.Point(4, 335)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(221, 13)
         Me.Label7.TabIndex = 17
@@ -227,7 +229,7 @@ Partial Class dlgNewLog
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(21, 239)
+        Me.Label8.Location = New System.Drawing.Point(21, 280)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(35, 13)
         Me.Label8.TabIndex = 18
@@ -236,7 +238,7 @@ Partial Class dlgNewLog
         'txtInjury
         '
         Me.txtInjury.Lines = New String(-1) {}
-        Me.txtInjury.Location = New System.Drawing.Point(62, 239)
+        Me.txtInjury.Location = New System.Drawing.Point(62, 280)
         Me.txtInjury.MaxLength = 32767
         Me.txtInjury.Name = "txtInjury"
         Me.txtInjury.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -249,17 +251,38 @@ Partial Class dlgNewLog
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(143, 142)
+        Me.Label9.Location = New System.Drawing.Point(143, 183)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(30, 13)
         Me.Label9.TabIndex = 20
         Me.Label9.Text = "miles"
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(70, 134)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(37, 13)
+        Me.Label10.TabIndex = 22
+        Me.Label10.Text = "*Time:"
+        '
+        'dt_time
+        '
+        Me.dt_time.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.dt_time.Location = New System.Drawing.Point(113, 134)
+        Me.dt_time.MinimumSize = New System.Drawing.Size(0, 29)
+        Me.dt_time.Name = "dt_time"
+        Me.dt_time.Size = New System.Drawing.Size(144, 29)
+        Me.dt_time.TabIndex = 21
+        Me.dt_time.Value = New Date(2016, 1, 30, 0, 0, 0, 0)
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 337)
+        Me.ClientSize = New System.Drawing.Size(369, 373)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.dt_time)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.txtInjury)
         Me.Controls.Add(Me.Label8)
@@ -311,4 +334,6 @@ Partial Class dlgNewLog
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtInjury As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents dt_time As MetroFramework.Controls.MetroDateTime
 End Class

@@ -10,7 +10,7 @@
             witem = value
             lblType.Text = "Type: " & value.WorkoutType
             lblDistance.Text = "Distance: " & value.Distance & " miles"
-            lblDate.Text = "Date: " & value.WorkoutDate.ToString
+            lblDate.Text = "Date: " & value.WorkoutDate.ToString("mm:dd:yy") & " at " & value.WorkoutTime.ToString("hh:mm")
         End Set
     End Property
 
