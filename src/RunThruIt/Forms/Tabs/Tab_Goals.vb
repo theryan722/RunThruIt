@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub MarkAsIncompleteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarkAsIncompleteToolStripMenuItem.Click
-
+        MarkGoalAsIncomplete()
     End Sub
 
 #End Region
