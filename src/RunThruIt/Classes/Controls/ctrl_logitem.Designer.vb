@@ -28,6 +28,7 @@ Partial Class ctrl_logitem
         Me.btnRemove = New MetroFramework.Controls.MetroButton()
         Me.btnView = New MetroFramework.Controls.MetroButton()
         Me.pnl_bottom = New System.Windows.Forms.Panel()
+        Me.pnl_divider = New System.Windows.Forms.Panel()
         Me.pnl_bottom.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -88,21 +89,31 @@ Partial Class ctrl_logitem
         Me.pnl_bottom.Controls.Add(Me.btnRemove)
         Me.pnl_bottom.Controls.Add(Me.btnView)
         Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnl_bottom.Location = New System.Drawing.Point(0, 47)
+        Me.pnl_bottom.Location = New System.Drawing.Point(0, 49)
         Me.pnl_bottom.Name = "pnl_bottom"
         Me.pnl_bottom.Size = New System.Drawing.Size(200, 23)
         Me.pnl_bottom.TabIndex = 5
+        '
+        'pnl_divider
+        '
+        Me.pnl_divider.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.pnl_divider.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl_divider.Location = New System.Drawing.Point(0, 72)
+        Me.pnl_divider.Name = "pnl_divider"
+        Me.pnl_divider.Size = New System.Drawing.Size(200, 5)
+        Me.pnl_divider.TabIndex = 11
         '
         'ctrl_logitem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.pnl_bottom)
+        Me.Controls.Add(Me.pnl_divider)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblDuration)
         Me.Controls.Add(Me.lblType)
         Me.Name = "ctrl_logitem"
-        Me.Size = New System.Drawing.Size(200, 70)
+        Me.Size = New System.Drawing.Size(200, 77)
         Me.pnl_bottom.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -114,5 +125,6 @@ Partial Class ctrl_logitem
     Friend WithEvents btnRemove As MetroFramework.Controls.MetroButton
     Friend WithEvents btnView As MetroFramework.Controls.MetroButton
     Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
+    Friend WithEvents pnl_divider As System.Windows.Forms.Panel
 
 End Class
