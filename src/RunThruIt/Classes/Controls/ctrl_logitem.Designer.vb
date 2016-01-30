@@ -24,7 +24,7 @@ Partial Class ctrl_logitem
     Private Sub InitializeComponent()
         Me.lblType = New System.Windows.Forms.Label()
         Me.lblDistance = New System.Windows.Forms.Label()
-        Me.lblPace = New System.Windows.Forms.Label()
+        Me.lblDate = New System.Windows.Forms.Label()
         Me.btnRemove = New MetroFramework.Controls.MetroButton()
         Me.btnView = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
@@ -41,20 +41,20 @@ Partial Class ctrl_logitem
         'lblDistance
         '
         Me.lblDistance.AutoSize = True
-        Me.lblDistance.Location = New System.Drawing.Point(6, 19)
+        Me.lblDistance.Location = New System.Drawing.Point(6, 33)
         Me.lblDistance.Name = "lblDistance"
         Me.lblDistance.Size = New System.Drawing.Size(52, 13)
         Me.lblDistance.TabIndex = 1
         Me.lblDistance.Text = "Distance:"
         '
-        'lblPace
+        'lblDate
         '
-        Me.lblPace.AutoSize = True
-        Me.lblPace.Location = New System.Drawing.Point(6, 32)
-        Me.lblPace.Name = "lblPace"
-        Me.lblPace.Size = New System.Drawing.Size(35, 13)
-        Me.lblPace.TabIndex = 2
-        Me.lblPace.Text = "Pace:"
+        Me.lblDate.AutoSize = True
+        Me.lblDate.Location = New System.Drawing.Point(7, 19)
+        Me.lblDate.Name = "lblDate"
+        Me.lblDate.Size = New System.Drawing.Size(33, 13)
+        Me.lblDate.TabIndex = 2
+        Me.lblDate.Text = "Date:"
         '
         'btnRemove
         '
@@ -80,7 +80,7 @@ Partial Class ctrl_logitem
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.btnRemove)
-        Me.Controls.Add(Me.lblPace)
+        Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblDistance)
         Me.Controls.Add(Me.lblType)
         Me.Name = "ctrl_logitem"
@@ -91,7 +91,7 @@ Partial Class ctrl_logitem
     End Sub
     Friend WithEvents lblType As System.Windows.Forms.Label
     Friend WithEvents lblDistance As System.Windows.Forms.Label
-    Friend WithEvents lblPace As System.Windows.Forms.Label
+    Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents btnRemove As MetroFramework.Controls.MetroButton
     Friend WithEvents btnView As MetroFramework.Controls.MetroButton
 
