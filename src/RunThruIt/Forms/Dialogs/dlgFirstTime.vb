@@ -101,6 +101,7 @@
     Private Sub dlgFirstTime_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If Not okaytoclose Then
             e.Cancel = True
+            MetroFramework.MetroMessageBox.Show(Me, "Please fill out the form and then press okay.", "Fill Out Form", vbOKOnly, MessageBoxIcon.Exclamation)
         End If
     End Sub
 
