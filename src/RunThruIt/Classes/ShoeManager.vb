@@ -10,6 +10,9 @@
 
     Public Shared Sub RemoveShoe(ByVal nshoe As Shoe)
         My.Settings.set_shoes.Remove(ConvertShoeToString(nshoe))
+        If My.Settings.set_defaultshoe = ConvertShoeToString(nshoe) Then
+            My.Settings.set_defaultshoe = ""
+        End If
     End Sub
 
     Public Shared Sub ClearShoes()
