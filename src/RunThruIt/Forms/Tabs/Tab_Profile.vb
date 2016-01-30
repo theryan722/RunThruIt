@@ -37,7 +37,11 @@
     End Sub
 
     Private Sub lbl_name_Click(sender As Object, e As EventArgs) Handles lbl_name.Click
-
+        Dim pname As String = InputBox("Please enter a name", "Modify Name", My.Settings.profile_name)
+        If pname <> "" Then
+            My.Settings.profile_name = pname
+            LoadProfile()
+        End If
     End Sub
 
     Private Sub lbl_sex_Click(sender As Object, e As EventArgs) Handles lbl_sex.Click
