@@ -1,5 +1,7 @@
 ﻿Public Class LogManager
 
+    'type|date|distance|pace|injured|shoes|notes
+
 #Region "Public"
 
     Public Shared Sub AddToLog(ByVal nworkout As Workout)
