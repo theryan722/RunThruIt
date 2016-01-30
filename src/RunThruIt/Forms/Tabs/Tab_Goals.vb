@@ -131,7 +131,7 @@
     End Sub
 
     Private Sub Tab_Goals_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        LoadAll()
     End Sub
 
 #End Region
