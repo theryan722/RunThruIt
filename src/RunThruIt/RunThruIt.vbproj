@@ -76,6 +76,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\LogManager.vb" />
+    <Compile Include="Classes\Tabs.vb" />
+    <Compile Include="Classes\Website.vb" />
     <Compile Include="Forms\Dialogs\dlgFirstTime.Designer.vb">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </Compile>
@@ -99,6 +102,12 @@
     </Compile>
     <Compile Include="Forms\frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_About.Designer.vb">
+      <DependentUpon>Tab_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_About.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tabs\Tab_Goals.Designer.vb">
@@ -167,9 +176,7 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="icon.ico" />
   </ItemGroup>
