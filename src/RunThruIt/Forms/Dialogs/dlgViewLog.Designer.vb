@@ -29,7 +29,7 @@ Partial Class dlgViewLog
         Me.lblDistance = New System.Windows.Forms.Label()
         Me.lblPace = New System.Windows.Forms.Label()
         Me.lblInjury = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblShoes = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtNotes = New MetroFramework.Controls.MetroTextBox()
         Me.SuspendLayout()
@@ -94,15 +94,15 @@ Partial Class dlgViewLog
         Me.lblInjury.TabIndex = 5
         Me.lblInjury.Text = "Injury:"
         '
-        'Label6
+        'lblShoes
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 191)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(52, 17)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = "Shoes:"
+        Me.lblShoes.AutoSize = True
+        Me.lblShoes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblShoes.Location = New System.Drawing.Point(3, 191)
+        Me.lblShoes.Name = "lblShoes"
+        Me.lblShoes.Size = New System.Drawing.Size(52, 17)
+        Me.lblShoes.TabIndex = 6
+        Me.lblShoes.Text = "Shoes:"
         '
         'Label7
         '
@@ -134,7 +134,7 @@ Partial Class dlgViewLog
         Me.ClientSize = New System.Drawing.Size(300, 300)
         Me.Controls.Add(Me.txtNotes)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.lblShoes)
         Me.Controls.Add(Me.lblInjury)
         Me.Controls.Add(Me.lblPace)
         Me.Controls.Add(Me.lblDistance)
@@ -157,7 +157,7 @@ Partial Class dlgViewLog
     Friend WithEvents lblDistance As System.Windows.Forms.Label
     Friend WithEvents lblPace As System.Windows.Forms.Label
     Friend WithEvents lblInjury As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents lblShoes As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtNotes As MetroFramework.Controls.MetroTextBox
 End Class
