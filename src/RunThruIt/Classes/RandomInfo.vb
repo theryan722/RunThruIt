@@ -8,7 +8,7 @@
     End Function
 
     Public Shared Function GetRandomTip() As String
-
+        Return tips(New Random().Next(0, tips.Length))
     End Function
 
 End Class
