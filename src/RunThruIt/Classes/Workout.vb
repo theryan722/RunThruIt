@@ -1,5 +1,15 @@
 ﻿Public Class Workout
 
+    'Run
+    'Bike
+    'Walk
+    'Swim
+    'Hike
+    'Strength Training
+    'Yoga
+
+#Region "Properties"
+
     Public Property WorkoutType As String
     Public Property WorkoutDate As Date
     Public Property Notes As String
@@ -7,6 +17,8 @@
     Public Property Shoes As String
     Public Property Pace As String
     Public Property Injured As Boolean
+
+#End Region
 
 #Region "Constructor"
 
