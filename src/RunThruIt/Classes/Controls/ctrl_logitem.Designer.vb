@@ -29,6 +29,7 @@ Partial Class ctrl_logitem
         Me.btnView = New MetroFramework.Controls.MetroButton()
         Me.pnl_bottom = New System.Windows.Forms.Panel()
         Me.pnl_divider = New System.Windows.Forms.Panel()
+        Me.btnPublish = New MetroFramework.Controls.MetroButton()
         Me.pnl_bottom.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,6 +87,7 @@ Partial Class ctrl_logitem
         'pnl_bottom
         '
         Me.pnl_bottom.BackColor = System.Drawing.Color.Transparent
+        Me.pnl_bottom.Controls.Add(Me.btnPublish)
         Me.pnl_bottom.Controls.Add(Me.btnRemove)
         Me.pnl_bottom.Controls.Add(Me.btnView)
         Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -102,6 +104,16 @@ Partial Class ctrl_logitem
         Me.pnl_divider.Name = "pnl_divider"
         Me.pnl_divider.Size = New System.Drawing.Size(200, 5)
         Me.pnl_divider.TabIndex = 11
+        '
+        'btnPublish
+        '
+        Me.btnPublish.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnPublish.Location = New System.Drawing.Point(0, 0)
+        Me.btnPublish.Name = "btnPublish"
+        Me.btnPublish.Size = New System.Drawing.Size(93, 23)
+        Me.btnPublish.TabIndex = 5
+        Me.btnPublish.Text = "Publish to Feed"
+        Me.btnPublish.UseSelectable = True
         '
         'ctrl_logitem
         '
@@ -126,5 +138,6 @@ Partial Class ctrl_logitem
     Friend WithEvents btnView As MetroFramework.Controls.MetroButton
     Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
     Friend WithEvents pnl_divider As System.Windows.Forms.Panel
+    Friend WithEvents btnPublish As MetroFramework.Controls.MetroButton
 
 End Class

@@ -16,6 +16,14 @@
 
 #Region "Buttons"
 
+    Private Sub btnPublish_Click(sender As Object, e As EventArgs) Handles btnPublish.Click
+        Try
+            Website.PostWorkoutToFeed(My.Settings.profile_name, WorkoutItem.WorkoutType, WorkoutItem.Distance, WorkoutItem.Duration, WorkoutItem.WorkoutDate.ToString("M/dd/yy") & " " & WorkoutItem.WorkoutTime.ToString("H:mm"), WorkoutItem.Pace, WorkoutItem.Shoes)
+        Catch ex As Exception
+            MetroFramework.MetroMessageBox.Show(frmManager, "There was an error attempting to publish the workout to runthruit.net", "Publish Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
+
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
         If MetroFramework.MetroMessageBox.Show(frmManager, "Are you sure you want to remove this workout?", "Remove Workout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
             LogManager.RemoveFromLog(WorkoutItem)
