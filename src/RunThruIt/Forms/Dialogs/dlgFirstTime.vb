@@ -16,13 +16,17 @@
 
     Private Function VerifyName() As Boolean
         Dim ret As Boolean = True
-
+        If txtName.Text = "" Then
+            ret = False
+        End If
         Return ret
     End Function
 
     Private Function VerifyAge() As Boolean
         Dim ret As Boolean = True
-
+        If IsNumeric(txtAge.Text) Then
+            ret = False
+        End If
         Return ret
     End Function
 
