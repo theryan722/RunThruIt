@@ -24,7 +24,13 @@
 
 #Region "Methods"
 
-
+    Public Function AtLeastOneTab() As Boolean
+        If TabControl1.TabCount < 1 Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
 
 #End Region
 
