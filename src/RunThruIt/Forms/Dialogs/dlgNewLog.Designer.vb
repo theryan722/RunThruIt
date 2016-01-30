@@ -51,7 +51,7 @@ Partial Class dlgNewLog
         Me.dt_date.Name = "dt_date"
         Me.dt_date.ShowCheckBox = True
         Me.dt_date.Size = New System.Drawing.Size(246, 29)
-        Me.dt_date.TabIndex = 0
+        Me.dt_date.TabIndex = 1
         '
         'combo_type
         '
@@ -61,7 +61,7 @@ Partial Class dlgNewLog
         Me.combo_type.Location = New System.Drawing.Point(113, 64)
         Me.combo_type.Name = "combo_type"
         Me.combo_type.Size = New System.Drawing.Size(121, 29)
-        Me.combo_type.TabIndex = 1
+        Me.combo_type.TabIndex = 0
         Me.combo_type.UseSelectable = True
         '
         'Label1
@@ -79,7 +79,7 @@ Partial Class dlgNewLog
         Me.btnCancel.Location = New System.Drawing.Point(0, 0)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancel.TabIndex = 3
+        Me.btnCancel.TabIndex = 1
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseSelectable = True
         '
@@ -89,7 +89,7 @@ Partial Class dlgNewLog
         Me.btnOk.Location = New System.Drawing.Point(294, 0)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(75, 23)
-        Me.btnOk.TabIndex = 4
+        Me.btnOk.TabIndex = 0
         Me.btnOk.Text = "Okay!"
         Me.btnOk.UseSelectable = True
         '
@@ -101,7 +101,7 @@ Partial Class dlgNewLog
         Me.Panel1.Location = New System.Drawing.Point(0, 289)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(369, 23)
-        Me.Panel1.TabIndex = 5
+        Me.Panel1.TabIndex = 7
         '
         'Label2
         '
@@ -132,7 +132,7 @@ Partial Class dlgNewLog
         Me.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtNotes.SelectedText = ""
         Me.txtNotes.Size = New System.Drawing.Size(229, 43)
-        Me.txtNotes.TabIndex = 8
+        Me.txtNotes.TabIndex = 4
         Me.txtNotes.UseSelectable = True
         '
         'txtDistance
@@ -145,7 +145,7 @@ Partial Class dlgNewLog
         Me.txtDistance.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtDistance.SelectedText = ""
         Me.txtDistance.Size = New System.Drawing.Size(75, 23)
-        Me.txtDistance.TabIndex = 9
+        Me.txtDistance.TabIndex = 2
         Me.txtDistance.UseSelectable = True
         '
         'Label4
@@ -176,7 +176,7 @@ Partial Class dlgNewLog
         Me.txtPace.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtPace.SelectedText = ""
         Me.txtPace.Size = New System.Drawing.Size(75, 23)
-        Me.txtPace.TabIndex = 12
+        Me.txtPace.TabIndex = 3
         Me.txtPace.UseSelectable = True
         '
         'txtShoes
@@ -189,7 +189,7 @@ Partial Class dlgNewLog
         Me.txtShoes.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtShoes.SelectedText = ""
         Me.txtShoes.Size = New System.Drawing.Size(229, 23)
-        Me.txtShoes.TabIndex = 13
+        Me.txtShoes.TabIndex = 6
         Me.txtShoes.UseSelectable = True
         '
         'check_injured
@@ -198,7 +198,7 @@ Partial Class dlgNewLog
         Me.check_injured.Location = New System.Drawing.Point(62, 239)
         Me.check_injured.Name = "check_injured"
         Me.check_injured.Size = New System.Drawing.Size(60, 15)
-        Me.check_injured.TabIndex = 14
+        Me.check_injured.TabIndex = 5
         Me.check_injured.Text = "Injured"
         Me.check_injured.UseSelectable = True
         '
