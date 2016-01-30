@@ -109,10 +109,10 @@
     <Compile Include="Forms\Dialogs\dlgFirstTime.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgFunFact.Designer.vb">
-      <DependentUpon>dlgFunFact.vb</DependentUpon>
+    <Compile Include="Forms\Dialogs\dlgRandom.Designer.vb">
+      <DependentUpon>dlgRandom.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Dialogs\dlgFunFact.vb">
+    <Compile Include="Forms\Dialogs\dlgRandom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Dialogs\dlgNewLog.Designer.vb">
@@ -190,8 +190,8 @@
     <EmbeddedResource Include="Forms\Dialogs\dlgFirstTime.resx">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Dialogs\dlgFunFact.resx">
-      <DependentUpon>dlgFunFact.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Dialogs\dlgRandom.resx">
+      <DependentUpon>dlgRandom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\dlgNewLog.resx">
       <DependentUpon>dlgNewLog.vb</DependentUpon>
