@@ -70,7 +70,13 @@
     End Sub
 
     Private Sub lbl_weight_Click(sender As Object, e As EventArgs) Handles lbl_weight.Click
-
+        Dim pweight As String = InputBox("Please enter a weight", "Modify Weight", My.Settings.profile_weight)
+        If Not IsNumeric(pweight) Or pweight = "" Then
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid weight.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            My.Settings.profile_weight = pweight
+            LoadProfile()
+        End If
     End Sub
 
     Private Sub lbl_activitylevel_Click(sender As Object, e As EventArgs) Handles lbl_activitylevel.Click
