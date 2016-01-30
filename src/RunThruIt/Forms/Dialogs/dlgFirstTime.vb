@@ -7,6 +7,8 @@
             SetProfile(txtName.Text, txtAge.Text, txtWeight.Text, comboSex.SelectedItem, txtActivityLevel.Text, txtPassword.Text)
             Me.Close()
             Tabs.AddProfile()
+            My.Settings.set_firsttime = False
+            My.Settings.Save()
         Else
             MetroFramework.MetroMessageBox.Show(Me, "Unfortunately, one or more fields was either left blank, or improperly filled out. Please check again.", "Error", vbOKOnly, MessageBoxIcon.Error)
         End If
