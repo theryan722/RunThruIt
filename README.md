@@ -1,4 +1,5 @@
-# RunThruIt
+![Logo](http://i.imgur.com/pM7vCNA.png)
+
 Hoya Hacks 2016 Project
 
 #???
