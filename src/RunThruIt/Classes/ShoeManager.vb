@@ -4,6 +4,10 @@
 
 #Region "Public"
 
+    Public Function GetShoeFromIndex(ByVal index As Integer) As Shoe
+        Return ConvertStringToShoe(My.Settings.set_shoes(index))
+    End Function
+
     Public Shared Sub AddShoe(ByVal nshoe As Shoe)
         My.Settings.set_shoes.Add(ConvertShoeToString(nshoe))
     End Sub

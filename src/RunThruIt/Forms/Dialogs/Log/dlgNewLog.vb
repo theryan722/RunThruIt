@@ -17,6 +17,7 @@
             CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, combo_shoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text), txtDuration.Text)
             My.Settings.Save()
             Me.DialogResult = Windows.Forms.DialogResult.OK
+            Dim newmiles As Integer = CInt(txtDistance.Text) + 
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
