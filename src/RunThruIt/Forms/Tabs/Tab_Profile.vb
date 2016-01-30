@@ -2,7 +2,10 @@
 
 #Region "UI"
 
-
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+        My.Settings.Save()
+        MetroFramework.MetroMessageBox.Show(frmManager, "Changes to profile saved!", "Saved Changes", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
 
 #End Region
 
@@ -26,5 +29,5 @@
     End Sub
 
 #End Region
-    
+
 End Class
