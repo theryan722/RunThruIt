@@ -28,6 +28,19 @@ Partial Class frmManager
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TabsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseCurrentTabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseAllTabsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GoalsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InjuryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MetroButton1
@@ -41,6 +54,7 @@ Partial Class frmManager
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.TabsToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.GoalsToolStripMenuItem, Me.LogToolStripMenuItem, Me.InjuryToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(704, 24)
@@ -72,6 +86,81 @@ Partial Class frmManager
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.UseSelectable = True
         '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1, Me.OptionsToolStripMenuItem})
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'AboutToolStripMenuItem1
+        '
+        Me.AboutToolStripMenuItem1.Name = "AboutToolStripMenuItem1"
+        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem1.Text = "About"
+        '
+        'TabsToolStripMenuItem
+        '
+        Me.TabsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseCurrentTabToolStripMenuItem, Me.CloseAllTabsToolStripMenuItem})
+        Me.TabsToolStripMenuItem.Name = "TabsToolStripMenuItem"
+        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.TabsToolStripMenuItem.Text = "Tabs"
+        '
+        'CloseCurrentTabToolStripMenuItem
+        '
+        Me.CloseCurrentTabToolStripMenuItem.Name = "CloseCurrentTabToolStripMenuItem"
+        Me.CloseCurrentTabToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseCurrentTabToolStripMenuItem.Text = "Close Current Tab"
+        '
+        'CloseAllTabsToolStripMenuItem
+        '
+        Me.CloseAllTabsToolStripMenuItem.Name = "CloseAllTabsToolStripMenuItem"
+        Me.CloseAllTabsToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseAllTabsToolStripMenuItem.Text = "Close All Tabs"
+        '
+        'GoalsToolStripMenuItem
+        '
+        Me.GoalsToolStripMenuItem.Name = "GoalsToolStripMenuItem"
+        Me.GoalsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.GoalsToolStripMenuItem.Text = "Goals"
+        '
+        'InjuryToolStripMenuItem
+        '
+        Me.InjuryToolStripMenuItem.Name = "InjuryToolStripMenuItem"
+        Me.InjuryToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
+        Me.InjuryToolStripMenuItem.Text = "Injury"
+        '
+        'LogToolStripMenuItem
+        '
+        Me.LogToolStripMenuItem.Name = "LogToolStripMenuItem"
+        Me.LogToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.LogToolStripMenuItem.Text = "Log"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'ProfileToolStripMenuItem
+        '
+        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
+        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ProfileToolStripMenuItem.Text = "Profile"
+        '
         'frmManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -84,6 +173,8 @@ Partial Class frmManager
         Me.Name = "frmManager"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 20)
         Me.Text = "RunThruIt"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -93,5 +184,17 @@ Partial Class frmManager
     Private WithEvents MetroTabControl1 As MetroFramework.Controls.MetroTabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabControl1 As MetroFramework.Controls.MetroTabControl
+    Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TabsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CloseCurrentTabToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CloseAllTabsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ProfileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GoalsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents InjuryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OptionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
