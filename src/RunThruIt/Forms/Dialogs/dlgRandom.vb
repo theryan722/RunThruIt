@@ -7,7 +7,7 @@
     End Sub
 
     Private Sub btnNewQuote_Click(sender As Object, e As EventArgs) Handles btnNewQuote.Click
-
+        TextBox1.Text = RandomInfo.GetRandomQuote()
     End Sub
 
     Private Sub btnNewTip_Click(sender As Object, e As EventArgs) Handles btnNewTip.Click
