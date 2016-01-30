@@ -12,7 +12,9 @@
     End Sub
 
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
-
+        Dim newb As New dlgViewLog
+        newb.DisplayWorkout(WorkoutItem)
+        newb.Show()
     End Sub
 
 #End Region
