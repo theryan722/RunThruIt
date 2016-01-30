@@ -5,6 +5,8 @@
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyAllFields() Then
             SetProfile(txtName.Text, txtAge.Text, txtWeight.Text, comboSex.SelectedItem, txtActivityLevel.Text, txtPassword.Text)
+            Me.Close()
+            Tabs.AddProfile()
         Else
             MetroFramework.MetroMessageBox.Show(Me, "Unfortunately, one or more fields was either left blank, or improperly filled out. Please check again.", "Error", vbOKOnly, MessageBoxIcon.Error)
         End If
@@ -101,5 +103,4 @@
 
 #End Region
 
-    
 End Class
