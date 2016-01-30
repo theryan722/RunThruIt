@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub btnNewTip_Click(sender As Object, e As EventArgs) Handles btnNewTip.Click
-
+        TextBox1.Text = RandomInfo.GetRandomTip()
     End Sub
 
 #End Region
