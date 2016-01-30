@@ -23,10 +23,12 @@ Partial Class ctrl_logitem
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblType = New System.Windows.Forms.Label()
-        Me.lblDistance = New System.Windows.Forms.Label()
+        Me.lblDuration = New System.Windows.Forms.Label()
         Me.lblDate = New System.Windows.Forms.Label()
         Me.btnRemove = New MetroFramework.Controls.MetroButton()
         Me.btnView = New MetroFramework.Controls.MetroButton()
+        Me.pnl_bottom = New System.Windows.Forms.Panel()
+        Me.pnl_bottom.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblType
@@ -38,14 +40,14 @@ Partial Class ctrl_logitem
         Me.lblType.TabIndex = 0
         Me.lblType.Text = "Type:"
         '
-        'lblDistance
+        'lblDuration
         '
-        Me.lblDistance.AutoSize = True
-        Me.lblDistance.Location = New System.Drawing.Point(6, 33)
-        Me.lblDistance.Name = "lblDistance"
-        Me.lblDistance.Size = New System.Drawing.Size(52, 13)
-        Me.lblDistance.TabIndex = 1
-        Me.lblDistance.Text = "Distance:"
+        Me.lblDuration.AutoSize = True
+        Me.lblDuration.Location = New System.Drawing.Point(6, 33)
+        Me.lblDuration.Name = "lblDuration"
+        Me.lblDuration.Size = New System.Drawing.Size(50, 13)
+        Me.lblDuration.TabIndex = 1
+        Me.lblDuration.Text = "Duration:"
         '
         'lblDate
         '
@@ -58,7 +60,8 @@ Partial Class ctrl_logitem
         '
         'btnRemove
         '
-        Me.btnRemove.Location = New System.Drawing.Point(3, 46)
+        Me.btnRemove.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnRemove.Location = New System.Drawing.Point(99, 0)
         Me.btnRemove.Name = "btnRemove"
         Me.btnRemove.Size = New System.Drawing.Size(55, 23)
         Me.btnRemove.TabIndex = 3
@@ -67,32 +70,46 @@ Partial Class ctrl_logitem
         '
         'btnView
         '
-        Me.btnView.Location = New System.Drawing.Point(64, 46)
+        Me.btnView.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnView.FontSize = MetroFramework.MetroButtonSize.Medium
+        Me.btnView.Location = New System.Drawing.Point(154, 0)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(46, 23)
         Me.btnView.TabIndex = 4
         Me.btnView.Text = "View"
         Me.btnView.UseSelectable = True
         '
+        'pnl_bottom
+        '
+        Me.pnl_bottom.BackColor = System.Drawing.Color.Transparent
+        Me.pnl_bottom.Controls.Add(Me.btnRemove)
+        Me.pnl_bottom.Controls.Add(Me.btnView)
+        Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl_bottom.Location = New System.Drawing.Point(0, 47)
+        Me.pnl_bottom.Name = "pnl_bottom"
+        Me.pnl_bottom.Size = New System.Drawing.Size(200, 23)
+        Me.pnl_bottom.TabIndex = 5
+        '
         'ctrl_logitem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.btnView)
-        Me.Controls.Add(Me.btnRemove)
+        Me.Controls.Add(Me.pnl_bottom)
         Me.Controls.Add(Me.lblDate)
-        Me.Controls.Add(Me.lblDistance)
+        Me.Controls.Add(Me.lblDuration)
         Me.Controls.Add(Me.lblType)
         Me.Name = "ctrl_logitem"
         Me.Size = New System.Drawing.Size(200, 70)
+        Me.pnl_bottom.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents lblType As System.Windows.Forms.Label
-    Friend WithEvents lblDistance As System.Windows.Forms.Label
+    Friend WithEvents lblDuration As System.Windows.Forms.Label
     Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents btnRemove As MetroFramework.Controls.MetroButton
     Friend WithEvents btnView As MetroFramework.Controls.MetroButton
+    Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
 
 End Class

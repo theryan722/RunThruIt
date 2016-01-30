@@ -19,6 +19,7 @@
         lblShoes.Text = "Shoes: " & nworkout.Shoes
         txtNotes.Text = nworkout.Notes
         lblTime.Text = "Time: " & nworkout.WorkoutTime.ToString("H:mm")
+        lblDuration.Text = "Duration: " & nworkout.Duration & " minutes"
     End Sub
 
 #End Region

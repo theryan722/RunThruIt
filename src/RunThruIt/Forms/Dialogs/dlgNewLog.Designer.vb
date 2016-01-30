@@ -45,6 +45,8 @@ Partial Class dlgNewLog
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.txt_time = New System.Windows.Forms.MaskedTextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtDuration = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -275,11 +277,35 @@ Partial Class dlgNewLog
         Me.txt_time.TabIndex = 23
         Me.txt_time.ValidatingType = GetType(Date)
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(171, 134)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(54, 13)
+        Me.Label11.TabIndex = 24
+        Me.Label11.Text = "*Duration:"
+        '
+        'txtDuration
+        '
+        Me.txtDuration.Lines = New String(-1) {}
+        Me.txtDuration.Location = New System.Drawing.Point(231, 134)
+        Me.txtDuration.MaxLength = 32767
+        Me.txtDuration.Name = "txtDuration"
+        Me.txtDuration.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtDuration.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtDuration.SelectedText = ""
+        Me.txtDuration.Size = New System.Drawing.Size(45, 23)
+        Me.txtDuration.TabIndex = 25
+        Me.txtDuration.UseSelectable = True
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(369, 373)
+        Me.Controls.Add(Me.txtDuration)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txt_time)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -335,4 +361,6 @@ Partial Class dlgNewLog
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents txt_time As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents txtDuration As MetroFramework.Controls.MetroTextBox
 End Class
