@@ -200,7 +200,19 @@ Namespace My
                 Return CType(Me("profile_goals"), Global.System.Collections.Specialized.StringCollection)
             End Get
             Set(value As Global.System.Collections.Specialized.StringCollection)
-                Me("profile_goals") = Value
+                Me("profile_goals") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")> _
+        Public Property set_firsttime() As Boolean
+            Get
+                Return CType(Me("set_firsttime"), Boolean)
+            End Get
+            Set(value As Boolean)
+                Me("set_firsttime") = value
             End Set
         End Property
     End Class
