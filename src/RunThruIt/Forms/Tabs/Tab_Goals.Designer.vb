@@ -204,7 +204,7 @@ Partial Class Tab_Goals
         '
         Me.ContextMenuStrip_Completed.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveToolStripMenuItem1, Me.ToolStripSeparator2, Me.MarkAsIncompleteToolStripMenuItem})
         Me.ContextMenuStrip_Completed.Name = "ContextMenuStrip_Completed"
-        Me.ContextMenuStrip_Completed.Size = New System.Drawing.Size(179, 54)
+        Me.ContextMenuStrip_Completed.Size = New System.Drawing.Size(179, 76)
         '
         'RemoveToolStripMenuItem
         '

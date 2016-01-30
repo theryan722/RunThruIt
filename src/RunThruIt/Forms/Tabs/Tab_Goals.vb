@@ -6,7 +6,17 @@
 
 #Region "Context Menu Strip"
 
+    Private Sub RemoveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RemoveToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub MarkAsCompletedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarkAsCompletedToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub AddGoalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddGoalToolStripMenuItem.Click
+
+    End Sub
 
 #End Region
 
@@ -16,7 +26,13 @@
 
 #Region "Context Menu Strip"
 
+    Private Sub RemoveToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles RemoveToolStripMenuItem1.Click
 
+    End Sub
+
+    Private Sub MarkAsIncompleteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarkAsIncompleteToolStripMenuItem.Click
+
+    End Sub
 
 #End Region
 
