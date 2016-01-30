@@ -52,6 +52,9 @@
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\..\..\..\DLLS\Organized\MetroFramework-winforms-modernui\MetroFramework.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\..\..\DLLS\Organized\MetroFramework-winforms-modernui\MetroFramework.Design.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
