@@ -60,7 +60,13 @@
     End Sub
 
     Private Sub lbl_age_Click(sender As Object, e As EventArgs) Handles lbl_age.Click
-
+        Dim page As String = InputBox("Please enter an age", "Modify Age", My.Settings.profile_age)
+        If Not IsNumeric(page) Or page = "" Then
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid age.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            My.Settings.profile_age = page
+            LoadProfile()
+        End If
     End Sub
 
     Private Sub lbl_weight_Click(sender As Object, e As EventArgs) Handles lbl_weight.Click
