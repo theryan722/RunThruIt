@@ -16,7 +16,7 @@
     Public Property Distance As String
     Public Property Shoes As String
     Public Property Pace As String
-    Public Property Injured As Boolean
+    Public Property Injury As String
 
 #End Region
 
@@ -26,14 +26,14 @@
 
     End Sub
 
-    Public Sub New(ByVal wtype As String, ByVal wdate As Date, ByVal wnotes As String, ByVal wdistance As String, ByVal wshoes As String, ByVal wpace As String, ByVal winjured As Boolean)
+    Public Sub New(ByVal wtype As String, ByVal wdate As Date, ByVal wnotes As String, ByVal wdistance As String, ByVal wshoes As String, ByVal wpace As String, ByVal winjury As String)
         WorkoutType = wtype
         WorkoutDate = wdate
         Notes = wnotes
         Distance = wdistance
         Shoes = wshoes
         Pace = wpace
-        Injured = winjured
+        Injury = winjury
     End Sub
 
 #End Region

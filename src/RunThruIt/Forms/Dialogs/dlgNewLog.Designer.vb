@@ -37,10 +37,11 @@ Partial Class dlgNewLog
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPace = New MetroFramework.Controls.MetroTextBox()
         Me.txtShoes = New MetroFramework.Controls.MetroTextBox()
-        Me.check_injured = New MetroFramework.Controls.MetroCheckBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtInjury = New MetroFramework.Controls.MetroTextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -99,7 +100,7 @@ Partial Class dlgNewLog
         Me.Panel1.Controls.Add(Me.btnOk)
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 303)
+        Me.Panel1.Location = New System.Drawing.Point(0, 314)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(369, 23)
         Me.Panel1.TabIndex = 7
@@ -183,7 +184,7 @@ Partial Class dlgNewLog
         'txtShoes
         '
         Me.txtShoes.Lines = New String(-1) {}
-        Me.txtShoes.Location = New System.Drawing.Point(62, 260)
+        Me.txtShoes.Location = New System.Drawing.Point(62, 268)
         Me.txtShoes.MaxLength = 32767
         Me.txtShoes.Name = "txtShoes"
         Me.txtShoes.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -193,20 +194,10 @@ Partial Class dlgNewLog
         Me.txtShoes.TabIndex = 6
         Me.txtShoes.UseSelectable = True
         '
-        'check_injured
-        '
-        Me.check_injured.AutoSize = True
-        Me.check_injured.Location = New System.Drawing.Point(62, 239)
-        Me.check_injured.Name = "check_injured"
-        Me.check_injured.Size = New System.Drawing.Size(60, 15)
-        Me.check_injured.TabIndex = 5
-        Me.check_injured.Text = "Injured"
-        Me.check_injured.UseSelectable = True
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(16, 260)
+        Me.Label6.Location = New System.Drawing.Point(16, 268)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 13)
         Me.Label6.TabIndex = 15
@@ -226,21 +217,44 @@ Partial Class dlgNewLog
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(4, 286)
+        Me.Label7.Location = New System.Drawing.Point(4, 294)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(221, 13)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Items marked with an asterisk (*) are required."
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(21, 239)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.TabIndex = 18
+        Me.Label8.Text = "Injury:"
+        '
+        'txtInjury
+        '
+        Me.txtInjury.Lines = New String(-1) {}
+        Me.txtInjury.Location = New System.Drawing.Point(62, 239)
+        Me.txtInjury.MaxLength = 32767
+        Me.txtInjury.Name = "txtInjury"
+        Me.txtInjury.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtInjury.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtInjury.SelectedText = ""
+        Me.txtInjury.Size = New System.Drawing.Size(229, 23)
+        Me.txtInjury.TabIndex = 19
+        Me.txtInjury.UseSelectable = True
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 326)
+        Me.ClientSize = New System.Drawing.Size(369, 337)
+        Me.Controls.Add(Me.txtInjury)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.check_injured)
         Me.Controls.Add(Me.txtShoes)
         Me.Controls.Add(Me.txtPace)
         Me.Controls.Add(Me.Label5)
@@ -278,8 +292,9 @@ Partial Class dlgNewLog
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtPace As MetroFramework.Controls.MetroTextBox
     Friend WithEvents txtShoes As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents check_injured As MetroFramework.Controls.MetroCheckBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents txtInjury As MetroFramework.Controls.MetroTextBox
 End Class

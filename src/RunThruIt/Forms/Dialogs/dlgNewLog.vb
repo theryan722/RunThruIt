@@ -10,7 +10,7 @@
 
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyFields() Then
-            CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, txtShoes.Text, txtPace.Text, check_injured.Checked)
+            CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, txtShoes.Text, txtPace.Text, txtInjury.Text)
             Me.DialogResult = Windows.Forms.DialogResult.OK
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -32,8 +32,8 @@
         Return ret
     End Function
 
-    Private Sub CreateWorkout(ByVal type As String, ByVal wdate As Date, ByVal notes As String, ByVal distance As String, ByVal shoes As String, ByVal pace As String, ByVal injured As Boolean)
-        NewWorkout = New Workout(type, wdate, notes, distance, shoes, pace, injured)
+    Private Sub CreateWorkout(ByVal type As String, ByVal wdate As Date, ByVal notes As String, ByVal distance As String, ByVal shoes As String, ByVal pace As String, ByVal injury As String)
+        NewWorkout = New Workout(type, wdate, notes, distance, shoes, pace, injury)
     End Sub
 
 #End Region
