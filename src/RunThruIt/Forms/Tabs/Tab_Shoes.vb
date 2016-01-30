@@ -28,8 +28,8 @@
     Private Sub LoadShoes()
         RemoveAllShoeItems()
         For Each item As Shoe In ShoeManager.GetShoes()
-            Dim newb As New ctrl_logitem
-            newb.WorkoutItem = item
+            Dim newb As New ctrl_shoeitem
+            newb.ShoeItem = item
             newb.BackColor = ConvertShoeLifespanToColor(item.GetLifespanLeft)
             newb.Dock = DockStyle.Top
             pnl_list.Controls.Add(newb)

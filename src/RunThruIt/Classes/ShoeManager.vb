@@ -10,9 +10,6 @@
 
     Public Shared Sub RemoveShoe(ByVal nshoe As Shoe)
         My.Settings.set_shoes.Remove(ConvertShoeToString(nshoe))
-        If My.Settings.set_defaultshoe = ConvertShoeToString(nshoe) Then
-            My.Settings.set_defaultshoe = ""
-        End If
     End Sub
 
     Public Shared Sub ClearShoes()
@@ -37,7 +34,7 @@
 
     Public Shared Function ConvertStringToShoe(ByVal str As String) As Shoe
         Dim arr() As String = str.Split("|")
-        Return New Shoe(arr(0), arr(1), arr(2), Date.Parse(arr(3)), & arr(4))
+        Return New Shoe(arr(0), arr(1), arr(2), Date.Parse(arr(3)), arr(4))
     End Function
 
 #End Region
