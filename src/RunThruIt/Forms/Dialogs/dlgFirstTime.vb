@@ -40,7 +40,9 @@
 
     Private Function VerifySex() As Boolean
         Dim ret As Boolean = True
-
+        If comboSex.SelectedIndex = -1 Then
+            ret = False
+        End If
         Return ret
     End Function
 
