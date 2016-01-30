@@ -40,6 +40,7 @@ Partial Class dlgNewLog
         Me.check_injured = New MetroFramework.Controls.MetroCheckBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -98,7 +99,7 @@ Partial Class dlgNewLog
         Me.Panel1.Controls.Add(Me.btnOk)
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 289)
+        Me.Panel1.Location = New System.Drawing.Point(0, 303)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(369, 23)
         Me.Panel1.TabIndex = 7
@@ -222,11 +223,21 @@ Partial Class dlgNewLog
         Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(4, 286)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(221, 13)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Items marked with an asterisk (*) are required."
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 312)
+        Me.ClientSize = New System.Drawing.Size(369, 326)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.check_injured)
@@ -270,4 +281,5 @@ Partial Class dlgNewLog
     Friend WithEvents check_injured As MetroFramework.Controls.MetroCheckBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
 End Class
