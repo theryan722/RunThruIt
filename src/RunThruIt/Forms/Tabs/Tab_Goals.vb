@@ -126,6 +126,10 @@
 
 #Region "Tab_Goals"
 
+    Private Sub Tab_Goals_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        My.Settings.Save()
+    End Sub
+
     Private Sub Tab_Goals_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
