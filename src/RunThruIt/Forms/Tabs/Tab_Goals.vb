@@ -58,7 +58,9 @@
 #Region "Methods"
 
     Private Sub AddGoal()
-
+        Dim newg As String = InputBox("Please enter a new goal:", "New Goal", "")
+        My.Settings.log_goals.Add(newg)
+        LoadGoals()
     End Sub
 
     Private Sub LoadGoals()
