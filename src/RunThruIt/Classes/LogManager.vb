@@ -9,7 +9,9 @@
     End Sub
 
     Public Shared Sub RemoveFromLog(ByVal nworkout As Workout)
-
+        If My.Settings.log_workout.Contains(ConvertWorkoutToString(nworkout)) Then
+            My.Settings.log_workout.Remove(ConvertWorkoutToString(nworkout))
+        End If
     End Sub
 
     Public Shared Function GetWorkouts() As List(Of Workout)
