@@ -67,7 +67,7 @@ Partial Class ctrl_logitem
         '
         'btnView
         '
-        Me.btnView.Location = New System.Drawing.Point(64, 47)
+        Me.btnView.Location = New System.Drawing.Point(64, 46)
         Me.btnView.Name = "btnView"
         Me.btnView.Size = New System.Drawing.Size(46, 23)
         Me.btnView.TabIndex = 4
