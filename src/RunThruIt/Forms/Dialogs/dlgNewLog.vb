@@ -9,7 +9,12 @@
     End Sub
 
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
-
+        If VerifyFields() Then
+            CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, txtShoes.Text, txtPace.Text, check_injured.Checked)
+            Me.DialogResult = Windows.Forms.DialogResult.OK
+        Else
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
 #End Region
