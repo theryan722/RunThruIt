@@ -17,7 +17,7 @@
     <Setting Name="profile_sex" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="profile_daysactive" Type="System.String" Scope="User">
+    <Setting Name="profile_activitylevel" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="log_water" Type="System.Collections.Specialized.StringCollection" Scope="User">

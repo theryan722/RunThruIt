@@ -2,7 +2,11 @@
 
 #Region "UI"
 
+    Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
+        If VerifyAllFields() Then
 
+        End If
+    End Sub
 
 #End Region
 
@@ -13,6 +17,8 @@
     Private Function VerifyAllFields() As Boolean
         Return VerifyName() And VerifyAge() And VerifyWeight() And VerifySex() And VerifyActivityLevel() And VerifyPassword()
     End Function
+
+#Region "Individual Fields"
 
     Private Function VerifyName() As Boolean
         Return txtName.Text <> ""
@@ -68,7 +74,16 @@
 
 #End Region
 
-    
+#End Region
+
+    Private Sub SetProfile(ByVal name As String, ByVal age As Integer, ByVal weight As Integer, ByVal sex As String, ByVal activitylevel As Integer, ByVal password As String)
+        My.Settings.profile_name = name
+        My.Settings.profile_age = age
+        My.Settings.profile_weight = weight
+        My.Settings.profile_sex = sex
+        My.Settings.profile_activitylevel = activitylevel
+        My.Settings.profile_password = password
+    End Sub
 
 #End Region
 
@@ -84,4 +99,5 @@
 
 #End Region
 
+    
 End Class
