@@ -46,7 +46,6 @@ Partial Class dlgNewLog
         Me.txt_time = New System.Windows.Forms.MaskedTextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtDuration = New MetroFramework.Controls.MetroTextBox()
-        Me.btnManageShoes = New MetroFramework.Controls.MetroButton()
         Me.combo_shoes = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -287,15 +286,6 @@ Partial Class dlgNewLog
         Me.txtDuration.TabIndex = 25
         Me.txtDuration.UseSelectable = True
         '
-        'btnManageShoes
-        '
-        Me.btnManageShoes.Location = New System.Drawing.Point(300, 311)
-        Me.btnManageShoes.Name = "btnManageShoes"
-        Me.btnManageShoes.Size = New System.Drawing.Size(53, 21)
-        Me.btnManageShoes.TabIndex = 26
-        Me.btnManageShoes.Text = "Manage"
-        Me.btnManageShoes.UseSelectable = True
-        '
         'combo_shoes
         '
         Me.combo_shoes.FormattingEnabled = True
@@ -310,7 +300,6 @@ Partial Class dlgNewLog
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(369, 373)
         Me.Controls.Add(Me.combo_shoes)
-        Me.Controls.Add(Me.btnManageShoes)
         Me.Controls.Add(Me.txtDuration)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txt_time)
@@ -368,6 +357,5 @@ Partial Class dlgNewLog
     Friend WithEvents txt_time As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtDuration As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents btnManageShoes As MetroFramework.Controls.MetroButton
     Friend WithEvents combo_shoes As System.Windows.Forms.ComboBox
 End Class

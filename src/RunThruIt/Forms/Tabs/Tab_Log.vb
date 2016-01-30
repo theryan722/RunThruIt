@@ -48,6 +48,10 @@
 
 #Region "UI"
 
+    Private Sub btnShoes_Click(sender As Object, e As EventArgs) Handles btnShoes.Click
+        Tabs.AddShoes()
+    End Sub
+
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim bb As New dlgNewLog
         If bb.ShowDialog = Windows.Forms.DialogResult.OK Then

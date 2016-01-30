@@ -24,10 +24,11 @@ Partial Class Tab_Log
     Private Sub InitializeComponent()
         Me.pnl_list = New System.Windows.Forms.Panel()
         Me.pnl_bottom = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnReload = New MetroFramework.Controls.MetroTile()
-        Me.btnRemoveAll = New MetroFramework.Controls.MetroTile()
         Me.btnAdd = New MetroFramework.Controls.MetroTile()
+        Me.btnRemoveAll = New MetroFramework.Controls.MetroTile()
+        Me.btnReload = New MetroFramework.Controls.MetroTile()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnShoes = New MetroFramework.Controls.MetroTile()
         Me.pnl_bottom.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -50,15 +51,55 @@ Partial Class Tab_Log
         Me.pnl_bottom.Size = New System.Drawing.Size(592, 60)
         Me.pnl_bottom.TabIndex = 2
         '
+        'btnAdd
+        '
+        Me.btnAdd.ActiveControl = Nothing
+        Me.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnAdd.Location = New System.Drawing.Point(357, 3)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(171, 54)
+        Me.btnAdd.Style = MetroFramework.MetroColorStyle.Lime
+        Me.btnAdd.TabIndex = 2
+        Me.btnAdd.Text = "Add Workout"
+        Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnAdd.UseSelectable = True
+        '
+        'btnRemoveAll
+        '
+        Me.btnRemoveAll.ActiveControl = Nothing
+        Me.btnRemoveAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnRemoveAll.Location = New System.Drawing.Point(180, 3)
+        Me.btnRemoveAll.Name = "btnRemoveAll"
+        Me.btnRemoveAll.Size = New System.Drawing.Size(171, 54)
+        Me.btnRemoveAll.Style = MetroFramework.MetroColorStyle.Red
+        Me.btnRemoveAll.TabIndex = 1
+        Me.btnRemoveAll.Text = "Remove All"
+        Me.btnRemoveAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnRemoveAll.UseSelectable = True
+        '
+        'btnReload
+        '
+        Me.btnReload.ActiveControl = Nothing
+        Me.btnReload.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnReload.Location = New System.Drawing.Point(3, 3)
+        Me.btnReload.Name = "btnReload"
+        Me.btnReload.Size = New System.Drawing.Size(171, 54)
+        Me.btnReload.TabIndex = 0
+        Me.btnReload.Text = "Reload"
+        Me.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReload.UseSelectable = True
+        '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnCount = 4
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.btnReload, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btnRemoveAll, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btnAdd, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnShoes, 3, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -67,43 +108,18 @@ Partial Class Tab_Log
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(592, 60)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'btnReload
+        'btnShoes
         '
-        Me.btnReload.ActiveControl = Nothing
-        Me.btnReload.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnReload.Location = New System.Drawing.Point(3, 3)
-        Me.btnReload.Name = "btnReload"
-        Me.btnReload.Size = New System.Drawing.Size(191, 54)
-        Me.btnReload.TabIndex = 0
-        Me.btnReload.Text = "Reload"
-        Me.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnReload.UseSelectable = True
-        '
-        'btnRemoveAll
-        '
-        Me.btnRemoveAll.ActiveControl = Nothing
-        Me.btnRemoveAll.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnRemoveAll.Location = New System.Drawing.Point(200, 3)
-        Me.btnRemoveAll.Name = "btnRemoveAll"
-        Me.btnRemoveAll.Size = New System.Drawing.Size(191, 54)
-        Me.btnRemoveAll.Style = MetroFramework.MetroColorStyle.Red
-        Me.btnRemoveAll.TabIndex = 1
-        Me.btnRemoveAll.Text = "Remove All"
-        Me.btnRemoveAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnRemoveAll.UseSelectable = True
-        '
-        'btnAdd
-        '
-        Me.btnAdd.ActiveControl = Nothing
-        Me.btnAdd.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnAdd.Location = New System.Drawing.Point(397, 3)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(192, 54)
-        Me.btnAdd.Style = MetroFramework.MetroColorStyle.Lime
-        Me.btnAdd.TabIndex = 2
-        Me.btnAdd.Text = "Add Workout"
-        Me.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnAdd.UseSelectable = True
+        Me.btnShoes.ActiveControl = Nothing
+        Me.btnShoes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnShoes.Location = New System.Drawing.Point(534, 3)
+        Me.btnShoes.Name = "btnShoes"
+        Me.btnShoes.Size = New System.Drawing.Size(55, 54)
+        Me.btnShoes.Style = MetroFramework.MetroColorStyle.Orange
+        Me.btnShoes.TabIndex = 3
+        Me.btnShoes.Text = "Shoes"
+        Me.btnShoes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnShoes.UseSelectable = True
         '
         'Tab_Log
         '
@@ -127,4 +143,5 @@ Partial Class Tab_Log
     Friend WithEvents btnReload As MetroFramework.Controls.MetroTile
     Friend WithEvents btnRemoveAll As MetroFramework.Controls.MetroTile
     Friend WithEvents btnAdd As MetroFramework.Controls.MetroTile
+    Friend WithEvents btnShoes As MetroFramework.Controls.MetroTile
 End Class
