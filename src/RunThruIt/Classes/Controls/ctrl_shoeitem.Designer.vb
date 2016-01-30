@@ -25,8 +25,9 @@ Partial Class ctrl_shoeitem
         Me.pnl_bottom = New System.Windows.Forms.Panel()
         Me.btnRemove = New MetroFramework.Controls.MetroButton()
         Me.btnView = New MetroFramework.Controls.MetroButton()
-        Me.lblName = New System.Windows.Forms.Label()
+        Me.lblDate = New System.Windows.Forms.Label()
         Me.lblMileage = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
         Me.pnl_bottom.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,28 +63,38 @@ Partial Class ctrl_shoeitem
         Me.btnView.Text = "View"
         Me.btnView.UseSelectable = True
         '
-        'lblName
+        'lblDate
         '
-        Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(3, 0)
-        Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(38, 13)
-        Me.lblName.TabIndex = 7
-        Me.lblName.Text = "Name:"
+        Me.lblDate.AutoSize = True
+        Me.lblDate.Location = New System.Drawing.Point(4, 14)
+        Me.lblDate.Name = "lblDate"
+        Me.lblDate.Size = New System.Drawing.Size(87, 13)
+        Me.lblDate.TabIndex = 9
+        Me.lblDate.Text = "Date Purchased:"
         '
         'lblMileage
         '
         Me.lblMileage.AutoSize = True
-        Me.lblMileage.Location = New System.Drawing.Point(3, 23)
+        Me.lblMileage.Location = New System.Drawing.Point(3, 28)
         Me.lblMileage.Name = "lblMileage"
         Me.lblMileage.Size = New System.Drawing.Size(47, 13)
         Me.lblMileage.TabIndex = 8
         Me.lblMileage.Text = "Mileage:"
         '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Location = New System.Drawing.Point(3, 1)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(38, 13)
+        Me.lblName.TabIndex = 7
+        Me.lblName.Text = "Name:"
+        '
         'ctrl_shoeitem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblMileage)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.pnl_bottom)
@@ -97,7 +108,8 @@ Partial Class ctrl_shoeitem
     Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
     Friend WithEvents btnRemove As MetroFramework.Controls.MetroButton
     Friend WithEvents btnView As MetroFramework.Controls.MetroButton
-    Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents lblMileage As System.Windows.Forms.Label
+    Friend WithEvents lblName As System.Windows.Forms.Label
 
 End Class

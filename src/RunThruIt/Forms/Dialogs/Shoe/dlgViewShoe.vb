@@ -22,9 +22,9 @@
         lblName.Text = "Name: " & nshoe.ShoeName
         lblMileage.Text = "Mileage: " & nshoe.Mileage
         lblMaxMileage.Text = "Max Recommended Mileage: " & nshoe.MaxMileage
-        lblDatePurchased.Text = "Date Purchased: " & nshoe.DatePurchased.ToString("mm:dd:yyyy")
+        lblDatePurchased.Text = "Date Purchased: " & nshoe.DatePurchased.ToString("M/dd/yyyy")
         txtNotes.Text = nshoe.Notes
-        lblLifespanLeft.Text = "Life Span Left: " & nshoe.GetLifespanLeft & "%"
+        lblLifespanLeft.Text = "Life Span Left: " & CStr(CDbl(nshoe.GetLifespanLeft) * 100) & "%"
         If CDbl(nshoe.GetLifespanLeft) < 0.2 Then
             FlashTimer.Start()
             lblLifespanLeft.ForeColor = Color.Red

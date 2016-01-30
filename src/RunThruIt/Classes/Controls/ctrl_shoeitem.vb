@@ -9,7 +9,8 @@
         Set(value As Shoe)
             sitem = value
             lblName.Text = "Name: " & value.ShoeName
-            lblMileage.Text = "Name: " & value.Mileage
+            lblMileage.Text = "Mileage: " & value.Mileage
+            lblDate.Text = "Date Purchased: " & value.DatePurchased.ToString("M/dd/yy")
         End Set
     End Property
 
