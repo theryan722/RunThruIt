@@ -239,6 +239,18 @@ Namespace My
                 Me("profile_picture") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property set_defaultshoe() As String
+            Get
+                Return CType(Me("set_defaultshoe"),String)
+            End Get
+            Set
+                Me("set_defaultshoe") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
