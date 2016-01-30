@@ -57,7 +57,7 @@
     End Sub
 
     Private Sub InjuryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InjuryToolStripMenuItem.Click
-
+        Tabs.AddInjury()
     End Sub
 
 #End Region
