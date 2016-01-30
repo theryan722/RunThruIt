@@ -32,7 +32,11 @@
     End Function
 
     Private Sub RemoveAllWorkoutItems()
-
+        If pnl_list.Controls.Count > 0 Then
+            For Each item As ctrl_logitem In pnl_list.Controls
+                item.Dispose()
+            Next
+        End If
     End Sub
 
 #End Region
