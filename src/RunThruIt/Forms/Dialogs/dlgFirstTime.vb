@@ -56,7 +56,9 @@
 
     Private Function VerifyPassword()
         Dim ret As Boolean = True
-
+        If txtPassword.Text <> txtPasswordConfirm.Text Then
+            ret = False
+        End If
         Return ret
     End Function
 
