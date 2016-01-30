@@ -13,6 +13,7 @@
         If My.Settings.profile_password = "" Then
             Dim pass As String = InputBox("Please enter a new password: ", "Password", "")
             My.Settings.profile_password = pass
+            LoadProfile()
         Else
             Dim check As String = InputBox("Please enter your current password to modify this setting.", "Authenticate", "")
             If check <> My.Settings.profile_password Then
@@ -20,6 +21,7 @@
             Else
                 Dim pass As String = InputBox("Please enter a new password: ", "Password", "")
                 My.Settings.profile_password = pass
+                LoadProfile()
             End If
         End If
     End Sub
@@ -29,8 +31,8 @@
         newb.Title = "Browse for profile picture"
         newb.Filter = "All Files (*.*)|*.*|JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp"
         If newb.ShowDialog = Windows.Forms.DialogResult.OK Then
-            pb_profilepicture.BackgroundImage = Image.FromFile(newb.FileName)
             My.Settings.profile_picture = newb.FileName
+            LoadProfile()
         End If
     End Sub
 
