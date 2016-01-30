@@ -25,13 +25,13 @@ Partial Class dlgFirstTime
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dlgFirstTime))
         Me.btnOk = New MetroFramework.Controls.MetroButton()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroTextBox2 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroTextBox3 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroTextBox4 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
-        Me.MetroTextBox5 = New MetroFramework.Controls.MetroTextBox()
-        Me.MetroTextBox6 = New MetroFramework.Controls.MetroTextBox()
+        Me.txtName = New MetroFramework.Controls.MetroTextBox()
+        Me.txtAge = New MetroFramework.Controls.MetroTextBox()
+        Me.txtWeight = New MetroFramework.Controls.MetroTextBox()
+        Me.txtPassword = New MetroFramework.Controls.MetroTextBox()
+        Me.comboSex = New MetroFramework.Controls.MetroComboBox()
+        Me.txtPasswordConfirm = New MetroFramework.Controls.MetroTextBox()
+        Me.txtActivityLevel = New MetroFramework.Controls.MetroTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -57,100 +57,100 @@ Partial Class dlgFirstTime
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "*Sex:"
         '
-        'MetroTextBox1
+        'txtName
         '
-        Me.MetroTextBox1.Lines = New String(-1) {}
-        Me.MetroTextBox1.Location = New System.Drawing.Point(140, 127)
-        Me.MetroTextBox1.MaxLength = 32767
-        Me.MetroTextBox1.Name = "MetroTextBox1"
-        Me.MetroTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox1.PromptText = "*Name"
-        Me.MetroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox1.SelectedText = ""
-        Me.MetroTextBox1.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox1.TabIndex = 7
-        Me.MetroTextBox1.UseSelectable = True
+        Me.txtName.Lines = New String(-1) {}
+        Me.txtName.Location = New System.Drawing.Point(140, 127)
+        Me.txtName.MaxLength = 32767
+        Me.txtName.Name = "txtName"
+        Me.txtName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtName.PromptText = "*Name"
+        Me.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtName.SelectedText = ""
+        Me.txtName.Size = New System.Drawing.Size(166, 23)
+        Me.txtName.TabIndex = 7
+        Me.txtName.UseSelectable = True
         '
-        'MetroTextBox2
+        'txtAge
         '
-        Me.MetroTextBox2.Lines = New String(-1) {}
-        Me.MetroTextBox2.Location = New System.Drawing.Point(140, 156)
-        Me.MetroTextBox2.MaxLength = 32767
-        Me.MetroTextBox2.Name = "MetroTextBox2"
-        Me.MetroTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox2.PromptText = "Age"
-        Me.MetroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox2.SelectedText = ""
-        Me.MetroTextBox2.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox2.TabIndex = 8
-        Me.MetroTextBox2.UseSelectable = True
+        Me.txtAge.Lines = New String(-1) {}
+        Me.txtAge.Location = New System.Drawing.Point(140, 156)
+        Me.txtAge.MaxLength = 32767
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtAge.PromptText = "Age"
+        Me.txtAge.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtAge.SelectedText = ""
+        Me.txtAge.Size = New System.Drawing.Size(166, 23)
+        Me.txtAge.TabIndex = 8
+        Me.txtAge.UseSelectable = True
         '
-        'MetroTextBox3
+        'txtWeight
         '
-        Me.MetroTextBox3.Lines = New String(-1) {}
-        Me.MetroTextBox3.Location = New System.Drawing.Point(140, 185)
-        Me.MetroTextBox3.MaxLength = 32767
-        Me.MetroTextBox3.Name = "MetroTextBox3"
-        Me.MetroTextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox3.PromptText = "Weight (e.x. 150) in lbs"
-        Me.MetroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox3.SelectedText = ""
-        Me.MetroTextBox3.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox3.TabIndex = 9
-        Me.MetroTextBox3.UseSelectable = True
+        Me.txtWeight.Lines = New String(-1) {}
+        Me.txtWeight.Location = New System.Drawing.Point(140, 185)
+        Me.txtWeight.MaxLength = 32767
+        Me.txtWeight.Name = "txtWeight"
+        Me.txtWeight.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtWeight.PromptText = "Weight (e.x. 150) in lbs"
+        Me.txtWeight.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtWeight.SelectedText = ""
+        Me.txtWeight.Size = New System.Drawing.Size(166, 23)
+        Me.txtWeight.TabIndex = 9
+        Me.txtWeight.UseSelectable = True
         '
-        'MetroTextBox4
+        'txtPassword
         '
-        Me.MetroTextBox4.Lines = New String(-1) {}
-        Me.MetroTextBox4.Location = New System.Drawing.Point(140, 279)
-        Me.MetroTextBox4.MaxLength = 32767
-        Me.MetroTextBox4.Name = "MetroTextBox4"
-        Me.MetroTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.MetroTextBox4.PromptText = "Password"
-        Me.MetroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox4.SelectedText = ""
-        Me.MetroTextBox4.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox4.TabIndex = 10
-        Me.MetroTextBox4.UseSelectable = True
+        Me.txtPassword.Lines = New String(-1) {}
+        Me.txtPassword.Location = New System.Drawing.Point(140, 279)
+        Me.txtPassword.MaxLength = 32767
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txtPassword.PromptText = "Password"
+        Me.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPassword.SelectedText = ""
+        Me.txtPassword.Size = New System.Drawing.Size(166, 23)
+        Me.txtPassword.TabIndex = 10
+        Me.txtPassword.UseSelectable = True
         '
-        'MetroComboBox1
+        'comboSex
         '
-        Me.MetroComboBox1.FormattingEnabled = True
-        Me.MetroComboBox1.ItemHeight = 23
-        Me.MetroComboBox1.Items.AddRange(New Object() {"Male", "Female"})
-        Me.MetroComboBox1.Location = New System.Drawing.Point(185, 214)
-        Me.MetroComboBox1.Name = "MetroComboBox1"
-        Me.MetroComboBox1.Size = New System.Drawing.Size(121, 29)
-        Me.MetroComboBox1.TabIndex = 11
-        Me.MetroComboBox1.UseSelectable = True
+        Me.comboSex.FormattingEnabled = True
+        Me.comboSex.ItemHeight = 23
+        Me.comboSex.Items.AddRange(New Object() {"Male", "Female"})
+        Me.comboSex.Location = New System.Drawing.Point(185, 214)
+        Me.comboSex.Name = "comboSex"
+        Me.comboSex.Size = New System.Drawing.Size(121, 29)
+        Me.comboSex.TabIndex = 11
+        Me.comboSex.UseSelectable = True
         '
-        'MetroTextBox5
+        'txtPasswordConfirm
         '
-        Me.MetroTextBox5.Lines = New String(-1) {}
-        Me.MetroTextBox5.Location = New System.Drawing.Point(140, 308)
-        Me.MetroTextBox5.MaxLength = 32767
-        Me.MetroTextBox5.Name = "MetroTextBox5"
-        Me.MetroTextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.MetroTextBox5.PromptText = "Confirm Password"
-        Me.MetroTextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox5.SelectedText = ""
-        Me.MetroTextBox5.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox5.TabIndex = 12
-        Me.MetroTextBox5.UseSelectable = True
+        Me.txtPasswordConfirm.Lines = New String(-1) {}
+        Me.txtPasswordConfirm.Location = New System.Drawing.Point(140, 308)
+        Me.txtPasswordConfirm.MaxLength = 32767
+        Me.txtPasswordConfirm.Name = "txtPasswordConfirm"
+        Me.txtPasswordConfirm.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.txtPasswordConfirm.PromptText = "Confirm Password"
+        Me.txtPasswordConfirm.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPasswordConfirm.SelectedText = ""
+        Me.txtPasswordConfirm.Size = New System.Drawing.Size(166, 23)
+        Me.txtPasswordConfirm.TabIndex = 12
+        Me.txtPasswordConfirm.UseSelectable = True
         '
-        'MetroTextBox6
+        'txtActivityLevel
         '
-        Me.MetroTextBox6.Lines = New String(-1) {}
-        Me.MetroTextBox6.Location = New System.Drawing.Point(140, 249)
-        Me.MetroTextBox6.MaxLength = 32767
-        Me.MetroTextBox6.Name = "MetroTextBox6"
-        Me.MetroTextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MetroTextBox6.PromptText = "Activity Level (1-5)"
-        Me.MetroTextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.MetroTextBox6.SelectedText = ""
-        Me.MetroTextBox6.Size = New System.Drawing.Size(166, 23)
-        Me.MetroTextBox6.TabIndex = 13
-        Me.MetroTextBox6.UseSelectable = True
+        Me.txtActivityLevel.Lines = New String(-1) {}
+        Me.txtActivityLevel.Location = New System.Drawing.Point(140, 249)
+        Me.txtActivityLevel.MaxLength = 32767
+        Me.txtActivityLevel.Name = "txtActivityLevel"
+        Me.txtActivityLevel.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtActivityLevel.PromptText = "Activity Level (1-5)"
+        Me.txtActivityLevel.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtActivityLevel.SelectedText = ""
+        Me.txtActivityLevel.Size = New System.Drawing.Size(166, 23)
+        Me.txtActivityLevel.TabIndex = 13
+        Me.txtActivityLevel.UseSelectable = True
         '
         'Label1
         '
@@ -189,13 +189,13 @@ Partial Class dlgFirstTime
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.MetroTextBox6)
-        Me.Controls.Add(Me.MetroTextBox5)
-        Me.Controls.Add(Me.MetroComboBox1)
-        Me.Controls.Add(Me.MetroTextBox4)
-        Me.Controls.Add(Me.MetroTextBox3)
-        Me.Controls.Add(Me.MetroTextBox2)
-        Me.Controls.Add(Me.MetroTextBox1)
+        Me.Controls.Add(Me.txtActivityLevel)
+        Me.Controls.Add(Me.txtPasswordConfirm)
+        Me.Controls.Add(Me.comboSex)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtWeight)
+        Me.Controls.Add(Me.txtAge)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnOk)
         Me.Name = "dlgFirstTime"
@@ -209,13 +209,13 @@ Partial Class dlgFirstTime
     End Sub
     Friend WithEvents btnOk As MetroFramework.Controls.MetroButton
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroTextBox2 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroTextBox3 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroTextBox4 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
-    Friend WithEvents MetroTextBox5 As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents MetroTextBox6 As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtName As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtAge As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtWeight As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtPassword As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents comboSex As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents txtPasswordConfirm As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents txtActivityLevel As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
