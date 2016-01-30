@@ -99,7 +99,9 @@
 
 #Region "frmManager"
 
-
+    Private Sub frmManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Tabs.AddWelcome()
+    End Sub
 
 #End Region   
     

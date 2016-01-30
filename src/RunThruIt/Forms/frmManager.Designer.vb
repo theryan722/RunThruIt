@@ -72,13 +72,13 @@ Partial Class frmManager
         'WelcomeToolStripMenuItem
         '
         Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
-        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.WelcomeToolStripMenuItem.Text = "Welcome"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TabsToolStripMenuItem
