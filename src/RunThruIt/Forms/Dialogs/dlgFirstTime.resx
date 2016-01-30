@@ -117,4 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Since this is your first time, please fill out some information about
+yourself to get started. After you fill out the form, you can begin tracking
+progress, logging workouts, managing goals and more.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAUnSURBVHhe7Z2BjdxGDEWvBJeQEtKB00Hcgd2B04HTgdOB04HTgd2B3YHTQdJBwhefgIVCaaXV
+        aDQk/wceDPiwdyuSwxlyRtJTAb0wXhrvjA/GJ+Ob8c+MLwY/e2+8NfiMFFQ/GDgRh84dvYe/jI/Ga0MK
+        oJ8MHOY58ygEA9mB4JIGE44/Otr3wFSiQBhAzO9njfh7kBFYV0gX6ZWBEzzn9ITF44+G1FGkYM8ZV/LG
+        kE4WKZ8R5zlgBDQlnKjRnT9BdpIaK4rzJxQEDRXN+RMKgka6qsxrgRaGB/Wr4Rk2EioRHxTdPc+g0WDj
+        iWlM2iEM5u3YReU3Q9ohDOYZMjJkNGmD2GTxDBgdMpq0QZFX/fdQVXBHWRZ+SygL3NEfhme4TCgLLCjr
+        3D+HrqbkKEPTZyuqCByNcLijF78b0o1ol3qGygrBLt0oY+PnHpoGbpSp7bsVtYefVWX1P0fVwLM43esZ
+        qAKSqeL8P6F1gOmz4RmnAvQ+yqviAnBCC0GTZ5gqkP1Kq1oDaE75SiD79u8WSksBUFwKgOLicIRnlEqU
+        1i+GZ5RKlJamgOJSABSXAqC4qgfAn0Z5eYapQvlWMPIMUwUdDjVpO7i4GAWecSrAaajyqtwM0uNmTVW3
+        hFUB3OhvwzNSZrgRVnpWhbuC5+gu4RtV3BXUg6NuhDE8I2XlqyHNVKkfQOUjzVRlGmDBq/S/oArVgNq/
+        K6rwlBA9OnZFpMbMWUC7fxuUOQtw/kG6o6xZQKN/h7JtEBHQ2vjZqUx9Ae37P6Asu4Tq+h1Q9KmA1K+y
+        76Ai7xRqx6+BqApIo56BR0Ydv4YiCDhB4xl6ROT8E8RcGqE/oHr/RBEEI2cCRr52+k7WqGsCpf2OIghG
+        qg50wOMiUWZduS4gE6nOv1j02HtnA4KO9q7m+4HEVmuP/QPmem3sDCwCoXVGYMTzWFc5PpBwFmuER4MB
+        pzPadQNnErFYIyCYuxnNTBe38P9ABtFIl6QeYlS+fP63ospdP6n1vbH0jgCens3PsxqEsvGt8clYun5+
+        nq685ILeGd5FL4GRMgUCge1dpwcDJM3ik1FPZHsXugUCJ7II4kev/4MRWlx8i1fCRjVEi+sPGwSM/Jbv
+        A2YURZobWwU/hAsCHHUk7S8RJQhaOn8i1PnCj4Z3ES0YPQjOcP4Ev3t49TjKPWoQnOl8oDoYOgNiAO+L
+        nwFBMFLLlhbymc6fILsOqbPm/TUw+Aj18t4ex1GGXA9c+Q5gmkZXZANG/RVvPiXwR8p+/xnC+6K9IT3+
+        bJwpMt1ro3e2mzPMVIBBRnv/L9+H1ivB0GLRxGjD6dTjPeb5rQzRLmYP3ftyI4HTmCYICubrLeDspU2b
+        Ubi8Kui56hc+DMDLNPoIqcIlC0JKEe/LiP50XxAy74y0GBLfK7FuirDwqwbTcRcx33hfQFxPlyzAWXnv
+        j4vrOT0LjNLxE8ucmgVU9o3PaVlAoz8Op2QBjf44NM8CGv3xaJoFNPrjwV3RTaTRH5cmewQa/XE5/OQy
+        jf7YsF9z6LyARn98Hn6EnXr+OeDU0ENSzz8Pu4+Ra78/F7sbQ9rvz8euxtBox7zFcTY3hnTWLy+bGkMq
+        /fJytzGk0i83LOxXle2NneL/rN5O1vux66I/3MW9qKvveBXnw3ORF+V9QORidR3gfUDkY1ER39Ap9rH6
+        Mmu1gPOz2gtgE0hZIC+8BeVuN5CHPigI8oHzNz9ShkzAdMCHvF8mYkHp9/BTRoma6R07CogY4KfpPUgr
+        jn96+hcX7llZYmTgTQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
