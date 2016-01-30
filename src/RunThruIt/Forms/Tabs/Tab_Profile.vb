@@ -21,8 +21,10 @@
 
 #Region "Tab_Profile"
 
-
+    Private Sub Tab_Profile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadProfile()
+    End Sub
 
 #End Region
-
+    
 End Class
