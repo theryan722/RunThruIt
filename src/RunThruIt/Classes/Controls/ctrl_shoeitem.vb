@@ -16,7 +16,10 @@
 #Region "UI"
 
     Private Sub btnRemove_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-
+        If MetroFramework.MetroMessageBox.Show(frmManager, "Are you sure you want to remove this shoe?", "Remove Shoe", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            ShoeManager.RemoveShoe(ShoeItem)
+            Me.Dispose()
+        End If
     End Sub
 
     Private Sub btnView_Click(sender As Object, e As EventArgs) Handles btnView.Click
