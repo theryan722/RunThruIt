@@ -7,7 +7,10 @@
     End Sub
 
     Private Sub btnRemoveAll_Click(sender As Object, e As EventArgs) Handles btnRemoveAll.Click
-
+        If MetroFramework.MetroMessageBox.Show(frmManager, "Are you sure you want to remove all shoes?", "Clear Shoes", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            ShoeManager.ClearShoes()
+            RemoveAllShoeItems()
+        End If
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
