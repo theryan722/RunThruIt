@@ -71,6 +71,10 @@
 
 #Region "Tab_Log"
 
+    Private Sub Tab_Log_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        My.Settings.Save()
+    End Sub
+
     Private Sub Tab_Log_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadWorkouts()
     End Sub
