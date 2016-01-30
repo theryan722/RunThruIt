@@ -4,7 +4,7 @@
 
 #Region "Public"
 
-    Public Function GetShoeFromIndex(ByVal index As Integer) As Shoe
+    Public Shared Function GetShoeFromIndex(ByVal index As Integer) As Shoe
         Return ConvertStringToShoe(My.Settings.set_shoes(index))
     End Function
 
