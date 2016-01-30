@@ -9,7 +9,13 @@
     End Sub
 
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
-
+        If VerifyFields() Then
+            CreateShoe(txtName.Text, txtMileage.Text, txtMaxMileage.Text, txtNotes.Text, Convert.ToDateTime(dt_date.Value))
+            My.Settings.Save()
+            Me.DialogResult = Windows.Forms.DialogResult.OK
+        Else
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
 #End Region

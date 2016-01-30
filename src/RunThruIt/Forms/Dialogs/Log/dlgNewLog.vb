@@ -11,9 +11,6 @@
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyFields() Then
             CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, combo_shoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text), txtDuration.Text)
-            If My.Settings.set_defaultshoe <> combo_shoes.Text Then
-                My.Settings.set_defaultshoe = combo_shoes.Text
-            End If
             My.Settings.Save()
             Me.DialogResult = Windows.Forms.DialogResult.OK
         Else
