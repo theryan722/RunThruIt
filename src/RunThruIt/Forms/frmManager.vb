@@ -49,7 +49,7 @@
     End Sub
 
     Private Sub GoalsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GoalsToolStripMenuItem.Click
-
+        Tabs.AddGoals()
     End Sub
 
     Private Sub LogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogToolStripMenuItem.Click
