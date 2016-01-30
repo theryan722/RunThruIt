@@ -26,8 +26,8 @@ Partial Class Tab_Log
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,16 +49,16 @@ Partial Class Tab_Log
         Me.AddToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
         Me.AddToolStripMenuItem.Text = "Add"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(115, 6)
+        '
         'ClearAllToolStripMenuItem
         '
         Me.ClearAllToolStripMenuItem.Name = "ClearAllToolStripMenuItem"
         Me.ClearAllToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
         Me.ClearAllToolStripMenuItem.Text = "Clear All"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(115, 6)
         '
         'Tab_Log
         '
