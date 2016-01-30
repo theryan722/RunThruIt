@@ -25,22 +25,22 @@ Partial Class frmManager
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmManager))
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WelcomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseCurrentTabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseAllTabsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GoalsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InjuryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WelcomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GoalsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InjuryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -61,6 +61,87 @@ Partial Class frmManager
         Me.MenuStrip1.Size = New System.Drawing.Size(704, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WelcomeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'WelcomeToolStripMenuItem
+        '
+        Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.WelcomeToolStripMenuItem.Text = "Welcome"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'TabsToolStripMenuItem
+        '
+        Me.TabsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseCurrentTabToolStripMenuItem, Me.CloseAllTabsToolStripMenuItem})
+        Me.TabsToolStripMenuItem.Name = "TabsToolStripMenuItem"
+        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.TabsToolStripMenuItem.Text = "Tabs"
+        '
+        'CloseCurrentTabToolStripMenuItem
+        '
+        Me.CloseCurrentTabToolStripMenuItem.Name = "CloseCurrentTabToolStripMenuItem"
+        Me.CloseCurrentTabToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseCurrentTabToolStripMenuItem.Text = "Close Current Tab"
+        '
+        'CloseAllTabsToolStripMenuItem
+        '
+        Me.CloseAllTabsToolStripMenuItem.Name = "CloseAllTabsToolStripMenuItem"
+        Me.CloseAllTabsToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseAllTabsToolStripMenuItem.Text = "Close All Tabs"
+        '
+        'ProfileToolStripMenuItem
+        '
+        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
+        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.ProfileToolStripMenuItem.Text = "Profile"
+        '
+        'GoalsToolStripMenuItem
+        '
+        Me.GoalsToolStripMenuItem.Name = "GoalsToolStripMenuItem"
+        Me.GoalsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.GoalsToolStripMenuItem.Text = "Goals"
+        '
+        'LogToolStripMenuItem
+        '
+        Me.LogToolStripMenuItem.Name = "LogToolStripMenuItem"
+        Me.LogToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
+        Me.LogToolStripMenuItem.Text = "Log"
+        '
+        'InjuryToolStripMenuItem
+        '
+        Me.InjuryToolStripMenuItem.Name = "InjuryToolStripMenuItem"
+        Me.InjuryToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
+        Me.InjuryToolStripMenuItem.Text = "Injury"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1, Me.OptionsToolStripMenuItem})
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'AboutToolStripMenuItem1
+        '
+        Me.AboutToolStripMenuItem1.Name = "AboutToolStripMenuItem1"
+        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(116, 22)
+        Me.AboutToolStripMenuItem1.Text = "About"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.OptionsToolStripMenuItem.Text = "Options"
         '
         'MetroTabControl1
         '
@@ -86,87 +167,6 @@ Partial Class frmManager
         Me.TabControl1.Size = New System.Drawing.Size(704, 429)
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.UseSelectable = True
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WelcomeToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1, Me.OptionsToolStripMenuItem})
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.AboutToolStripMenuItem.Text = "About"
-        '
-        'AboutToolStripMenuItem1
-        '
-        Me.AboutToolStripMenuItem1.Name = "AboutToolStripMenuItem1"
-        Me.AboutToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.AboutToolStripMenuItem1.Text = "About"
-        '
-        'TabsToolStripMenuItem
-        '
-        Me.TabsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseCurrentTabToolStripMenuItem, Me.CloseAllTabsToolStripMenuItem})
-        Me.TabsToolStripMenuItem.Name = "TabsToolStripMenuItem"
-        Me.TabsToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
-        Me.TabsToolStripMenuItem.Text = "Tabs"
-        '
-        'CloseCurrentTabToolStripMenuItem
-        '
-        Me.CloseCurrentTabToolStripMenuItem.Name = "CloseCurrentTabToolStripMenuItem"
-        Me.CloseCurrentTabToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.CloseCurrentTabToolStripMenuItem.Text = "Close Current Tab"
-        '
-        'CloseAllTabsToolStripMenuItem
-        '
-        Me.CloseAllTabsToolStripMenuItem.Name = "CloseAllTabsToolStripMenuItem"
-        Me.CloseAllTabsToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.CloseAllTabsToolStripMenuItem.Text = "Close All Tabs"
-        '
-        'GoalsToolStripMenuItem
-        '
-        Me.GoalsToolStripMenuItem.Name = "GoalsToolStripMenuItem"
-        Me.GoalsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
-        Me.GoalsToolStripMenuItem.Text = "Goals"
-        '
-        'InjuryToolStripMenuItem
-        '
-        Me.InjuryToolStripMenuItem.Name = "InjuryToolStripMenuItem"
-        Me.InjuryToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
-        Me.InjuryToolStripMenuItem.Text = "Injury"
-        '
-        'LogToolStripMenuItem
-        '
-        Me.LogToolStripMenuItem.Name = "LogToolStripMenuItem"
-        Me.LogToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-        Me.LogToolStripMenuItem.Text = "Log"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OptionsToolStripMenuItem.Text = "Options"
-        '
-        'ProfileToolStripMenuItem
-        '
-        Me.ProfileToolStripMenuItem.Name = "ProfileToolStripMenuItem"
-        Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.ProfileToolStripMenuItem.Text = "Profile"
-        '
-        'WelcomeToolStripMenuItem
-        '
-        Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
-        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.WelcomeToolStripMenuItem.Text = "Welcome"
         '
         'frmManager
         '

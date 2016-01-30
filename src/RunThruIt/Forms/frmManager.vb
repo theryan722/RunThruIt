@@ -10,7 +10,11 @@
 
 #Region "Tabs"
 
-
+    Private Sub CloseCurrentTabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseCurrentTabToolStripMenuItem.Click
+        If AtLeastOneTab() Then
+            RemoveTab()
+        End If
+    End Sub
 
 #End Region
 
@@ -49,4 +53,5 @@
 
 #End Region
 
+    
 End Class
