@@ -18,7 +18,7 @@
         lblPace.Text = "Pace: " & nworkout.Pace
         lblShoes.Text = "Shoes: " & nworkout.Shoes
         txtNotes.Text = nworkout.Notes
-        lblTime.Text = "Time: " & nworkout.WorkoutTime.ToString("hh:mm")
+        lblTime.Text = "Time: " & nworkout.WorkoutTime.ToString("H:mm")
     End Sub
 
 #End Region
