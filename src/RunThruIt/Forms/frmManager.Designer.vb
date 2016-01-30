@@ -40,6 +40,7 @@ Partial Class frmManager
         Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WelcomeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -88,7 +89,7 @@ Partial Class frmManager
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WelcomeToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -161,6 +162,12 @@ Partial Class frmManager
         Me.ProfileToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
         Me.ProfileToolStripMenuItem.Text = "Profile"
         '
+        'WelcomeToolStripMenuItem
+        '
+        Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.WelcomeToolStripMenuItem.Text = "Welcome"
+        '
         'frmManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -196,5 +203,6 @@ Partial Class frmManager
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents WelcomeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
