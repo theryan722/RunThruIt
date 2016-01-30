@@ -97,10 +97,10 @@
 
     Private Sub LoadProfile()
         lbl_name.Text = "Name: " & My.Settings.profile_name
-        lbl_age.Text = If(My.Settings.profile_age = "", "Age: Unknown", "Age: " & My.Settings.profile_age)
+        lbl_age.Text = If(My.Settings.profile_age = "", "Age: Unknown", "Age: " & My.Settings.profile_age.ToString)
         lbl_sex.Text = "Sex: " & My.Settings.profile_sex
-        lbl_activitylevel.Text = If(My.Settings.profile_activitylevel = "", "Activity Level: Unknown", "Activity Level: " & My.Settings.profile_activitylevel)
-        lbl_weight.Text = If(My.Settings.profile_weight = "", "Weight: Unknown", "Weight: " & My.Settings.profile_weight)
+        lbl_activitylevel.Text = If(My.Settings.profile_activitylevel = "", "Activity Level: Unknown", "Activity Level: " & My.Settings.profile_activitylevel.ToString)
+        lbl_weight.Text = If(My.Settings.profile_weight = "", "Weight: Unknown", "Weight: " & My.Settings.profile_weight.ToString)
         pb_profilepicture.BackgroundImage = If(My.Settings.profile_picture = "", My.Resources.profile_128, Image.FromFile(My.Settings.profile_picture))
     End Sub
 

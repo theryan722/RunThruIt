@@ -108,9 +108,13 @@
             dlgFirstTime.ShowDialog()
         Else
             Tabs.AddWelcome()
-            If My.Settings.set_displaytipsatstartup Then
-                dlgRandom.ShowDialog()
-            End If
+            
+        End If
+    End Sub
+
+    Private Sub frmManager_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        If My.Settings.set_displaytipsatstartup Then
+            dlgRandom.ShowDialog()
         End If
     End Sub
 
