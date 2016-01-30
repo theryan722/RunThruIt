@@ -13,7 +13,7 @@
     Public Sub DisplayWorkout(ByVal nworkout As Workout)
         lblType.Text = "Type: " & nworkout.WorkoutType
         lblDate.Text = "Date: " & nworkout.WorkoutDate
-        lblDistance.Text = "Distance: " & nworkout.Distance
+        lblDistance.Text = "Distance: " & nworkout.Distance & " miles"
         lblInjury.Text = "Injury: " & nworkout.Injury
         lblPace.Text = "Pace: " & nworkout.Pace
         lblShoes.Text = "Shoes: " & nworkout.Shoes

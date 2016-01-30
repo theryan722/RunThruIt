@@ -42,6 +42,7 @@ Partial Class dlgNewLog
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txtInjury = New MetroFramework.Controls.MetroTextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -245,11 +246,21 @@ Partial Class dlgNewLog
         Me.txtInjury.TabIndex = 19
         Me.txtInjury.UseSelectable = True
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(143, 142)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(30, 13)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "miles"
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(369, 337)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.txtInjury)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -299,4 +310,5 @@ Partial Class dlgNewLog
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtInjury As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class
