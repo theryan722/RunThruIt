@@ -68,6 +68,7 @@
         For Each item As String In My.Settings.log_goals
             lb_goals.Items.Add(item)
         Next
+        TabGoals.Text = "Goals (" & My.Settings.log_goals.Count & ")"
     End Sub
 
     Private Sub LoadCompleted()
@@ -75,6 +76,7 @@
         For Each item As String In My.Settings.log_completedgoals
             lb_completed.Items.Add(item)
         Next
+        TabGoals.Text = "Completed (" & My.Settings.log_completedgoals.Count & ")"
     End Sub
 
     Private Sub LoadAll()
