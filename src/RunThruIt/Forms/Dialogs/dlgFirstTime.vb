@@ -11,7 +11,7 @@
 #Region "Verification"
 
     Private Function VerifyAllFields() As Boolean
-
+        Return VerifyName() And VerifyAge() And VerifyWeight() And VerifySex() And VerifyActivityLevel() And VerifyPassword()
     End Function
 
     Private Function VerifyName() As Boolean
