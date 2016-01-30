@@ -53,11 +53,12 @@
     End Sub
 
     Private Sub LoadAll()
-
+        LoadGoals()
+        LoadCompleted()
     End Sub
 
     Private Sub MarkGoalAsCompleted()
-
+        
     End Sub
 
     Private Sub MarkGoalAsIncomplete()
