@@ -21,17 +21,5 @@
     End Sub
 
 #End Region
-
-#Region "dlgViewLog"
-
-    Private Sub dlgViewLog_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        Me.Parent = Nothing
-    End Sub
-
-    Private Sub dlgViewLog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Parent = frmManager
-    End Sub
-
-#End Region
     
 End Class

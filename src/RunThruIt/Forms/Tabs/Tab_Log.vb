@@ -1,6 +1,6 @@
 ﻿Public Class Tab_Log
 
-#Region "Methods"""
+#Region "Methods"
 
     Private Sub LoadWorkouts()
         RemoveAllWorkoutItems()
