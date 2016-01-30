@@ -88,7 +88,8 @@
     End Sub
 
     Private Sub RemoveAllCompleted()
-
+        My.Settings.log_completedgoals.Clear()
+        LoadCompleted()
     End Sub
 
     Private Sub RemoveAllGoals()
