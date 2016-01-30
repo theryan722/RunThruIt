@@ -39,7 +39,7 @@
 #End Region
 
     Private Sub btnReload_Click(sender As Object, e As EventArgs) Handles btnReload.Click
-
+        LoadAll()
     End Sub
 
     Private Sub btnRemoveAll_Click(sender As Object, e As EventArgs) Handles btnRemoveAll.Click
