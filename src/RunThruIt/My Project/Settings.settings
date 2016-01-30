@@ -14,7 +14,7 @@
     <Setting Name="profile_age" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="profile_gender" Type="System.String" Scope="User">
+    <Setting Name="profile_sex" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="profile_daysactive" Type="System.String" Scope="User">
