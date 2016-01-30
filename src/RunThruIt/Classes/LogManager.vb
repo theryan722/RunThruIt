@@ -21,6 +21,10 @@
         My.Settings.log_workout.Clear()
     End Sub
 
+    Public Shared Function ConvertWorkoutToString(ByVal nworkout As Workout) As String
+        Return nworkout.WorkoutType & "|" & nworkout.WorkoutDate.ToString() & "|" & nworkout.Notes & "|" & nworkout.Distance & "|" & nworkout.Shoes & "|" & nworkout.Pace & "|" & nworkout.Injured.ToString
+    End Function
+
 #End Region
 
 #Region "Private"
