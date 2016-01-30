@@ -10,7 +10,7 @@
 
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyFields() Then
-            CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, txtShoes.Text, txtPace.Text, txtInjury.Text, dt_time.Value)
+            CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, txtShoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text))
             If My.Settings.set_defaultshoe <> txtShoes.Text Then
                 My.Settings.set_defaultshoe = txtShoes.Text
             End If
@@ -31,6 +31,9 @@
             ret = False
         End If
         If Not IsDate(dt_date.Value) Then
+            ret = False
+        End If
+        If Not IsDate(Convert.ToDateTime(txt_time.Text)) Then
             ret = False
         End If
         Return ret
