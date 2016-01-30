@@ -44,7 +44,10 @@
     End Sub
 
     Private Sub btnRemoveAll_Click(sender As Object, e As EventArgs) Handles btnRemoveAll.Click
-
+        If MetroFramework.MetroMessageBox.Show(frmManager, "Are you sure you want to clear all workouts?", "Clear Workouts", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            LogManager.ClearWorkouts()
+            RemoveAllWorkoutItems()
+        End If
     End Sub
 
 #End Region
