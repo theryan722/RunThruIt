@@ -123,34 +123,6 @@ yourself to get started. After you fill out the form, you can begin tracking
 progress, logging workouts, managing goals and more.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAAAIABoBAAARgAAACAgAAAAACAAqBAAAK4EAAAwMAAAAAAgAKglAABWFQAAQEAAAAAA

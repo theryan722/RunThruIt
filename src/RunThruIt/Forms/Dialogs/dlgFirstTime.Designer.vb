@@ -35,6 +35,8 @@ Partial Class dlgFirstTime
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnBrowse = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -164,7 +166,7 @@ Partial Class dlgFirstTime
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImage = Global.RunThruIt.My.Resources.Resources.profile_128
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(3, 70)
         Me.PictureBox1.Name = "PictureBox1"
@@ -181,11 +183,31 @@ Partial Class dlgFirstTime
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Items marked with an asterisk (*) are required."
         '
+        'btnBrowse
+        '
+        Me.btnBrowse.Location = New System.Drawing.Point(6, 203)
+        Me.btnBrowse.Name = "btnBrowse"
+        Me.btnBrowse.Size = New System.Drawing.Size(51, 23)
+        Me.btnBrowse.TabIndex = 17
+        Me.btnBrowse.Text = "Browse"
+        Me.btnBrowse.UseVisualStyleBackColor = True
+        '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(63, 203)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(51, 23)
+        Me.btnReset.TabIndex = 18
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
         'dlgFirstTime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(623, 358)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.btnBrowse)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -221,4 +243,6 @@ Partial Class dlgFirstTime
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnBrowse As System.Windows.Forms.Button
+    Friend WithEvents btnReset As System.Windows.Forms.Button
 End Class
