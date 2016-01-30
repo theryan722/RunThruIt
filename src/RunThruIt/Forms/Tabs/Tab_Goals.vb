@@ -81,7 +81,10 @@
     End Sub
 
     Private Sub RemoveCompleted()
-
+        If lb_completed.SelectedIndex <> -1 Then
+            My.Settings.log_completedgoals.Remove(lb_completed.SelectedItem)
+            LoadCompleted()
+        End If
     End Sub
 
     Private Sub RemoveAllCompleted()
