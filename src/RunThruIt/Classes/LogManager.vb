@@ -18,7 +18,7 @@
 
 
     Public Shared Sub ClearWorkouts()
-
+        My.Settings.log_workout.Clear()
     End Sub
 
 #End Region
