@@ -74,7 +74,10 @@
     End Sub
 
     Private Sub RemoveGoal()
-
+        If lb_goals.SelectedIndex <> -1 Then
+            My.Settings.log_goals.Remove(lb_goals.SelectedItem)
+            LoadGoals()
+        End If
     End Sub
 
     Private Sub RemoveCompleted()
