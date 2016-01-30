@@ -23,6 +23,7 @@ Partial Class dlgRandom
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dlgRandom))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnClose = New MetroFramework.Controls.MetroButton()
         Me.btnNewTip = New MetroFramework.Controls.MetroButton()
@@ -106,6 +107,7 @@ Partial Class dlgRandom
         Me.Controls.Add(Me.check_displayatstartup)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Panel1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgRandom"

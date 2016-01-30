@@ -198,6 +198,7 @@ Partial Class dlgFirstTime
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnOk)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "dlgFirstTime"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
