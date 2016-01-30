@@ -1,6 +1,18 @@
 ﻿Public Class ctrl_logitem
 
+    Dim witem As Workout
+
     Public Property WorkoutItem As Workout
+        Get
+            Return witem
+        End Get
+        Set(value As Workout)
+            witem = value
+            lblType.Text = "Type: " & value.WorkoutType
+            lblDistance.Text = "Distance: " & value.Distance
+            lblPace.Text = "Pace: " & value.Pace
+        End Set
+    End Property
 
 #Region "Buttons"
 
