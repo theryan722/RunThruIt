@@ -44,7 +44,7 @@ Partial Class dlgFirstTime
         Me.btnOk.Location = New System.Drawing.Point(498, 321)
         Me.btnOk.Name = "btnOk"
         Me.btnOk.Size = New System.Drawing.Size(109, 26)
-        Me.btnOk.TabIndex = 0
+        Me.btnOk.TabIndex = 7
         Me.btnOk.Text = "Okay, lets go!"
         Me.btnOk.UseSelectable = True
         '
@@ -68,7 +68,7 @@ Partial Class dlgFirstTime
         Me.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtName.SelectedText = ""
         Me.txtName.Size = New System.Drawing.Size(166, 23)
-        Me.txtName.TabIndex = 7
+        Me.txtName.TabIndex = 0
         Me.txtName.UseSelectable = True
         '
         'txtAge
@@ -82,7 +82,7 @@ Partial Class dlgFirstTime
         Me.txtAge.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtAge.SelectedText = ""
         Me.txtAge.Size = New System.Drawing.Size(166, 23)
-        Me.txtAge.TabIndex = 8
+        Me.txtAge.TabIndex = 1
         Me.txtAge.UseSelectable = True
         '
         'txtWeight
@@ -96,7 +96,7 @@ Partial Class dlgFirstTime
         Me.txtWeight.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtWeight.SelectedText = ""
         Me.txtWeight.Size = New System.Drawing.Size(166, 23)
-        Me.txtWeight.TabIndex = 9
+        Me.txtWeight.TabIndex = 2
         Me.txtWeight.UseSelectable = True
         '
         'txtPassword
@@ -110,7 +110,7 @@ Partial Class dlgFirstTime
         Me.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.Size = New System.Drawing.Size(166, 23)
-        Me.txtPassword.TabIndex = 10
+        Me.txtPassword.TabIndex = 5
         Me.txtPassword.UseSelectable = True
         '
         'comboSex
@@ -121,7 +121,7 @@ Partial Class dlgFirstTime
         Me.comboSex.Location = New System.Drawing.Point(185, 214)
         Me.comboSex.Name = "comboSex"
         Me.comboSex.Size = New System.Drawing.Size(121, 29)
-        Me.comboSex.TabIndex = 11
+        Me.comboSex.TabIndex = 3
         Me.comboSex.UseSelectable = True
         '
         'txtPasswordConfirm
@@ -135,7 +135,7 @@ Partial Class dlgFirstTime
         Me.txtPasswordConfirm.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtPasswordConfirm.SelectedText = ""
         Me.txtPasswordConfirm.Size = New System.Drawing.Size(166, 23)
-        Me.txtPasswordConfirm.TabIndex = 12
+        Me.txtPasswordConfirm.TabIndex = 6
         Me.txtPasswordConfirm.UseSelectable = True
         '
         'txtActivityLevel
@@ -149,7 +149,7 @@ Partial Class dlgFirstTime
         Me.txtActivityLevel.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtActivityLevel.SelectedText = ""
         Me.txtActivityLevel.Size = New System.Drawing.Size(166, 23)
-        Me.txtActivityLevel.TabIndex = 13
+        Me.txtActivityLevel.TabIndex = 4
         Me.txtActivityLevel.UseSelectable = True
         '
         'Label1
