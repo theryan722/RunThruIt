@@ -32,6 +32,15 @@
         End If
     End Function
 
+    Public Sub RemoveTab()
+        If AtLeastOneTab() Then
+            Try
+                TabControl1.SelectedTab.Dispose()
+            Catch
+            End Try
+        End If
+    End Sub
+
 #End Region
 
 #Region "frmManager"
