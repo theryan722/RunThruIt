@@ -30,6 +30,10 @@
 
 #Region "Tab_Shoes"
 
+    Private Sub Tab_shoes_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        My.Settings.Save()
+    End Sub
+
     Private Sub Tab_shoes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
