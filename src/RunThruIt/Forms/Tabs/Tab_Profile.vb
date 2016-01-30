@@ -64,7 +64,7 @@
         If Not IsNumeric(page) Or page = "" Then
             MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid age.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            My.Settings.profile_age = page
+            My.Settings.profile_age = CInt(page)
             LoadProfile()
         End If
     End Sub
@@ -74,7 +74,7 @@
         If Not IsNumeric(pweight) Or pweight = "" Then
             MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid weight.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            My.Settings.profile_weight = pweight
+            My.Settings.profile_weight = CInt(pweight)
             LoadProfile()
         End If
     End Sub
@@ -84,7 +84,7 @@
         If Not IsNumeric(pactivitylevel) Or pactivitylevel = "" Or pactivitylevel > 5 Or pactivitylevel < 1 Then
             MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a valid activity level.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
-            My.Settings.profile_activitylevel = pactivitylevel
+            My.Settings.profile_activitylevel = CInt(pactivitylevel)
             LoadProfile()
         End If
     End Sub
