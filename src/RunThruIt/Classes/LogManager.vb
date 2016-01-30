@@ -15,7 +15,11 @@
     End Sub
 
     Public Shared Function GetWorkouts() As List(Of Workout)
-
+        Dim ret As New List(Of Workout)
+        For Each item As String In My.Settings.log_workout
+            ret.Add(ConvertStringToWorkout(item))
+        Next
+        Return ret
     End Function
 
     Public Shared Sub ClearWorkouts()
