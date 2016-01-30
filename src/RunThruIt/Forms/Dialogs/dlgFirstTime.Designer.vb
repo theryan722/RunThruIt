@@ -28,10 +28,10 @@ Partial Class dlgFirstTime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(300, 300)
+        Me.ClientSize = New System.Drawing.Size(565, 290)
         Me.Name = "dlgFirstTime"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
-        Me.Text = "dlgFirstTime"
+        Me.Text = "Welcome!"
         Me.ResumeLayout(False)
 
     End Sub
