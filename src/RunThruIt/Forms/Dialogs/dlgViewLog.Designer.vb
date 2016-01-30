@@ -143,6 +143,7 @@ Partial Class dlgViewLog
         Me.Controls.Add(Me.btnClose)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "dlgViewLog"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
         Me.Resizable = False

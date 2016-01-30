@@ -268,9 +268,11 @@ Partial Class dlgNewLog
         Me.Controls.Add(Me.combo_type)
         Me.Controls.Add(Me.dt_date)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "dlgNewLog"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
+        Me.Resizable = False
         Me.Text = "Add Workout"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
