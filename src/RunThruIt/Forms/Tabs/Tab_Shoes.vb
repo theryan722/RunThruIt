@@ -14,7 +14,11 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-
+        Dim bb As New dlgNewShoe
+        If bb.ShowDialog = Windows.Forms.DialogResult.OK Then
+            ShoeManager.AddShoe(bb.NewShoe)
+            LoadShoes()
+        End If
     End Sub
 
 #End Region
