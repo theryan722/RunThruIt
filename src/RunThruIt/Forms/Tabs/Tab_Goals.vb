@@ -11,7 +11,7 @@
     End Sub
 
     Private Sub MarkAsCompletedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarkAsCompletedToolStripMenuItem.Click
-
+        MarkGoalAsCompleted()
     End Sub
 
     Private Sub AddGoalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddGoalToolStripMenuItem.Click
