@@ -15,11 +15,7 @@
     End Function
 
     Private Function VerifyName() As Boolean
-        Dim ret As Boolean = True
-        If txtName.Text = "" Then
-            ret = False
-        End If
-        Return ret
+        Return txtName.Text <> ""
     End Function
 
     Private Function VerifyAge() As Boolean
