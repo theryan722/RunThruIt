@@ -44,6 +44,7 @@ Partial Class Tab_Profile
         Me.pb_profilepicture.Size = New System.Drawing.Size(128, 128)
         Me.pb_profilepicture.TabIndex = 0
         Me.pb_profilepicture.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.pb_profilepicture, "Click to change")
         '
         'lbl_name
         '
@@ -54,6 +55,7 @@ Partial Class Tab_Profile
         Me.lbl_name.Size = New System.Drawing.Size(66, 24)
         Me.lbl_name.TabIndex = 1
         Me.lbl_name.Text = "Name:"
+        Me.ToolTip1.SetToolTip(Me.lbl_name, "Click to change")
         '
         'lbl_sex
         '
@@ -64,6 +66,7 @@ Partial Class Tab_Profile
         Me.lbl_sex.Size = New System.Drawing.Size(48, 24)
         Me.lbl_sex.TabIndex = 2
         Me.lbl_sex.Text = "Sex:"
+        Me.ToolTip1.SetToolTip(Me.lbl_sex, "Click to change")
         '
         'lbl_age
         '
@@ -74,6 +77,7 @@ Partial Class Tab_Profile
         Me.lbl_age.Size = New System.Drawing.Size(50, 24)
         Me.lbl_age.TabIndex = 3
         Me.lbl_age.Text = "Age:"
+        Me.ToolTip1.SetToolTip(Me.lbl_age, "Click to change")
         '
         'lbl_activitylevel
         '
@@ -84,6 +88,7 @@ Partial Class Tab_Profile
         Me.lbl_activitylevel.Size = New System.Drawing.Size(122, 24)
         Me.lbl_activitylevel.TabIndex = 4
         Me.lbl_activitylevel.Text = "Activity Level:"
+        Me.ToolTip1.SetToolTip(Me.lbl_activitylevel, "Click to change")
         '
         'lbl_weight
         '
@@ -94,6 +99,7 @@ Partial Class Tab_Profile
         Me.lbl_weight.Size = New System.Drawing.Size(74, 24)
         Me.lbl_weight.TabIndex = 5
         Me.lbl_weight.Text = "Weight:"
+        Me.ToolTip1.SetToolTip(Me.lbl_weight, "Click to change")
         '
         'btnChangePassword
         '
