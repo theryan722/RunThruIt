@@ -1,10 +1,13 @@
 ﻿Public Class dlgFirstTime
 
+    Private okaytoclose As Boolean = False
+
 #Region "UI"
 
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyAllFields() Then
             SetProfile(txtName.Text, txtAge.Text, txtWeight.Text, comboSex.SelectedItem, txtActivityLevel.Text, txtPassword.Text)
+            okaytoclose = True
             Me.Close()
             Tabs.AddWelcome()
             My.Settings.set_firsttime = False
@@ -89,6 +92,16 @@
         My.Settings.profile_sex = sex
         My.Settings.profile_activitylevel = activitylevel
         My.Settings.profile_password = password
+    End Sub
+
+#End Region
+
+#Region "dlgFirstTime"
+
+    Private Sub dlgFirstTime_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If Not okaytoclose Then
+            e.Cancel = True
+        End If
     End Sub
 
 #End Region

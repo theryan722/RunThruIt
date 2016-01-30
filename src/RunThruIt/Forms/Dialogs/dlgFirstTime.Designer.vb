@@ -198,6 +198,7 @@ Partial Class dlgFirstTime
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnOk)
+        Me.MaximizeBox = False
         Me.Name = "dlgFirstTime"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
         Me.Resizable = False
