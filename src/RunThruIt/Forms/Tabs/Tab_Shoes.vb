@@ -3,7 +3,7 @@
 #Region "UI"
 
     Private Sub btnReload_Click(sender As Object, e As EventArgs) Handles btnReload.Click
-
+        LoadShoes()
     End Sub
 
     Private Sub btnRemoveAll_Click(sender As Object, e As EventArgs) Handles btnRemoveAll.Click
