@@ -12,6 +12,10 @@
         Me.Close()
     End Sub
 
+    Private Sub TipsQuotesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TipsQuotesToolStripMenuItem.Click
+        dlgRandom.ShowDialog()
+    End Sub
+
 #End Region
 
 #Region "Tabs"

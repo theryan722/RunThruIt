@@ -41,6 +41,7 @@ Partial Class frmManager
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
+        Me.TipsQuotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,7 +65,7 @@ Partial Class frmManager
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WelcomeToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.WelcomeToolStripMenuItem, Me.TipsQuotesToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -72,13 +73,13 @@ Partial Class frmManager
         'WelcomeToolStripMenuItem
         '
         Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
-        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.WelcomeToolStripMenuItem.Text = "Welcome"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(124, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TabsToolStripMenuItem
@@ -168,6 +169,12 @@ Partial Class frmManager
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.UseSelectable = True
         '
+        'TipsQuotesToolStripMenuItem
+        '
+        Me.TipsQuotesToolStripMenuItem.Name = "TipsQuotesToolStripMenuItem"
+        Me.TipsQuotesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.TipsQuotesToolStripMenuItem.Text = "Tips && Quotes"
+        '
         'frmManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -204,5 +211,6 @@ Partial Class frmManager
     Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WelcomeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TipsQuotesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
