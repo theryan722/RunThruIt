@@ -39,7 +39,7 @@
     End Sub
 
     Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
-
+        Tabs.AddOptions()
     End Sub
 
 #End Region
