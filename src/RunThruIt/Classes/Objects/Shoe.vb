@@ -3,8 +3,8 @@
     Public Property ShoeName As String
     Public Property Mileage As String
     Public Property Notes As String
-    Public Property ShoeIsDefault As Boolean
     Public Property DatePurchased As Date
+    Public Property MaxMileage As String
 
 #Region "Constructor"
 
@@ -12,18 +12,19 @@
 
     End Sub
 
-    Public Sub New(ByVal sname As String, ByVal smileage As String, ByVal snotes As String, ByVal sdef As Boolean, ByVal sdate As Date)
+    Public Sub New(ByVal sname As String, ByVal smileage As String, ByVal snotes As String, ByVal sdate As Date, ByVal smaxmileage As String)
         ShoeName = sname
         Mileage = smileage
         Notes = snotes
-        ShoeIsDefault = sdef
         DatePurchased = sdate
+        MaxMileage = smaxmileage
     End Sub
 
 #End Region
 
-    Public Sub AlertIfHighMileage()
-
-    End Sub
+    Public Function GetLifespanLeft() As String
+        Dim per As Double = 1.0 - (CInt(Mileage) / CInt(MaxMileage))
+        Return per.ToString()
+    End Function
 
 End Class

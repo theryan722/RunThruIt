@@ -103,6 +103,12 @@
     <Compile Include="Classes\Controls\ctrl_logitem.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Classes\Controls\ctrl_shoeitem.Designer.vb">
+      <DependentUpon>ctrl_shoeitem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Controls\ctrl_shoeitem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Classes\LogManager.vb" />
     <Compile Include="Classes\Objects\Shoe.vb" />
     <Compile Include="Classes\RandomInfo.vb" />
@@ -133,6 +139,12 @@
       <DependentUpon>dlgViewLog.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dialogs\dlgViewLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgViewShoe.Designer.vb">
+      <DependentUpon>dlgViewShoe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgViewShoe.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmManager.vb">
@@ -210,6 +222,9 @@
     <EmbeddedResource Include="Classes\Controls\ctrl_logitem.resx">
       <DependentUpon>ctrl_logitem.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Classes\Controls\ctrl_shoeitem.resx">
+      <DependentUpon>ctrl_shoeitem.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\dlgFirstTime.resx">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dialogs\dlgViewLog.resx">
       <DependentUpon>dlgViewLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgViewShoe.resx">
+      <DependentUpon>dlgViewShoe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManager.resx">
       <DependentUpon>frmManager.vb</DependentUpon>
@@ -289,6 +307,7 @@
     <Content Include="icon.ico" />
     <None Include="Resources\profile_128.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
