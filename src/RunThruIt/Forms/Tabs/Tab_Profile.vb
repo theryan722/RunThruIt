@@ -36,6 +36,26 @@
         End If
     End Sub
 
+    Private Sub lbl_name_Click(sender As Object, e As EventArgs) Handles lbl_name.Click
+
+    End Sub
+
+    Private Sub lbl_sex_Click(sender As Object, e As EventArgs) Handles lbl_sex.Click
+
+    End Sub
+
+    Private Sub lbl_age_Click(sender As Object, e As EventArgs) Handles lbl_age.Click
+
+    End Sub
+
+    Private Sub lbl_weight_Click(sender As Object, e As EventArgs) Handles lbl_weight.Click
+
+    End Sub
+
+    Private Sub lbl_activitylevel_Click(sender As Object, e As EventArgs) Handles lbl_activitylevel.Click
+
+    End Sub
+
 #End Region
 
 #End Region
