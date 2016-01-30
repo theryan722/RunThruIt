@@ -93,7 +93,8 @@
     End Sub
 
     Private Sub RemoveAllGoals()
-
+        My.Settings.log_goals.Clear()
+        LoadGoals()
     End Sub
 
 #End Region
