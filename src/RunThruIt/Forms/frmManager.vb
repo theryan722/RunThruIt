@@ -28,6 +28,20 @@
 
 #Region "Methods"
 
+    Public Sub RemoveTab(ByVal index As Integer)
+        Try
+            Dim d As Integer = TabControl1.SelectedIndex
+            TabControl1.SelectTab(index)
+            If d = TabControl1.TabCount - 1 Then
+                CloseCurrentTabToolStripMenuItem.PerformClick()
+            Else
+                RemoveTab()
+                TabControl1.SelectTab(d)
+            End If
+        Catch
+        End Try
+    End Sub
+
     Public Function AtLeastOneTab() As Boolean
         If TabControl1.TabCount < 1 Then
             Return False
