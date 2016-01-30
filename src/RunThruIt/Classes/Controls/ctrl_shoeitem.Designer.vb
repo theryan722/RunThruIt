@@ -28,6 +28,7 @@ Partial Class ctrl_shoeitem
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblMileage = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
+        Me.pnl_divider = New System.Windows.Forms.Panel()
         Me.pnl_bottom.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -37,7 +38,7 @@ Partial Class ctrl_shoeitem
         Me.pnl_bottom.Controls.Add(Me.btnRemove)
         Me.pnl_bottom.Controls.Add(Me.btnView)
         Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pnl_bottom.Location = New System.Drawing.Point(0, 43)
+        Me.pnl_bottom.Location = New System.Drawing.Point(0, 45)
         Me.pnl_bottom.Name = "pnl_bottom"
         Me.pnl_bottom.Size = New System.Drawing.Size(150, 23)
         Me.pnl_bottom.TabIndex = 6
@@ -93,16 +94,26 @@ Partial Class ctrl_shoeitem
         Me.lblName.TabIndex = 7
         Me.lblName.Text = "Name:"
         '
+        'pnl_divider
+        '
+        Me.pnl_divider.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.pnl_divider.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl_divider.Location = New System.Drawing.Point(0, 68)
+        Me.pnl_divider.Name = "pnl_divider"
+        Me.pnl_divider.Size = New System.Drawing.Size(150, 5)
+        Me.pnl_divider.TabIndex = 10
+        '
         'ctrl_shoeitem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.pnl_bottom)
+        Me.Controls.Add(Me.pnl_divider)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblMileage)
         Me.Controls.Add(Me.lblName)
-        Me.Controls.Add(Me.pnl_bottom)
         Me.Name = "ctrl_shoeitem"
-        Me.Size = New System.Drawing.Size(150, 66)
+        Me.Size = New System.Drawing.Size(150, 73)
         Me.pnl_bottom.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -114,5 +125,6 @@ Partial Class ctrl_shoeitem
     Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents lblMileage As System.Windows.Forms.Label
     Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents pnl_divider As System.Windows.Forms.Panel
 
 End Class
