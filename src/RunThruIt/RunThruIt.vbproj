@@ -101,6 +101,7 @@
     <Compile Include="Classes\SettingsManager.vb" />
     <Compile Include="Classes\Tabs.vb" />
     <Compile Include="Classes\Website.vb" />
+    <Compile Include="Classes\Workout.vb" />
     <Compile Include="Forms\Dialogs\dlgFirstTime.Designer.vb">
       <DependentUpon>dlgFirstTime.vb</DependentUpon>
     </Compile>
