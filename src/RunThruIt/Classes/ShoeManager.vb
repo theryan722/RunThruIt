@@ -29,7 +29,7 @@
 #Region "Convert"
 
     Public Shared Function ConvertShoeToString(ByVal nshoe As Shoe) As String
-
+        Return nshoe.ShoeName & "|" & nshoe.Mileage & "|" & nshoe.Notes & "|" & nshoe.ShoeIsDefault.ToString
     End Function
 
     Public Shared Function ConvertStringToShoe(ByVal str As String) As Shoe
