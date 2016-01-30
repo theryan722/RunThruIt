@@ -22,60 +22,92 @@ Partial Class Tab_Log
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1.SuspendLayout()
+        Me.pnl_list = New System.Windows.Forms.Panel()
+        Me.pnl_bottom = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnReload = New MetroFramework.Controls.MetroTile()
+        Me.btnRemoveAll = New MetroFramework.Controls.MetroTile()
+        Me.pnl_bottom.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ContextMenuStrip1
+        'pnl_list
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveToolStripMenuItem, Me.AddToolStripMenuItem, Me.ToolStripSeparator1, Me.ClearAllToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(119, 76)
+        Me.pnl_list.AutoScroll = True
+        Me.pnl_list.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_list.Location = New System.Drawing.Point(0, 0)
+        Me.pnl_list.Name = "pnl_list"
+        Me.pnl_list.Size = New System.Drawing.Size(592, 451)
+        Me.pnl_list.TabIndex = 1
         '
-        'RemoveToolStripMenuItem
+        'pnl_bottom
         '
-        Me.RemoveToolStripMenuItem.Name = "RemoveToolStripMenuItem"
-        Me.RemoveToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
-        Me.RemoveToolStripMenuItem.Text = "Remove"
+        Me.pnl_bottom.Controls.Add(Me.TableLayoutPanel1)
+        Me.pnl_bottom.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl_bottom.Location = New System.Drawing.Point(0, 451)
+        Me.pnl_bottom.Name = "pnl_bottom"
+        Me.pnl_bottom.Size = New System.Drawing.Size(592, 60)
+        Me.pnl_bottom.TabIndex = 2
         '
-        'AddToolStripMenuItem
+        'TableLayoutPanel1
         '
-        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
-        Me.AddToolStripMenuItem.Text = "Add"
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.btnReload, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnRemoveAll, 1, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(592, 60)
+        Me.TableLayoutPanel1.TabIndex = 0
         '
-        'ToolStripSeparator1
+        'btnReload
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(115, 6)
+        Me.btnReload.ActiveControl = Nothing
+        Me.btnReload.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnReload.Location = New System.Drawing.Point(3, 3)
+        Me.btnReload.Name = "btnReload"
+        Me.btnReload.Size = New System.Drawing.Size(290, 54)
+        Me.btnReload.TabIndex = 0
+        Me.btnReload.Text = "Reload"
+        Me.btnReload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnReload.UseSelectable = True
         '
-        'ClearAllToolStripMenuItem
+        'btnRemoveAll
         '
-        Me.ClearAllToolStripMenuItem.Name = "ClearAllToolStripMenuItem"
-        Me.ClearAllToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
-        Me.ClearAllToolStripMenuItem.Text = "Clear All"
+        Me.btnRemoveAll.ActiveControl = Nothing
+        Me.btnRemoveAll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnRemoveAll.Location = New System.Drawing.Point(299, 3)
+        Me.btnRemoveAll.Name = "btnRemoveAll"
+        Me.btnRemoveAll.Size = New System.Drawing.Size(290, 54)
+        Me.btnRemoveAll.Style = MetroFramework.MetroColorStyle.Red
+        Me.btnRemoveAll.TabIndex = 1
+        Me.btnRemoveAll.Text = "Remove All"
+        Me.btnRemoveAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnRemoveAll.UseSelectable = True
         '
         'Tab_Log
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(592, 511)
+        Me.Controls.Add(Me.pnl_list)
+        Me.Controls.Add(Me.pnl_bottom)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Tab_Log"
         Me.ShowInTaskbar = False
         Me.Text = "Log"
-        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.pnl_bottom.ResumeLayout(False)
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents RemoveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AddToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ClearAllToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents pnl_list As System.Windows.Forms.Panel
+    Friend WithEvents pnl_bottom As System.Windows.Forms.Panel
+    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents btnReload As MetroFramework.Controls.MetroTile
+    Friend WithEvents btnRemoveAll As MetroFramework.Controls.MetroTile
 End Class
