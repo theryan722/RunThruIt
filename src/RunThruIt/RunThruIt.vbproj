@@ -82,11 +82,41 @@
     <Compile Include="Forms\Dialogs\dlgFirstTime.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Dialogs\dlgFunFact.Designer.vb">
+      <DependentUpon>dlgFunFact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgFunFact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgNewLog.Designer.vb">
+      <DependentUpon>dlgNewLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgNewLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Goals.Designer.vb">
+      <DependentUpon>Tab_Goals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Goals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Injury.Designer.vb">
+      <DependentUpon>Tab_Injury.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Injury.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Log.Designer.vb">
+      <DependentUpon>Tab_Log.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Log.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
