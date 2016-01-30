@@ -7,6 +7,23 @@
         MetroFramework.MetroMessageBox.Show(frmManager, "Changes to profile saved!", "Saved Changes", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
+#Region "Change Settings"
+
+    Private Sub btnChangePassword_Click(sender As Object, e As EventArgs) Handles btnChangePassword.Click
+        If My.Settings.profile_password = "" Then
+            Dim pass As String = InputBox("Please enter a new password: ", "Password", "")
+            My.Settings.profile_password = pass
+        Else
+            Dim check As String = InputBox("Please enter your current password to modify this setting.", "Authenticate", "")
+            If check <> My.Settings.profile_password Then
+                MetroFramework.MetroMessageBox.Show(frmManager, "The password you entered did not match.", "Authentication Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Else
+                Dim pass As String = InputBox("Please enter a new password: ", "Password", "")
+                My.Settings.profile_password = pass
+            End If
+        End If
+    End Sub
+
     Private Sub pb_profilepicture_Click(sender As Object, e As EventArgs) Handles pb_profilepicture.Click
         Dim newb As New OpenFileDialog
         newb.Title = "Browse for profile picture"
@@ -16,6 +33,8 @@
             My.Settings.profile_picture = newb.FileName
         End If
     End Sub
+
+#End Region
 
 #End Region
 
