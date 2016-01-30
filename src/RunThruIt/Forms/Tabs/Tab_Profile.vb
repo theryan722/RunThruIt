@@ -41,6 +41,8 @@
         If pname <> "" Then
             My.Settings.profile_name = pname
             LoadProfile()
+        Else
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please enter a name.'.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -48,8 +50,10 @@
         Dim psex As String = InputBox("Please enter a sex", "Modify Sex", My.Settings.profile_sex)
         If psex.ToLower = "male" Then
             My.Settings.profile_sex = "Male"
+            LoadProfile()
         ElseIf psex.ToLower = "female" Then
             My.Settings.profile_sex = "Female"
+            LoadProfile()
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please enter either 'Female' or 'Male'.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
