@@ -45,7 +45,14 @@
     End Sub
 
     Private Sub lbl_sex_Click(sender As Object, e As EventArgs) Handles lbl_sex.Click
-
+        Dim psex As String = InputBox("Please enter a sex", "Modify Sex", My.Settings.profile_sex)
+        If psex.ToLower = "male" Then
+            My.Settings.profile_sex = "Male"
+        ElseIf psex.ToLower = "female" Then
+            My.Settings.profile_sex = "Female"
+        Else
+            MetroFramework.MetroMessageBox.Show(frmManager, "Please enter either 'Female' or 'Male'.", "Invalid Entry", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
     Private Sub lbl_age_Click(sender As Object, e As EventArgs) Handles lbl_age.Click
