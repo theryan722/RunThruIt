@@ -39,7 +39,10 @@
 #Region "Methods"
 
     Private Sub LoadGoals()
-
+        lb_goals.Items.Clear()
+        For Each item As String In My.Settings.log_goals
+            lb_goals.Items.Add(item)
+        Next
     End Sub
 
     Private Sub LoadCompleted()
