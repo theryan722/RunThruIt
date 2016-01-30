@@ -227,6 +227,18 @@ Namespace My
                 Me("set_displaytipsatstartup") = value
             End Set
         End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        Public Property profile_picture() As String
+            Get
+                Return CType(Me("profile_picture"), String)
+            End Get
+            Set(value As String)
+                Me("profile_picture") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
