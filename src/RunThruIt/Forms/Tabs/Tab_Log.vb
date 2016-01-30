@@ -11,7 +11,9 @@
     'Yoga
 
     Private Sub LoadWorkouts()
+        For Each item As Workout In LogManager.GetWorkouts()
 
+        Next
     End Sub
 
     Private Function ConvertWorkoutTypeToColor(ByVal workouttype As String) As Color
