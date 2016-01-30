@@ -16,8 +16,14 @@
         If VerifyFields() Then
             CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, combo_shoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text), txtDuration.Text)
             My.Settings.Save()
+            If combo_shoes.SelectedItem <> "" AndAlso txtDistance.Text <> "" Then
+                Dim orig As Shoe = ShoeManager.GetShoeFromIndex(combo_shoes.SelectedIndex)
+                Dim newmiles As Integer = CInt(txtDistance.Text) + orig.Mileage
+                Dim news As New Shoe(orig.ShoeName, newmiles, orig.Notes, orig.DatePurchased, orig.MaxMileage)
+                ShoeManager.RemoveShoe(orig)
+                ShoeManager.AddShoe(news)
+            End If
             Me.DialogResult = Windows.Forms.DialogResult.OK
-            Dim newmiles As Integer = CInt(txtDistance.Text) + ShoeManager.
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
