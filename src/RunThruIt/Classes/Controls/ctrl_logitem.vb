@@ -30,5 +30,13 @@
     End Sub
 
 #End Region
+
+#Region "ctrl_logitem"
+
+    Private Sub ctrl_logitem_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles Me.MouseDoubleClick
+        btnView.PerformClick()
+    End Sub
+
+#End Region
     
 End Class
