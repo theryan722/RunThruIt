@@ -15,27 +15,39 @@
     End Function
 
     Private Function VerifyName() As Boolean
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
     Private Function VerifyAge() As Boolean
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
     Private Function VerifyWeight() As Boolean
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
     Private Function VerifySex() As Boolean
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
     Private Function VerifyActivityLevel()
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
     Private Function VerifyPassword()
+        Dim ret As Boolean = True
 
+        Return ret
     End Function
 
 #End Region
