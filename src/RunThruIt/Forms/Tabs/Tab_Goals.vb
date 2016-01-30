@@ -66,7 +66,11 @@
     End Sub
 
     Private Sub MarkGoalAsIncomplete()
-
+        If lb_completed.SelectedIndex <> -1 Then
+            My.Settings.log_goals.Add(lb_completed.SelectedItem)
+            My.Settings.log_completedgoals.Remove(lb_completed.SelectedItem)
+            LoadAll()
+        End If
     End Sub
 
     Private Sub RemoveGoal()
