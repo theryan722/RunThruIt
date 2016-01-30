@@ -48,6 +48,14 @@
 
 #Region "UI"
 
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim bb As New dlgNewLog
+        If bb.ShowDialog = Windows.Forms.DialogResult.OK Then
+            LogManager.AddToLog(bb.NewWorkout)
+            LoadWorkouts()
+        End If
+    End Sub
+
     Private Sub btnReload_Click(sender As Object, e As EventArgs) Handles btnReload.Click
         LoadWorkouts()
     End Sub
