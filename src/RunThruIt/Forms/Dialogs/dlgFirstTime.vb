@@ -6,7 +6,7 @@
         If VerifyAllFields() Then
             SetProfile(txtName.Text, txtAge.Text, txtWeight.Text, comboSex.SelectedItem, txtActivityLevel.Text, txtPassword.Text)
             Me.Close()
-            Tabs.AddProfile()
+            Tabs.AddWelcome()
             My.Settings.set_firsttime = False
             My.Settings.Save()
         Else
