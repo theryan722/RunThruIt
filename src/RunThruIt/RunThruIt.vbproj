@@ -178,6 +178,9 @@
     <EmbeddedResource Include="Forms\frmManager.resx">
       <DependentUpon>frmManager.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_About.resx">
+      <DependentUpon>Tab_About.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tabs\Tab_Goals.resx">
       <DependentUpon>Tab_Goals.vb</DependentUpon>
     </EmbeddedResource>
