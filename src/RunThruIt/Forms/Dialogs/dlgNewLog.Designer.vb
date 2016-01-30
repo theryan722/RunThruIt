@@ -36,7 +36,6 @@ Partial Class dlgNewLog
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPace = New MetroFramework.Controls.MetroTextBox()
-        Me.txtShoes = New MetroFramework.Controls.MetroTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -47,6 +46,8 @@ Partial Class dlgNewLog
         Me.txt_time = New System.Windows.Forms.MaskedTextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtDuration = New MetroFramework.Controls.MetroTextBox()
+        Me.btnManageShoes = New MetroFramework.Controls.MetroButton()
+        Me.combo_shoes = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -186,19 +187,6 @@ Partial Class dlgNewLog
         Me.txtPace.TabIndex = 3
         Me.txtPace.UseSelectable = True
         '
-        'txtShoes
-        '
-        Me.txtShoes.Lines = New String(-1) {}
-        Me.txtShoes.Location = New System.Drawing.Point(62, 309)
-        Me.txtShoes.MaxLength = 32767
-        Me.txtShoes.Name = "txtShoes"
-        Me.txtShoes.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtShoes.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtShoes.SelectedText = ""
-        Me.txtShoes.Size = New System.Drawing.Size(229, 23)
-        Me.txtShoes.TabIndex = 6
-        Me.txtShoes.UseSelectable = True
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -299,11 +287,30 @@ Partial Class dlgNewLog
         Me.txtDuration.TabIndex = 25
         Me.txtDuration.UseSelectable = True
         '
+        'btnManageShoes
+        '
+        Me.btnManageShoes.Location = New System.Drawing.Point(300, 311)
+        Me.btnManageShoes.Name = "btnManageShoes"
+        Me.btnManageShoes.Size = New System.Drawing.Size(53, 21)
+        Me.btnManageShoes.TabIndex = 26
+        Me.btnManageShoes.Text = "Manage"
+        Me.btnManageShoes.UseSelectable = True
+        '
+        'combo_shoes
+        '
+        Me.combo_shoes.FormattingEnabled = True
+        Me.combo_shoes.Location = New System.Drawing.Point(62, 311)
+        Me.combo_shoes.Name = "combo_shoes"
+        Me.combo_shoes.Size = New System.Drawing.Size(229, 21)
+        Me.combo_shoes.TabIndex = 27
+        '
         'dlgNewLog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(369, 373)
+        Me.Controls.Add(Me.combo_shoes)
+        Me.Controls.Add(Me.btnManageShoes)
         Me.Controls.Add(Me.txtDuration)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.txt_time)
@@ -314,7 +321,6 @@ Partial Class dlgNewLog
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtShoes)
         Me.Controls.Add(Me.txtPace)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -352,7 +358,6 @@ Partial Class dlgNewLog
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txtPace As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtShoes As MetroFramework.Controls.MetroTextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -363,4 +368,6 @@ Partial Class dlgNewLog
     Friend WithEvents txt_time As System.Windows.Forms.MaskedTextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtDuration As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents btnManageShoes As MetroFramework.Controls.MetroButton
+    Friend WithEvents combo_shoes As System.Windows.Forms.ComboBox
 End Class

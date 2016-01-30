@@ -106,6 +106,7 @@
     <Compile Include="Classes\LogManager.vb" />
     <Compile Include="Classes\RandomInfo.vb" />
     <Compile Include="Classes\SettingsManager.vb" />
+    <Compile Include="Classes\ShoeManager.vb" />
     <Compile Include="Classes\Tabs.vb" />
     <Compile Include="Classes\Website.vb" />
     <Compile Include="Classes\Objects\Workout.vb" />
