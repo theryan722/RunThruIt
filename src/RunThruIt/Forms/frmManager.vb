@@ -46,6 +46,7 @@
         If MetroFramework.MetroMessageBox.Show(Me, "Are you sure you want to reset all settings? Any non backed up data will be lost.", "Reset Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
             My.Settings.Reset()
             MetroFramework.MetroMessageBox.Show(Me, "Settings Successfully reset! Application will now restart!", "Application Restart", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Application.Restart()
         End If
     End Sub
 
