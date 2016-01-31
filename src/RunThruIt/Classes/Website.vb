@@ -6,6 +6,7 @@ Public Class Website
         Dim pub As String = name & "|" & workouttype & "|" & distance & "|" & duration & "|" & sdatetime & "|" & pace & "|" & shoes
         Dim request As WebRequest = WebRequest.Create("http://ryanoday.com/runthruit/scripts/addworkout.php?w=" & pub)
         request.GetResponse()
+        MetroFramework.MetroMessageBox.Show(frmManager, "Workout published to the RunThruIt Feed!", "Published", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
 End Class
