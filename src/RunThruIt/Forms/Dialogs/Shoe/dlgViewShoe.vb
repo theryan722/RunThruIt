@@ -29,6 +29,7 @@
             FlashTimer.Start()
             lblLifespanLeft.ForeColor = Color.Red
         End If
+        nshoe.InjuryCheck()
     End Sub
 
 #End Region

@@ -265,6 +265,54 @@ Namespace My
                 Me("set_shoes") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property set_inj_totmile_wk1() As Integer
+            Get
+                Return CType(Me("set_inj_totmile_wk1"),Integer)
+            End Get
+            Set
+                Me("set_inj_totmile_wk1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property set_inj_totmile_wk2() As Integer
+            Get
+                Return CType(Me("set_inj_totmile_wk2"),Integer)
+            End Get
+            Set
+                Me("set_inj_totmile_wk2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property set_inj_wk1_ldate() As String
+            Get
+                Return CType(Me("set_inj_wk1_ldate"),String)
+            End Get
+            Set
+                Me("set_inj_wk1_ldate") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property set_inj_wk2_ldate() As String
+            Get
+                Return CType(Me("set_inj_wk2_ldate"),String)
+            End Get
+            Set
+                Me("set_inj_wk2_ldate") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

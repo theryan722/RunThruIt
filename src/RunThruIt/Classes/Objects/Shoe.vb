@@ -27,4 +27,10 @@
         Return per.ToString()
     End Function
 
+    Public Sub InjuryCheck()
+        If Mileage >= MaxMileage Then
+            MetroFramework.MetroMessageBox.Show(frmManager, "Warning: These shoes have reached their maximum recommended mileage. You are putting yourself at risk of injury by continuing to run in them. Please consider buying a new pair of shoes.", "Injury Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
 End Class
