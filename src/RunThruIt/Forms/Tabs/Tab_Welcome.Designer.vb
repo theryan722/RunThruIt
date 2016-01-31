@@ -24,7 +24,7 @@ Partial Class Tab_Welcome
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnGoals = New MetroFramework.Controls.MetroTile()
-        Me.btnInjury = New MetroFramework.Controls.MetroTile()
+        Me.btnOtherTrackers = New MetroFramework.Controls.MetroTile()
         Me.btnLog = New MetroFramework.Controls.MetroTile()
         Me.btnProfile = New MetroFramework.Controls.MetroTile()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -48,21 +48,21 @@ Partial Class Tab_Welcome
         Me.ToolTip1.SetToolTip(Me.btnGoals, "View, set and track your goals")
         Me.btnGoals.UseSelectable = True
         '
-        'btnInjury
+        'btnOtherTrackers
         '
-        Me.btnInjury.ActiveControl = Nothing
-        Me.btnInjury.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnInjury.Location = New System.Drawing.Point(267, 234)
-        Me.btnInjury.Name = "btnInjury"
-        Me.btnInjury.Size = New System.Drawing.Size(259, 225)
-        Me.btnInjury.Style = MetroFramework.MetroColorStyle.Red
-        Me.btnInjury.TabIndex = 1
-        Me.btnInjury.Text = "Injury"
-        Me.btnInjury.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.btnInjury.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
-        Me.btnInjury.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
-        Me.ToolTip1.SetToolTip(Me.btnInjury, "Get help with injury prevention and healing")
-        Me.btnInjury.UseSelectable = True
+        Me.btnOtherTrackers.ActiveControl = Nothing
+        Me.btnOtherTrackers.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnOtherTrackers.Location = New System.Drawing.Point(267, 234)
+        Me.btnOtherTrackers.Name = "btnOtherTrackers"
+        Me.btnOtherTrackers.Size = New System.Drawing.Size(259, 225)
+        Me.btnOtherTrackers.Style = MetroFramework.MetroColorStyle.Silver
+        Me.btnOtherTrackers.TabIndex = 1
+        Me.btnOtherTrackers.Text = "Other Trackers"
+        Me.btnOtherTrackers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnOtherTrackers.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.btnOtherTrackers.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.ToolTip1.SetToolTip(Me.btnOtherTrackers, "Track weight and water intake")
+        Me.btnOtherTrackers.UseSelectable = True
         '
         'btnLog
         '
@@ -103,7 +103,7 @@ Partial Class Tab_Welcome
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.btnGoals, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btnProfile, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnInjury, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnOtherTrackers, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.btnLog, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
@@ -129,7 +129,7 @@ Partial Class Tab_Welcome
 
     End Sub
     Friend WithEvents btnGoals As MetroFramework.Controls.MetroTile
-    Friend WithEvents btnInjury As MetroFramework.Controls.MetroTile
+    Friend WithEvents btnOtherTrackers As MetroFramework.Controls.MetroTile
     Friend WithEvents btnLog As MetroFramework.Controls.MetroTile
     Friend WithEvents btnProfile As MetroFramework.Controls.MetroTile
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
