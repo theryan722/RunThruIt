@@ -94,7 +94,7 @@ Partial Class dlgNewShoe
         Me.dt_date.MinimumSize = New System.Drawing.Size(0, 29)
         Me.dt_date.Name = "dt_date"
         Me.dt_date.Size = New System.Drawing.Size(210, 29)
-        Me.dt_date.TabIndex = 7
+        Me.dt_date.TabIndex = 1
         Me.dt_date.Value = New Date(2016, 1, 30, 0, 0, 0, 0)
         '
         'Label5
@@ -117,7 +117,7 @@ Partial Class dlgNewShoe
         Me.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtNotes.SelectedText = ""
         Me.txtNotes.Size = New System.Drawing.Size(246, 68)
-        Me.txtNotes.TabIndex = 10
+        Me.txtNotes.TabIndex = 4
         Me.txtNotes.UseSelectable = True
         '
         'txtName
@@ -130,7 +130,7 @@ Partial Class dlgNewShoe
         Me.txtName.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtName.SelectedText = ""
         Me.txtName.Size = New System.Drawing.Size(182, 23)
-        Me.txtName.TabIndex = 11
+        Me.txtName.TabIndex = 0
         Me.txtName.UseSelectable = True
         '
         'txtMileage
@@ -143,7 +143,7 @@ Partial Class dlgNewShoe
         Me.txtMileage.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtMileage.SelectedText = ""
         Me.txtMileage.Size = New System.Drawing.Size(75, 23)
-        Me.txtMileage.TabIndex = 12
+        Me.txtMileage.TabIndex = 2
         Me.txtMileage.UseSelectable = True
         '
         'txtMaxMileage
@@ -156,7 +156,7 @@ Partial Class dlgNewShoe
         Me.txtMaxMileage.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtMaxMileage.SelectedText = ""
         Me.txtMaxMileage.Size = New System.Drawing.Size(75, 23)
-        Me.txtMaxMileage.TabIndex = 13
+        Me.txtMaxMileage.TabIndex = 3
         Me.txtMaxMileage.UseSelectable = True
         '
         'Panel1
@@ -167,7 +167,7 @@ Partial Class dlgNewShoe
         Me.Panel1.Location = New System.Drawing.Point(0, 294)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(350, 23)
-        Me.Panel1.TabIndex = 14
+        Me.Panel1.TabIndex = 2
         '
         'btnOk
         '

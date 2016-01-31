@@ -139,7 +139,7 @@ Partial Class dlgNewLog
         Me.txtNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtNotes.SelectedText = ""
         Me.txtNotes.Size = New System.Drawing.Size(229, 43)
-        Me.txtNotes.TabIndex = 4
+        Me.txtNotes.TabIndex = 6
         Me.txtNotes.UseSelectable = True
         '
         'txtDistance
@@ -152,7 +152,7 @@ Partial Class dlgNewLog
         Me.txtDistance.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtDistance.SelectedText = ""
         Me.txtDistance.Size = New System.Drawing.Size(75, 23)
-        Me.txtDistance.TabIndex = 2
+        Me.txtDistance.TabIndex = 4
         Me.txtDistance.UseSelectable = True
         '
         'Label4
@@ -183,7 +183,7 @@ Partial Class dlgNewLog
         Me.txtPace.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtPace.SelectedText = ""
         Me.txtPace.Size = New System.Drawing.Size(75, 23)
-        Me.txtPace.TabIndex = 3
+        Me.txtPace.TabIndex = 5
         Me.txtPace.UseSelectable = True
         '
         'Label6
@@ -234,7 +234,7 @@ Partial Class dlgNewLog
         Me.txtInjury.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtInjury.SelectedText = ""
         Me.txtInjury.Size = New System.Drawing.Size(229, 23)
-        Me.txtInjury.TabIndex = 19
+        Me.txtInjury.TabIndex = 7
         Me.txtInjury.UseSelectable = True
         '
         'Label9
@@ -261,7 +261,7 @@ Partial Class dlgNewLog
         Me.txt_time.Mask = "00:00"
         Me.txt_time.Name = "txt_time"
         Me.txt_time.Size = New System.Drawing.Size(49, 20)
-        Me.txt_time.TabIndex = 23
+        Me.txt_time.TabIndex = 2
         Me.txt_time.ValidatingType = GetType(Date)
         '
         'Label11
@@ -283,7 +283,7 @@ Partial Class dlgNewLog
         Me.txtDuration.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtDuration.SelectedText = ""
         Me.txtDuration.Size = New System.Drawing.Size(45, 23)
-        Me.txtDuration.TabIndex = 25
+        Me.txtDuration.TabIndex = 3
         Me.txtDuration.UseSelectable = True
         '
         'combo_shoes
@@ -292,7 +292,7 @@ Partial Class dlgNewLog
         Me.combo_shoes.Location = New System.Drawing.Point(62, 311)
         Me.combo_shoes.Name = "combo_shoes"
         Me.combo_shoes.Size = New System.Drawing.Size(229, 21)
-        Me.combo_shoes.TabIndex = 27
+        Me.combo_shoes.TabIndex = 8
         '
         'dlgNewLog
         '
