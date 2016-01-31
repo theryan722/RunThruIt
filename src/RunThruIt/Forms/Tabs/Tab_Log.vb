@@ -56,7 +56,7 @@
         Dim bb As New dlgNewLog
         If bb.ShowDialog = Windows.Forms.DialogResult.OK Then
             LogManager.AddToLog(bb.NewWorkout)
-            LoadWorkouts()
+            'LoadWorkouts()
             frmManager.CloseCurrentTabToolStripMenuItem.PerformClick()
             Tabs.AddLog()
         End If
