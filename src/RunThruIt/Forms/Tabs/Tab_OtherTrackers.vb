@@ -76,7 +76,9 @@
 #Region "UI"
 
     Private Sub btn_sleep_record_Click(sender As Object, e As EventArgs) Handles btn_sleep_record.Click
-
+        Dim slep As String = InputBox("Please enter the amount of hours you slept last night.", "Enter Sleep", "0")
+        My.Settings.log_sleep.Add(DateTime.Today.ToString("M/dd/yyyy") & "|" & slep)
+        LoadSleep()
     End Sub
 
     Private Sub btn_sleep_remove_Click(sender As Object, e As EventArgs) Handles btn_sleep_remove.Click
