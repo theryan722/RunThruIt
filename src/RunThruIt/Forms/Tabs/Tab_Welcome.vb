@@ -14,8 +14,8 @@
         Tabs.AddLog()
     End Sub
 
-    Private Sub btnInjury_Click(sender As Object, e As EventArgs) Handles btnOtherTrackers.Click
-        Tabs.AddInjury()
+    Private Sub btnOtherTrackers_Click(sender As Object, e As EventArgs) Handles btnOtherTrackers.Click
+        Tabs.AddOtherTrackers()
     End Sub
 
 #End Region
