@@ -35,7 +35,7 @@ Partial Class frmManager
         Me.ProfileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GoalsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InjuryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OtherTrackersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -56,7 +56,7 @@ Partial Class frmManager
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.TabsToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.GoalsToolStripMenuItem, Me.LogToolStripMenuItem, Me.InjuryToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.TabsToolStripMenuItem, Me.ProfileToolStripMenuItem, Me.GoalsToolStripMenuItem, Me.LogToolStripMenuItem, Me.OtherTrackersToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(704, 24)
@@ -125,11 +125,11 @@ Partial Class frmManager
         Me.LogToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.LogToolStripMenuItem.Text = "Log"
         '
-        'InjuryToolStripMenuItem
+        'OtherTrackersToolStripMenuItem
         '
-        Me.InjuryToolStripMenuItem.Name = "InjuryToolStripMenuItem"
-        Me.InjuryToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
-        Me.InjuryToolStripMenuItem.Text = "Injury"
+        Me.OtherTrackersToolStripMenuItem.Name = "OtherTrackersToolStripMenuItem"
+        Me.OtherTrackersToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.OtherTrackersToolStripMenuItem.Text = "Other Trackers"
         '
         'AboutToolStripMenuItem
         '
@@ -205,7 +205,7 @@ Partial Class frmManager
     Friend WithEvents CloseAllTabsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ProfileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GoalsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents InjuryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OtherTrackersToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem

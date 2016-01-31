@@ -60,8 +60,8 @@
         Tabs.AddLog()
     End Sub
 
-    Private Sub InjuryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InjuryToolStripMenuItem.Click
-        Tabs.AddInjury()
+    Private Sub OtherTrackersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OtherTrackersToolStripMenuItem.Click
+        Tabs.AddOtherTrackers()
     End Sub
 
 #End Region
