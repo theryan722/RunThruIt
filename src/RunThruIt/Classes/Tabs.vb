@@ -38,9 +38,9 @@
         frmManager.TabControl1.SelectedTab = t
     End Sub
 
-    Public Shared Sub AddInjury()
+    Public Shared Sub AddOtherTrackers()
         Dim t As New TabPage
-        Dim newtab As New Tab_Injury
+        Dim newtab As New Tab_OtherTrackers
         newtab.Show()
         newtab.Dock = DockStyle.Fill
         newtab.TopLevel = False
