@@ -88,7 +88,10 @@
 #Region "Methods"
 
     Private Sub LoadSleep()
-
+        lb_sleep.Items.Clear()
+        For Each item As String In My.Settings.log_sleep
+            lb_sleep.Items.Add(item)
+        Next
     End Sub
 
     Private Sub CheckSleep()
