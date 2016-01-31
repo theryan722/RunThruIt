@@ -75,13 +75,25 @@
 
 #Region "UI"
 
+    Private Sub btn_sleep_record_Click(sender As Object, e As EventArgs) Handles btn_sleep_record.Click
 
+    End Sub
+
+    Private Sub btn_sleep_remove_Click(sender As Object, e As EventArgs) Handles btn_sleep_remove.Click
+
+    End Sub
 
 #End Region
 
 #Region "Methods"
 
+    Private Sub LoadSleep()
 
+    End Sub
+
+    Private Sub CheckSleep()
+
+    End Sub
 
 #End Region
 
