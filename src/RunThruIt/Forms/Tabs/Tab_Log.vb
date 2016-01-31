@@ -57,6 +57,8 @@
         If bb.ShowDialog = Windows.Forms.DialogResult.OK Then
             LogManager.AddToLog(bb.NewWorkout)
             LoadWorkouts()
+            frmManager.CloseCurrentTabToolStripMenuItem.PerformClick()
+            Tabs.AddLog()
         End If
     End Sub
 
