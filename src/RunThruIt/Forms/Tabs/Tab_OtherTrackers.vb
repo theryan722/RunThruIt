@@ -71,6 +71,22 @@
 
 #End Region
 
+#Region "Sleep"
+
+#Region "UI"
+
+
+
+#End Region
+
+#Region "Methods"
+
+
+
+#End Region
+
+#End Region
+
 #Region "Tab_OtherTrackers"
 
     Private Sub Tab_OtherTrackers_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
