@@ -36,4 +36,8 @@
         End If
     End Function
 
+    Public Shared Sub SetWeekTwoDate(ByVal dt As Date)
+        My.Settings.set_inj_wk2_ldate = dt.ToString("H/dd/yyyy")
+    End Sub
+
 End Class
