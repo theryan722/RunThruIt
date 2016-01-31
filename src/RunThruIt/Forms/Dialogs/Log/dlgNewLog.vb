@@ -11,7 +11,6 @@
     Private Sub btnOk_Click(sender As Object, e As EventArgs) Handles btnOk.Click
         If VerifyFields() Then
             CreateWorkout(combo_type.SelectedItem, dt_date.Value, txtNotes.Text, txtDistance.Text, combo_shoes.Text, txtPace.Text, txtInjury.Text, Convert.ToDateTime(txt_time.Text), txtDuration.Text)
-            My.Settings.Save()
             If combo_shoes.Text <> "" AndAlso txtDistance.Text <> "" Then
                 If ShoeManager.CheckIfShoeExists(combo_shoes.Text) Then
                     Dim orig As Shoe = ShoeManager.GetShoeFromIndex(combo_shoes.SelectedIndex)
@@ -21,6 +20,7 @@
                     ShoeManager.AddShoe(news)
                 End If
             End If
+            My.Settings.Save()
             Me.DialogResult = Windows.Forms.DialogResult.OK
         Else
             MetroFramework.MetroMessageBox.Show(frmManager, "Please make sure you properly fill out the form and all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
