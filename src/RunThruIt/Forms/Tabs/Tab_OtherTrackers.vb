@@ -7,6 +7,7 @@
     Private Sub btn_water_addintakefortoday_Click(sender As Object, e As EventArgs) Handles btn_water_addintakefortoday.Click
         Dim wat As String = InputBox("Please enter the amount of water you have consumed today, in fl.oz.", "Enter Water Intake", "0")
         My.Settings.log_water.Add(DateTime.Today.ToString("M/dd/yyyy") & "|" & wat)
+        CheckWaterIntake(wat)
         LoadWater()
     End Sub
 
