@@ -18,7 +18,7 @@
 
     Private Sub btnPublish_Click(sender As Object, e As EventArgs) Handles btnPublish.Click
         Try
-            Website.PostWorkoutToFeed(My.Settings.profile_name, WorkoutItem.WorkoutType, WorkoutItem.Distance, WorkoutItem.Duration, WorkoutItem.WorkoutDate.ToString("M/dd/yy") & " " & WorkoutItem.WorkoutTime.ToString("H:mm"), WorkoutItem.Pace, WorkoutItem.Shoes)
+            Website.PostWorkoutToFeed(My.Settings.profile_name, WorkoutItem.WorkoutType, WorkoutItem.Distance, WorkoutItem.Duration, WorkoutItem.WorkoutDate.ToString("M/dd/yy") & " " & WorkoutItem.WorkoutTime.ToString("H:mm"), WorkoutItem.Pace, WorkoutItem.Shoes, WorkoutItem.Notes)
         Catch ex As Exception
             MetroFramework.MetroMessageBox.Show(frmManager, "There was an error attempting to publish the workout to runthruit.net", "Publish Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
