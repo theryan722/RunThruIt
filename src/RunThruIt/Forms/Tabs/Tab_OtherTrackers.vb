@@ -109,6 +109,11 @@
     Private Sub CheckSleep(ByVal slep As Integer)
         If slep < 7 Then
             MetroFramework.MetroMessageBox.Show(frmManager, "Notice: Your hours slept was low. Please consider getting more rest.", "Sleep Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            My.Settings.set_log_warncounter(1) += 1
+            If My.Settings.set_log_warncounter(1) > 5 Then
+                MetroFramework.MetroMessageBox.Show(frmManager, "Warning: Your sleep trends have been low. You should really consider getting more rest!", "Sleep Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                My.Settings.set_log_warncounter(1) = 0
+            End If
         End If
 
     End Sub
