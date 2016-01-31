@@ -99,7 +99,10 @@
         Next
     End Sub
 
-    Private Sub CheckSleep()
+    Private Sub CheckSleep(ByVal slep As Integer)
+        If slep < 7 Then
+            MetroFramework.MetroMessageBox.Show(frmManager, "Notice: Your hours slept was low. Please consider getting more rest.", "Sleep Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
 
     End Sub
 
