@@ -75,9 +75,9 @@
 
     Private Sub Tab_OtherTrackers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadWater()
+        LoadWeight()
     End Sub
 
 #End Region
 
-    
 End Class
