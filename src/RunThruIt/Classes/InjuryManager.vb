@@ -20,4 +20,8 @@
         My.Settings.set_inj_totmile_wk2 = miles
     End Sub
 
+    Public Shared Function GetWeekTwoMileage() As Integer
+        Return My.Settings.set_inj_totmile_wk2
+    End Function
+
 End Class
