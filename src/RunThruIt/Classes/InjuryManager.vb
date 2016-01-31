@@ -54,9 +54,9 @@
         Return ret
     End Function
 
-    Public Shared Function DisplayAlert()
+    Public Shared Sub DisplayAlert()
         MetroFramework.MetroMessageBox.Show(frmManager, "Warning: You have increased your mileage by more than the recommended maximum of 10% per week. You are putting yourself at risk of injury. Please consider reducing your mileage or resting.", "Injury Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-    End Function
+    End Sub
 
     Public Shared Sub ProcessWorkout(ByVal nworkout As Workout)
         If GetWeekOneDate() = Nothing Then
