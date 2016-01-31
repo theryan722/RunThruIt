@@ -80,7 +80,10 @@
     End Sub
 
     Private Sub btn_sleep_remove_Click(sender As Object, e As EventArgs) Handles btn_sleep_remove.Click
-
+        If lb_sleep.SelectedIndex <> -1 Then
+            My.Settings.log_sleep.Remove(lb_sleep.SelectedItem)
+            LoadSleep()
+        End If
     End Sub
 
 #End Region
