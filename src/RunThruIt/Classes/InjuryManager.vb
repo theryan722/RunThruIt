@@ -2,7 +2,7 @@
 
     Public Shared Function CheckIfGreaterThanTenPercent()
         Dim ret As Boolean = False
-        If My.Settings.set_inj_totmile_wk2 > (0.1 * My.Settings.set_inj_totmile_wk1) Then
+        If (GetWeekTwoMileage() - GetWeekOneMileage()) > (0.1 * GetWeekOneMileage()) Then
             ret = True
         End If
         Return ret
@@ -54,12 +54,38 @@
         Return ret
     End Function
 
-    Public Shared Function ProcessWorkout(ByVal nworkout As Workout) As Boolean
+    Public Shared Function DisplayAlert()
+        MetroFramework.MetroMessageBox.Show(frmManager, "Warning: You have increased your mileage by more than the recommended maximum of 10% per week. You are putting yourself at risk of injury. Please consider reducing your mileage or resting.", "Injury Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    End Function
+
+    Public Shared Sub ProcessWorkout(ByVal nworkout As Workout)
         If GetWeekOneDate() = Nothing Then
             SetWeekOneDate(nworkout.WorkoutDate)
+            SetWeekOneMileage(GetWeekOneMileage() + nworkout.Distance)
         Else
-            if
+            If GetDifferenceBetweenDates(nworkout.WorkoutDate, GetWeekOneDate) <= New TimeSpan(7, 0, 0, 0) Then
+                SetWeekOneMileage(GetWeekOneMileage() + nworkout.Distance)
+            Else
+                If GetDifferenceBetweenDates(nworkout.WorkoutDate, GetWeekOneDate) <= New TimeSpan(14, 0, 0, 0) Then
+                    SetWeekTwoMileage(GetWeekTwoMileage() + nworkout.Distance)
+                    If CheckIfGreaterThanTenPercent() Then
+                        DisplayAlert()
+                    End If
+                Else
+                    If GetDifferenceBetweenDates(nworkout.WorkoutDate, GetWeekOneDate) <= New TimeSpan(15, 0, 0, 0) Then
+                        SetWeekTwoMileage(GetWeekTwoMileage() + nworkout.Distance)
+                        If CheckIfGreaterThanTenPercent() Then
+                            DisplayAlert()
+                        End If
+                    Else
+                        SetWeekOneDate(nworkout.WorkoutDate)
+                        SetWeekOneMileage(nworkout.Distance)
+                        SetWeekTwoDate(Nothing)
+                        SetWeekTwoMileage(0)
+                    End If
+                End If
             End If
-    End Function
+        End If
+    End Sub
 
 End Class
