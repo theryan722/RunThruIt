@@ -8,20 +8,14 @@
         Return ret
     End Function
 
+#Region "Week One"
+
     Public Shared Sub SetWeekOneMileage(ByVal miles As Integer)
         My.Settings.set_inj_totmile_wk1 = miles
     End Sub
 
     Public Shared Function GetWeekOneMileage() As Integer
         Return My.Settings.set_inj_totmile_wk1
-    End Function
-
-    Public Shared Sub SetWeekTwoMileage(ByVal miles As Integer)
-        My.Settings.set_inj_totmile_wk2 = miles
-    End Sub
-
-    Public Shared Function GetWeekTwoMileage() As Integer
-        Return My.Settings.set_inj_totmile_wk2
     End Function
 
     Public Shared Sub SetWeekOneDate(ByVal dt As Date)
@@ -36,6 +30,18 @@
         End If
     End Function
 
+#End Region
+
+#Region "Week Two"
+
+    Public Shared Sub SetWeekTwoMileage(ByVal miles As Integer)
+        My.Settings.set_inj_totmile_wk2 = miles
+    End Sub
+
+    Public Shared Function GetWeekTwoMileage() As Integer
+        Return My.Settings.set_inj_totmile_wk2
+    End Function
+
     Public Shared Sub SetWeekTwoDate(ByVal dt As Date)
         My.Settings.set_inj_wk2_ldate = dt.ToString("H/dd/yyyy")
     End Sub
@@ -48,6 +54,8 @@
         End If
     End Function
 
+#End Region
+    
     Public Shared Function GetDifferenceBetweenDates(ByVal date1 As Date, ByVal date2 As Date) As TimeSpan
         Dim ret As New TimeSpan
         ret = date1.Subtract(date2)
