@@ -40,4 +40,12 @@
         My.Settings.set_inj_wk2_ldate = dt.ToString("H/dd/yyyy")
     End Sub
 
+    Public Shared Function GetWeekTwoDate() As Date
+        If My.Settings.set_inj_wk2_ldate = "" Then
+            Return Nothing
+        Else
+            Return Date.Parse(My.Settings.set_inj_wk2_ldate)
+        End If
+    End Function
+
 End Class
