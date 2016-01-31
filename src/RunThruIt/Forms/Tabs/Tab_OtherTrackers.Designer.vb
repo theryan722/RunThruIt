@@ -33,12 +33,18 @@ Partial Class Tab_OtherTrackers
         Me.TabSleep = New System.Windows.Forms.TabPage()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btn_weight_remove = New MetroFramework.Controls.MetroButton()
+        Me.btn_weight_record = New MetroFramework.Controls.MetroButton()
+        Me.lb_weight = New System.Windows.Forms.ListBox()
         Me.MetroTabControl1.SuspendLayout()
         Me.TabWater.SuspendLayout()
         Me.TabWeight.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabSleep.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'MetroTabControl1
@@ -49,7 +55,7 @@ Partial Class Tab_OtherTrackers
         Me.MetroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MetroTabControl1.Location = New System.Drawing.Point(0, 0)
         Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 0
+        Me.MetroTabControl1.SelectedIndex = 1
         Me.MetroTabControl1.Size = New System.Drawing.Size(633, 557)
         Me.MetroTabControl1.TabIndex = 0
         Me.MetroTabControl1.UseSelectable = True
@@ -135,6 +141,8 @@ Partial Class Tab_OtherTrackers
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.lb_weight)
+        Me.Panel3.Controls.Add(Me.Panel5)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
@@ -148,6 +156,48 @@ Partial Class Tab_OtherTrackers
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(625, 515)
         Me.Panel4.TabIndex = 0
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.btn_weight_remove)
+        Me.Panel5.Controls.Add(Me.btn_weight_record)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel5.Location = New System.Drawing.Point(0, 492)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(625, 23)
+        Me.Panel5.TabIndex = 1
+        '
+        'btn_weight_remove
+        '
+        Me.btn_weight_remove.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_weight_remove.Location = New System.Drawing.Point(453, 0)
+        Me.btn_weight_remove.Name = "btn_weight_remove"
+        Me.btn_weight_remove.Size = New System.Drawing.Size(172, 23)
+        Me.btn_weight_remove.TabIndex = 1
+        Me.btn_weight_remove.Text = "Remove Selected"
+        Me.btn_weight_remove.UseSelectable = True
+        '
+        'btn_weight_record
+        '
+        Me.btn_weight_record.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btn_weight_record.Location = New System.Drawing.Point(0, 0)
+        Me.btn_weight_record.Name = "btn_weight_record"
+        Me.btn_weight_record.Size = New System.Drawing.Size(172, 23)
+        Me.btn_weight_record.TabIndex = 0
+        Me.btn_weight_record.Text = "Record Weight"
+        Me.btn_weight_record.UseSelectable = True
+        '
+        'lb_weight
+        '
+        Me.lb_weight.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lb_weight.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_weight.FormattingEnabled = True
+        Me.lb_weight.ItemHeight = 18
+        Me.lb_weight.Location = New System.Drawing.Point(0, 0)
+        Me.lb_weight.Name = "lb_weight"
+        Me.lb_weight.ScrollAlwaysVisible = True
+        Me.lb_weight.Size = New System.Drawing.Size(625, 492)
+        Me.lb_weight.TabIndex = 2
         '
         'Tab_OtherTrackers
         '
@@ -165,6 +215,8 @@ Partial Class Tab_OtherTrackers
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.TabSleep.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -179,4 +231,8 @@ Partial Class Tab_OtherTrackers
     Friend WithEvents TabSleep As System.Windows.Forms.TabPage
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents btn_weight_remove As MetroFramework.Controls.MetroButton
+    Friend WithEvents btn_weight_record As MetroFramework.Controls.MetroButton
+    Friend WithEvents lb_weight As System.Windows.Forms.ListBox
 End Class

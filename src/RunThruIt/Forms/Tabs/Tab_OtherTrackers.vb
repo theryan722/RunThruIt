@@ -38,6 +38,28 @@
 
 #End Region
 
+#Region "Weight"
+
+#Region "UI"
+
+    Private Sub btn_weight_record_Click(sender As Object, e As EventArgs) Handles btn_weight_record.Click
+
+    End Sub
+
+    Private Sub btn_weight_remove_Click(sender As Object, e As EventArgs) Handles btn_weight_remove.Click
+
+    End Sub
+
+#End Region
+
+#Region "Methods"
+
+
+
+#End Region
+
+#End Region
+
 #Region "Tab_OtherTrackers"
 
     Private Sub Tab_OtherTrackers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -46,4 +68,5 @@
 
 #End Region
 
+    
 End Class
