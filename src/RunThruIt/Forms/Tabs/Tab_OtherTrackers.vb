@@ -6,7 +6,7 @@
 
     Private Sub btn_water_addintakefortoday_Click(sender As Object, e As EventArgs) Handles btn_water_addintakefortoday.Click
         Dim wat As String = InputBox("Please enter the amount of water you have consumed today, in fl.oz.", "Enter Water Intake", "0")
-        My.Settings.log_water.Add(DateTime.Today.ToString("M/dd/yyyy") & "|" & wat & " oz")
+        My.Settings.log_water.Add(DateTime.Today.ToString("M/dd/yyyy") & "|" & wat)
         LoadWater()
     End Sub
 
@@ -43,7 +43,10 @@
 #Region "UI"
 
     Private Sub btn_weight_record_Click(sender As Object, e As EventArgs) Handles btn_weight_record.Click
-
+        Dim wet As String = InputBox("Please enter your current weight  in lbs.", "Enter Weight", My.Settings.profile_weight)
+        My.Settings.profile_weight = wet
+        My.Settings.log_weight.Add(DateTime.Today.ToString("M/dd/yyyy") & "|" & wet)
+        LoadWeight()
     End Sub
 
     Private Sub btn_weight_remove_Click(sender As Object, e As EventArgs) Handles btn_weight_remove.Click
