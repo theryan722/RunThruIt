@@ -24,4 +24,8 @@
         Return My.Settings.set_inj_totmile_wk2
     End Function
 
+    Public Shared Sub SetWeekOneDate(ByVal dt As Date)
+        My.Settings.set_inj_wk1_ldate = dt.ToString("H/dd/yyyy")
+    End Sub
+
 End Class
