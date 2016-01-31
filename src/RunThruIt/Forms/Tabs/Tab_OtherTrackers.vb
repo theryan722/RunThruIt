@@ -54,7 +54,12 @@
 
 #Region "Methods"
 
-
+    Private Sub LoadWeight()
+        lb_weight.Items.Clear()
+        For Each item As String In My.Settings.log_weight
+            lb_weight.Items.Add(item)
+        Next
+    End Sub
 
 #End Region
 
