@@ -41,6 +41,7 @@ Partial Class frmManager
         Me.MetroTabControl1 = New MetroFramework.Controls.MetroTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabControl1 = New MetroFramework.Controls.MetroTabControl()
+        Me.ResetSettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -136,7 +137,7 @@ Partial Class frmManager
         '
         'AboutToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1})
+        Me.AboutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem1, Me.ResetSettingsToolStripMenuItem})
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.AboutToolStripMenuItem.Text = "About"
@@ -171,6 +172,12 @@ Partial Class frmManager
         Me.TabControl1.Size = New System.Drawing.Size(704, 429)
         Me.TabControl1.TabIndex = 1
         Me.TabControl1.UseSelectable = True
+        '
+        'ResetSettingsToolStripMenuItem
+        '
+        Me.ResetSettingsToolStripMenuItem.Name = "ResetSettingsToolStripMenuItem"
+        Me.ResetSettingsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ResetSettingsToolStripMenuItem.Text = "Reset Settings"
         '
         'frmManager
         '
@@ -208,5 +215,6 @@ Partial Class frmManager
     Friend WithEvents AboutToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents WelcomeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TipsQuotesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ResetSettingsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

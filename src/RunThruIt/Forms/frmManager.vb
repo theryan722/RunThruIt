@@ -42,6 +42,13 @@
         Tabs.AddAbout()
     End Sub
 
+    Private Sub ResetSettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ResetSettingsToolStripMenuItem.Click
+        If MetroFramework.MetroMessageBox.Show(Me, "Are you sure you want to reset all settings? Any non backed up data will be lost.", "Reset Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+            My.Settings.Reset()
+            MetroFramework.MetroMessageBox.Show(Me, "Settings Successfully reset! Application will now restart!", "Application Restart", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+    End Sub
+
 #End Region
 
     Private Sub ProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfileToolStripMenuItem.Click
