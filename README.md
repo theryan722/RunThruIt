@@ -3,7 +3,7 @@
 Hoya Hacks 2016 Project
 
 #What is it
-RunThruIt helps track your goals, runs, workouts, weight, water intake and more. It even tracks the mileage on your running shoes and alerts you to when they are worn out and need replacing. It can also preemptively alert you before a possible injury, if you aren't getting enough sleep or even drinking enough fluids. You can also publish your workouts to the public RunThruIt feed at [runthruit.net](http://runthruit.net)
+RunThruIt helps you run smarter. Track your goals, runs, workouts, weight, water intake and more. It even tracks the mileage on your running shoes and alerts you to when they are worn out and need replacing. It can also preemptively alert you before a possible injury, if you aren't getting enough sleep or even drinking enough fluids. You can also publish your workouts to the public RunThruIt feed at [runthruit.net](http://runthruit.net)
 
 #Download
 Visit the [releases](https://github.com/theryan722/RunThruIt/releases) page to download the binary.
