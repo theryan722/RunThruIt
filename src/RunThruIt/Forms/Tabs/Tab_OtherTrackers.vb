@@ -25,6 +25,11 @@
     Private Sub CheckWaterIntake(ByVal wat As Integer)
         If wat < 40 Then
             MetroFramework.MetroMessageBox.Show(frmManager, "Notice: Your water consumption for today was low. Please consider increasing your water intake.", "Water Intake Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            My.Settings.set_log_warncounter(0) += 1
+            If My.Settings.set_log_warncounter(0) > 8 Then
+                MetroFramework.MetroMessageBox.Show(frmManager, "Warning: Your water consumption trends have been low. You should really consider increasing your water intake!", "Water Intake Alert", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                My.Settings.set_log_warncounter(0) = 0
+            End If
         End If
     End Sub
 
