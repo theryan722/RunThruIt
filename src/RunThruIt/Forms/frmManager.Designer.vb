@@ -73,19 +73,20 @@ Partial Class frmManager
         'WelcomeToolStripMenuItem
         '
         Me.WelcomeToolStripMenuItem.Name = "WelcomeToolStripMenuItem"
-        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.WelcomeToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.WelcomeToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.WelcomeToolStripMenuItem.Text = "Welcome"
         '
         'TipsQuotesToolStripMenuItem
         '
         Me.TipsQuotesToolStripMenuItem.Name = "TipsQuotesToolStripMenuItem"
-        Me.TipsQuotesToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.TipsQuotesToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.TipsQuotesToolStripMenuItem.Text = "Tips && Quotes"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'TabsToolStripMenuItem
@@ -98,13 +99,16 @@ Partial Class frmManager
         'CloseCurrentTabToolStripMenuItem
         '
         Me.CloseCurrentTabToolStripMenuItem.Name = "CloseCurrentTabToolStripMenuItem"
-        Me.CloseCurrentTabToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseCurrentTabToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.CloseCurrentTabToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
         Me.CloseCurrentTabToolStripMenuItem.Text = "Close Current Tab"
         '
         'CloseAllTabsToolStripMenuItem
         '
         Me.CloseAllTabsToolStripMenuItem.Name = "CloseAllTabsToolStripMenuItem"
-        Me.CloseAllTabsToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.CloseAllTabsToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.CloseAllTabsToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
         Me.CloseAllTabsToolStripMenuItem.Text = "Close All Tabs"
         '
         'ProfileToolStripMenuItem
