@@ -47,7 +47,10 @@
     End Sub
 
     Private Sub btn_weight_remove_Click(sender As Object, e As EventArgs) Handles btn_weight_remove.Click
-
+        If lb_weight.SelectedIndex <> -1 Then
+            My.Settings.log_weight.Remove(lb_weight.SelectedItem)
+            LoadWeight()
+        End If
     End Sub
 
 #End Region
