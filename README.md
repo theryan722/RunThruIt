@@ -10,6 +10,7 @@ Visit the releases page to download the binary.
 
 #Website
 [RunThruIt.net](http://runthruit.net)
+If for some reason that link does not work, you can try [RyanODay.com/RunThruIt](http://ryanoday.com/RunThruIt)
 
 #Devpost
 [Here is the link to the project submission page](http://devpost.com/software/runthruit)
