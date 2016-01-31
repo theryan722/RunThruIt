@@ -4,7 +4,7 @@ var lines = flines.split("\n");
 var feedbody;
 var indline;
 
-for (i=1;i<lines.length;i++){
+for (i=0;i<lines.length;i++){
 
 indline = lines[i].split("|");
 
