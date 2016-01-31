@@ -30,20 +30,26 @@ Partial Class Tab_OtherTrackers
         Me.btn_water_removeselected = New MetroFramework.Controls.MetroButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lb_water = New System.Windows.Forms.ListBox()
+        Me.TabSleep = New System.Windows.Forms.TabPage()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.MetroTabControl1.SuspendLayout()
         Me.TabWater.SuspendLayout()
+        Me.TabWeight.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.TabSleep.SuspendLayout()
         Me.SuspendLayout()
         '
         'MetroTabControl1
         '
         Me.MetroTabControl1.Controls.Add(Me.TabWater)
         Me.MetroTabControl1.Controls.Add(Me.TabWeight)
+        Me.MetroTabControl1.Controls.Add(Me.TabSleep)
         Me.MetroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MetroTabControl1.Location = New System.Drawing.Point(0, 0)
         Me.MetroTabControl1.Name = "MetroTabControl1"
-        Me.MetroTabControl1.SelectedIndex = 0
+        Me.MetroTabControl1.SelectedIndex = 2
         Me.MetroTabControl1.Size = New System.Drawing.Size(633, 557)
         Me.MetroTabControl1.TabIndex = 0
         Me.MetroTabControl1.UseSelectable = True
@@ -60,6 +66,7 @@ Partial Class Tab_OtherTrackers
         '
         'TabWeight
         '
+        Me.TabWeight.Controls.Add(Me.Panel3)
         Me.TabWeight.Location = New System.Drawing.Point(4, 38)
         Me.TabWeight.Name = "TabWeight"
         Me.TabWeight.Size = New System.Drawing.Size(625, 515)
@@ -117,6 +124,31 @@ Partial Class Tab_OtherTrackers
         Me.lb_water.Size = New System.Drawing.Size(625, 492)
         Me.lb_water.TabIndex = 0
         '
+        'TabSleep
+        '
+        Me.TabSleep.Controls.Add(Me.Panel4)
+        Me.TabSleep.Location = New System.Drawing.Point(4, 38)
+        Me.TabSleep.Name = "TabSleep"
+        Me.TabSleep.Size = New System.Drawing.Size(625, 515)
+        Me.TabSleep.TabIndex = 2
+        Me.TabSleep.Text = "Sleep"
+        '
+        'Panel3
+        '
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(625, 515)
+        Me.Panel3.TabIndex = 0
+        '
+        'Panel4
+        '
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(625, 515)
+        Me.Panel4.TabIndex = 0
+        '
         'Tab_OtherTrackers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,11 +158,13 @@ Partial Class Tab_OtherTrackers
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Tab_OtherTrackers"
         Me.ShowInTaskbar = False
-        Me.Text = "Weight, Water"
+        Me.Text = "Other Trackers"
         Me.MetroTabControl1.ResumeLayout(False)
         Me.TabWater.ResumeLayout(False)
+        Me.TabWeight.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.TabSleep.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -142,4 +176,7 @@ Partial Class Tab_OtherTrackers
     Friend WithEvents btn_water_addintakefortoday As MetroFramework.Controls.MetroButton
     Friend WithEvents TabWeight As System.Windows.Forms.TabPage
     Friend WithEvents lb_water As System.Windows.Forms.ListBox
+    Friend WithEvents TabSleep As System.Windows.Forms.TabPage
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
 End Class
