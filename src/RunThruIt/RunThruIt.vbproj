@@ -185,12 +185,6 @@
     <Compile Include="Forms\Tabs\Tab_Log.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Tabs\Tab_Options.Designer.vb">
-      <DependentUpon>Tab_Options.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Tabs\Tab_Options.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\Tabs\Tab_OtherTrackers.Designer.vb">
       <DependentUpon>Tab_OtherTrackers.vb</DependentUpon>
     </Compile>
@@ -270,9 +264,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tabs\Tab_Log.resx">
       <DependentUpon>Tab_Log.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Tabs\Tab_Options.resx">
-      <DependentUpon>Tab_Options.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tabs\Tab_OtherTrackers.resx">
       <DependentUpon>Tab_OtherTrackers.vb</DependentUpon>

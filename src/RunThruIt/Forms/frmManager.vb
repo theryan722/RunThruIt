@@ -42,10 +42,6 @@
         Tabs.AddAbout()
     End Sub
 
-    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
-        Tabs.AddOptions()
-    End Sub
-
 #End Region
 
     Private Sub ProfileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfileToolStripMenuItem.Click
@@ -108,7 +104,7 @@
             dlgFirstTime.ShowDialog()
         Else
             Tabs.AddWelcome()
-            
+
         End If
     End Sub
 
@@ -118,6 +114,6 @@
         End If
     End Sub
 
-#End Region   
-    
+#End Region
+
 End Class
