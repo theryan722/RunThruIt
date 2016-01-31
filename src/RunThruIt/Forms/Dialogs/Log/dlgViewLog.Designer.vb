@@ -171,7 +171,7 @@ Partial Class dlgViewLog
         Me.Name = "dlgViewLog"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
         Me.Resizable = False
-        Me.Text = "View"
+        Me.Text = "View Workout"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -143,7 +143,7 @@ Partial Class dlgViewShoe
         Me.Name = "dlgViewShoe"
         Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 0)
         Me.Resizable = False
-        Me.Text = "View"
+        Me.Text = "View Shoe"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
