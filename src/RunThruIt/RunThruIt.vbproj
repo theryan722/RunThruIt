@@ -113,7 +113,6 @@
     <Compile Include="Classes\Trackers\LogManager.vb" />
     <Compile Include="Classes\Objects\Shoe.vb" />
     <Compile Include="Classes\RandomInfo.vb" />
-    <Compile Include="Classes\SettingsManager.vb" />
     <Compile Include="Classes\Trackers\ShoeManager.vb" />
     <Compile Include="Classes\Tabs.vb" />
     <Compile Include="Classes\Website.vb" />
