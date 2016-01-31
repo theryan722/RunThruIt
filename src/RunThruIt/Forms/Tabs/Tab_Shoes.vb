@@ -17,7 +17,8 @@
         Dim bb As New dlgNewShoe
         If bb.ShowDialog = Windows.Forms.DialogResult.OK Then
             ShoeManager.AddShoe(bb.NewShoe)
-            LoadShoes()
+            frmManager.CloseCurrentTabToolStripMenuItem.PerformClick()
+            Tabs.AddShoes()
         End If
     End Sub
 
