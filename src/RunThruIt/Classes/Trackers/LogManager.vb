@@ -6,7 +6,7 @@
 
     Public Shared Sub AddToLog(ByVal nworkout As Workout)
         My.Settings.log_workout.Add(ConvertWorkoutToString(nworkout))
-
+        InjuryManager.ProcessWorkout(nworkout)
     End Sub
 
     Public Shared Sub RemoveFromLog(ByVal nworkout As Workout)

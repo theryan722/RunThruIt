@@ -48,4 +48,18 @@
         End If
     End Function
 
+    Public Shared Function GetDifferenceBetweenDates(ByVal date1 As Date, ByVal date2 As Date) As TimeSpan
+        Dim ret As New TimeSpan
+        ret = date1.Subtract(date2)
+        Return ret
+    End Function
+
+    Public Shared Function ProcessWorkout(ByVal nworkout As Workout) As Boolean
+        If GetWeekOneDate() = Nothing Then
+            SetWeekOneDate(nworkout.WorkoutDate)
+        Else
+            if
+            End If
+    End Function
+
 End Class
