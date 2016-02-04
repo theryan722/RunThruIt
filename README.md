@@ -8,6 +8,9 @@ RunThruIt helps you run smarter. Track your goals, runs, workouts, weight, water
 #Download
 Visit the [releases](https://github.com/theryan722/RunThruIt/releases) page to download the binary.
 
+#Future Plans
+In the future I plan on adding the ability to extract information from GPS watches, fitbits, etc. as well as a scheduling and meetup feature.
+
 #Website
 [RunThruIt.net](http://runthruit.net)
 If for some reason that link does not work, you can try [RyanODay.com/RunThruIt](http://ryanoday.com/runthruit)
